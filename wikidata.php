@@ -37,9 +37,16 @@ function wikidata_herbarium_from_code($code)
 {
 	$item = '';
 	
+	// restrict to herbaria
 	$sparql = 'SELECT * WHERE { ?herbarium wdt:P5858 "' . $code . '" . 
 	?herbarium wdt:P31 wd:Q181916
 	  }';
+	  
+	// any type of entity that has code  
+	  
+	$sparql = 'SELECT * WHERE { ?herbarium wdt:P5858 "' . $code . '" . 
+	  }';
+	  
 	
 	$url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=' . urlencode($sparql);
 	$json = get($url, '', 'application/json');
