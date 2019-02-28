@@ -1,6 +1,37 @@
 <?php
 
 require_once(dirname(__FILE__) . '/fingerprint.php');
+require_once(dirname(__FILE__) . '/lcs.php');
+
+//----------------------------------------------------------------------------------------
+function compare_two_strings($str1, $str2)
+{
+	$score = 0;
+
+	// check
+	$v1 = finger_print($str1);
+	$v2 = finger_print($str2);	
+	
+	if (($v1 != '') && ($v2 != ''))
+	{
+		//echo "v1: $v1\n";
+		//echo "v2: $v2\n";
+		
+		$lcs = new LongestCommonSequence($v1, $v2);
+		$d = $lcs->score();
+		
+		//echo $d;
+		
+		$score = min($d / strlen($v1), $d / strlen($v2));
+		
+		//$score = $d / strlen($v1);
+		
+		//echo "score=$score\n";
+	}
+	
+	return $score;
+}
+
 
 $stopwords = array(
 'a', 'and', 'in', 'the', 'of',
@@ -8,6 +39,7 @@ $stopwords = array(
 '-'
 );
 
+//----------------------------------------------------------------------------------------
 function optimizeSearchString($searchString) {
 	global $stopwords;
     $wordsFromSearchString = preg_split('/,?\s+/u', $searchString);
@@ -15,6 +47,7 @@ function optimizeSearchString($searchString) {
     return $finalWords;
 }
 
+/*
 $str1 = 'Herbario Gaspar Xuárez Universidad de Buenos Aires (BAA)';
 $str2 = 'Herbario Gaspar Xuárez';
 
@@ -54,6 +87,6 @@ $intersect = array_intersect($c1, $c2);
 
 print_r($intersect);
 
-
+*/
 ?>
 

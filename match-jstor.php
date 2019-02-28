@@ -149,18 +149,18 @@ while (!feof($file_handle))
 				
 				if ($mode == 0)
 				{
-					// match to wikidata item
-					echo 'UPDATE collections SET wikidata="' . $item . '" WHERE id="' . $obj->JSTOR . '";' . "\n";
+					// match to wikidata item using identifier
+					echo 'UPDATE collections SET wikidata="' . $item . '", wikidata_match_reason="IH code" WHERE id="' . $obj->JSTOR . '";' . "\n";
 				}
 				
 				if ($mode == 1)
 				{
 					// match to Wikispecies code (maybe item already exists but not linked to code?)
-					echo 'UPDATE collections SET wikidata_code="' . $item . '" WHERE id="' . $obj->JSTOR . '";' . "\n";
+					echo 'UPDATE collections SET wikidata="' . $item . '", wikidata_match_reason="Wikispecies code" WHERE id="' . $obj->JSTOR . '";' . "\n";
 				}
 			
 			
-				// Get details of entity
+				// Get details of Wikidata entity and add that to database
 				$entity = get_wikidata_entity($item);
 				
 				//print_r($entity);
@@ -225,13 +225,7 @@ while (!feof($file_handle))
 					}
 				}
 				
-				
-				
 				echo 'REPLACE INTO collections(' . join(',', $keys) . ') VALUES (' . join(',', $values) . ');' . "\n";			
-
-				
-				
-				
 			}
 			
 		}

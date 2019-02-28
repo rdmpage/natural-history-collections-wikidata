@@ -1,5 +1,8 @@
 <?php
 
+require_once (dirname(__FILE__) . '/fingerprint.php');
+require_once (dirname(__FILE__) . '/lcs.php');
+require_once (dirname(__FILE__) . '/utils.php');
 
 //----------------------------------------------------------------------------------------
 function get($url, $user_agent='', $content_type = '')
@@ -42,8 +45,7 @@ function wikidata_herbarium_from_code($code)
 	?herbarium wdt:P31 wd:Q181916
 	  }';
 	  
-	// any type of entity that has code  
-	  
+	// any type of entity that has Herbarium Index code  	  
 	$sparql = 'SELECT * WHERE { ?herbarium wdt:P5858 "' . $code . '" . 
 	  }';
 	  
@@ -346,15 +348,23 @@ function get_wikidata_entity($qid)
 
 //----------------------------------------------------------------------------------------
 // Find in Wikidata
-function wikidata_reconcile($text, $type = null)
+function wikidata_reconcile($text, $type = null, $properties = array())
 {
 	$query = new stdclass;
 	$query->query = $text;
+	
+	$query->limit = 3;
 	
 	if (isset($type))
 	{
 		$query->type = $type;
 	}
+	
+	$query->properties = $properties;
+	
+	//print_r($query);
+	
+	//echo json_encode($query);
 
 	$json = get(
 		'https://tools.wmflabs.org/openrefine-wikidata/en/api?query=' . urlencode(json_encode($query)),
@@ -365,9 +375,26 @@ function wikidata_reconcile($text, $type = null)
 	$obj = json_decode($json);
 	
 	print_r($obj);
-
-
-
+	
+	
+	
+	$items = array();
+	
+	foreach ($obj->result as $result)
+	{
+		if ($result->match)
+		{
+			$items[] = $result->id;
+		}
+		else
+		{
+			// check
+			$score = compare_two_strings($text, $result->name);
+			//echo "score=$score\n";
+		}	
+	}
+	
+	return $items;
 }
 
 //----------------------------------------------------------------------------------------
@@ -463,8 +490,55 @@ if (0)
 	
 	$text = 'Australian National Herbarium';
 	$type = 'Q181916'; // herbarium
+
+	$text = 'University of Alaska Herbarium';
+	$type = 'Q181916'; // herbarium
 	
-	wikidata_reconcile($text, $type);
+	$text = 'W S Turrell Herbarium Miami University';
+	$type = null;
+	
+	$text = 'Taiwan Forestry Research Institute';
+	$type = null;
+	
+	$text = 'Wartburg College';
+	$type = null;
+	
+	$text = 'Museo Nacional de Historia Natural';
+	$type = null;
+	
+	$text = 'Conservatoire et Jardin botaniques de la Ville de Genève';
+	$type = 'Q167346';
+	
+	// Properties don't exclude non-matching things from results,
+	// but do affect order of results (those that have property appear earlier)
+	// and value of "match" can be false if string matches by property doesn't
+	$properties = array();
+	
+		
+	if (0)
+	{
+		// Property by id
+		$property = new stdclass;
+		$property->pid = "P17"; // country
+	
+		$value = new stdclass;
+		$value->id = "Q30"; // USA
+		//$value->id = "Q17"; // Japan
+		$value->id = "Q55"; // Netherlands
+		$property->v = $value;
+		$properties[] = $property;
+	}
+	
+	if (1)
+	{	
+		// Property value as string
+		$property = new stdclass;
+		$property->pid = "P17";
+		$property->v = "Uraguay";
+		$properties[] = $property;
+	}
+		
+	wikidata_reconcile($text, $type, $properties);
 	
 
 }
