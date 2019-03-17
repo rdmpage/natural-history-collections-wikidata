@@ -25,7 +25,7 @@ http://asih.org/standard-symbolic-codes/about-symbolic-codes, Excel file http://
 See https://github.com/OpenRefine/OpenRefine/wiki/Reconciliation-Service-API
 
 
-## Wikidata notes
+## Wikidata notes and problematic examples
 
 ### Handling multiple collection codes
 
@@ -41,6 +41,21 @@ Dunn-Palmer Herbarium, University of Missouri
 has cause
 merge
 
+
+### Bogor Zoological Museum
+
+https://species.wikimedia.org/wiki/BZM
+
+- BZM
+- IPBD (Institute for Plant Diseases, Buitenzorg, Java)
+- MZB (Museum Zoologicum Bogoriense/Museum Zoologi Bogor, Cibinong, Java, Indonesia)
+- ZMBJ (Zoologische Museum Buitenzorg, Java)
+- MBBJ (Museum Bogoriense, Bogor, Java)
+
+See also:
+ 
+Robert Holmberg 1998. Museum Zoologicum Bogoriense (MZB), Indonesia. Newsletter of the American Arachnological Society, April 1998, 57:10 http://hdl.handle.net/2149/1320 https://auspace.athabascau.ca/bitstream/handle/2149/1320/MuseumZoologicum.pdf?sequence=1&isAllowed=y
+
 ## Images
 
 Wikispecies logo 
@@ -52,6 +67,8 @@ This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unp
 ## JSTOR
 
 https://labstest.jstor.org/zambezi/
+
+
 
 
 
