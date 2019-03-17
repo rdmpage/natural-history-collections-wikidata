@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Where</title>	
+	
+	<style>
+	
+	
+	</style>
+	
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<script  src="http://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/ejs@2.6.1/ejs.min.js" integrity="sha256-ZS2YSpipWLkQ1/no+uTJmGexwpda/op53QxO/UBJw4I=" crossorigin="anonymous"></script>	
+
+	<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+	<!-- <script src="js/ejs.js"></script> -->
+
+	<script>
+	
+		var template_card = `
+			<% for(var i in data) {%>
+				<div class="row">
+					<div class="col s12 m6">
+						<div class="card">
+						
+							<% if (data[i].map) {  %>
+								<div class="card-image">
+									<!--
+									<div style="float:right;width:50%">
+										<img src="<%- data[i].map %>">
+									</div>
+									<div style="float:right;width:50%">
+										<img src="<%- data[i].map %>">
+									</div>
+									-->
+									<img src="<%- data[i].map %>">
+								</div>	
+							<% } %>
+							
+							<% if (data[i].image) {  %>
+								<div class="card-image">
+									<img src="http://exeg5le.cloudimg.io/s/width/400/<%- data[i].image %>">
+								</div>	
+							<% } %>
+						
+						
+							<div class="card-content">
+								<span class="card-title">
+									<%- data[i].display_name.join(' / ') %>
+								</span>
+								
+								<% if (data[i].url) { %>
+									<a class="btn" href="<%- data[i].url %>" target="_new">Website</a>
+								<% } %>																	
+								
+								<table class="striped">
+									<tbody>	
+										<% if (data[i].code.length > 0) { %>
+											<tr><td>code</td><td><%- data[i].code.join(';') %></td></tr>
+										<% } %>									
+										<% if (data[i].grid) {  %>
+											<tr><td>grid</td><td><%- data[i].grid %></td></tr>
+										<% } %>
+
+										<% if (data[i].ringgold) {  %>
+											<tr><td>ringgold</td><td><%- data[i].ringgold %></td></tr>
+										<% } %>
+																				
+										<% if (data[i].bgci) {  %>
+											<tr><td>BGCI garden ID</td><td><%- data[i].bgci %></td></tr>
+										<% } %>
+
+										<% if (data[i].twitter) {  %>
+											<tr><td><img width="32" src="images/twitter-square.svg"></td><td><a href="https://twitter.com/<%- data[i].twitter %>" target="_new">@<%- data[i].twitter %></a></td></tr>
+										<% } %>
+
+										<% if (data[i].instagram) {  %>
+											<tr><td><img width="32" src="images/instagram.svg"></td><td><a href="https://www.instagram.com/<%- data[i].instagram %>" target="_new"><%- data[i].instagram %></a></td></tr>
+										<% } %>
+
+										<% if (data[i].wikispecies) {  %>
+											<tr><td>wikispecies</td><td><a href="https://species.wikimedia.org/wiki/<%- data[i].wikispecies %>" target="_new"><%- data[i].wikispecies %></a></td></tr>
+										<% } %>
+								
+									</tbody>
+								</table>
+								
+								
+							</div>
+							
+							<div class="card-action">
+          						<a href="https://wikidata.org/wiki/<%- i %>" target="_new">Wikidata <%- i %></a>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			<% } %>
+		`;
+		
+        //--------------------------------------------------------------------------------
+		// http://stackoverflow.com/a/11407464
+		$(document).keypress(function(event){
+		
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			
+			if(keycode == '13'){
+				search();   
+			}
+		});    
+		
+        //--------------------------------------------------------------------------------
+		function search() {
+			var query = document.getElementById('query').value;
+		
+						var sparql = `SELECT DISTINCT * 
+WHERE 
+{ 
+	{
+  		?repository wdt:P5858 "CODE" . 
+  	}
+  	UNION
+  	{
+    	<https://species.wikimedia.org/wiki/CODE> schema:about ?repository .
+   	}  
+  
+  ?repository rdfs:label ?label .
+  
+  #?repository ?p ?o .
+  
+  OPTIONAL {
+   ?repository wdt:P195|wdt:P137|wdt:P749 ?parent .
+    OPTIONAL { ?parent wdt:P18 ?parent_image . } 
+    OPTIONAL { ?parent wdt:P17 ?parent_country . ?parent_country rdfs:label ?parent_country_label . FILTER (lang(?parent_country_label) = 'en') } 
+    OPTIONAL { ?parent wdt:P625 ?parent_coordinates . }   
+    OPTIONAL { ?parent wdt:P2002 ?parent_twitter . } 
+    OPTIONAL { ?parent wdt:P2427 ?parent_grid . } 
+    OPTIONAL { ?parent wdt:P3500 ?parent_ringgold . } 
+    OPTIONAL { ?parent wdt:P5818 ?parent_bgci . } 
+    OPTIONAL { ?parent wdt:P2427 ?parent_grid . } 
+    OPTIONAL { ?parent wdt:P856 ?parent_url . }
+    
+    OPTIONAL { ?parent wdt:P2003 ?parent_instagram . }
+  }
+  
+  OPTIONAL { ?repository schema:description ?description . FILTER (lang(?description) = 'en')  } 
+
+  
+  
+  OPTIONAL { ?repository wdt:P18 ?image . } 
+  OPTIONAL { ?repository wdt:P17 ?country . ?country rdfs:label ?country_label . FILTER (lang(?country_label) = 'en') }  
+  OPTIONAL { ?repository wdt:P625 ?coordinates . }  
+  OPTIONAL { ?repository wdt:P2002 ?twitter . } 
+  OPTIONAL { ?repository wdt:P2427 ?grid . } 
+  OPTIONAL { ?repository wdt:P3500 ?ringgold . } 
+  OPTIONAL { ?repository wdt:P5818 ?bgci . } 
+  OPTIONAL { ?repository wdt:P2427 ?grid . } 
+  OPTIONAL { ?repository wdt:P856 ?url . }
+  
+  OPTIONAL { ?repository wdt:P2003 ?instagram . }
+  
+  #OPTIONAL { ?repository wdt:P4090 ?bcode. }
+  #OPTIONAL { ?repository wdt:P5858 ?ihcode. }  
+  
+  OPTIONAL { 
+  	?repository p:P4090 ?bcode_statement . 
+  	?bcode_statement ps:P4090 ?bcode .
+  }  
+  
+  OPTIONAL { 
+  	?repository p:P5858 ?ihcode_statement . 
+  	?ihcode_statement ps:P5858 ?ihcode .
+  }  
+  
+  OPTIONAL { ?wikispecies schema:about ?repository; schema:isPartOf <https://species.wikimedia.org/> } 
+  
+  
+  # FILTER (lang(?label) = 'en') . 
+}`;
+
+			sparql = sparql.replace(/CODE/g, query);
+			
+			console.log(sparql);
+			
+			$('#output').html('');
+			$('#results').html('');
+	
+			$.getJSON('https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=' + encodeURIComponent(sparql),
+				function(data){
+				  if (data.results.bindings.length == 0) {
+				  	var html = '<p>Not found!</p>';
+				  	
+				  	document.getElementById('results').innerHTML = html;
+				  } else {
+				  
+				  	console.log(JSON.stringify(data.results.bindings, null, 2));
+				  	
+				  	// results object
+				  	
+				  	var results = {};
+				  	for (var i in data.results.bindings) {
+				  		var id = data.results.bindings[i].repository.value;
+				  		id = id.replace('http://www.wikidata.org/entity/', '');
+				  		
+				  		if (!results[id]) {
+				  			results[id] = {};
+				  			results[id].name = {};
+							results[id].display_name = [];
+				  			results[id].description = {};
+				  			results[id].code = [];
+				  		}
+				  		results[id].wikidata = data.results.bindings[i].repository.value;
+				  		
+				  		// label
+				  		if (data.results.bindings[i].label) {
+				  			results[id].name[data.results.bindings[i].label['xml:lang']] = data.results.bindings[i].label.value;
+				  			
+				  			switch (data.results.bindings[i].label['xml:lang'])
+				  			{
+				  				case 'en':
+				  				case 'fr':
+				  				case 'ja':
+				  				case 'zh':
+				  					if (results[id].display_name.indexOf(data.results.bindings[i].label.value) == -1) {				  				
+					  					results[id].display_name.push(data.results.bindings[i].label.value);
+					  				}
+				  					break;
+				  				default:
+				  					break;
+				  			}
+				  		}				  		
+
+				  		// description
+				  		if (data.results.bindings[i].description) {
+				  			results[id].description[data.results.bindings[i].description['xml:lang']] = data.results.bindings[i].description.value
+				  		}	
+				  		
+				  		// image
+				  		if (data.results.bindings[i].image) {
+				  			results[id].image = data.results.bindings[i].image.value;
+				  		}
+					  	if (data.results.bindings[i].parent_image) {
+				  			results[id].image = data.results.bindings[i].parent_image.value;
+				  		}				  					  		
+				  		
+				  		// grid
+				  		if (data.results.bindings[i].grid) {
+				  			results[id].grid = data.results.bindings[i].grid.value;
+				  		}
+					  	if (data.results.bindings[i].parent_grid) {
+				  			results[id].grid = data.results.bindings[i].parent_grid.value;
+				  		}
+
+						// ringgold
+				  		if (data.results.bindings[i].ringgold) {
+				  			results[id].ringgold = data.results.bindings[i].ringgold.value;
+				  		}
+					  	if (data.results.bindings[i].parent_ringgold) {
+				  			results[id].ringgold = data.results.bindings[i].parent_ringgold.value;
+				  		}
+
+						// twitter
+				  		if (data.results.bindings[i].twitter) {
+				  			results[id].twitter = data.results.bindings[i].twitter.value;
+				  		}
+					  	if (data.results.bindings[i].parent_twitter) {
+				  			results[id].twitter = data.results.bindings[i].parent_twitter.value;
+				  		}
+
+						// instagram
+				  		if (data.results.bindings[i].instagram) {
+				  			results[id].instagram = data.results.bindings[i].instagram.value;
+				  		}
+					  	if (data.results.bindings[i].parent_instagram) {
+				  			results[id].instagram = data.results.bindings[i].parent_instagram.value;
+				  		}
+
+						// url
+				  		if (data.results.bindings[i].url) {
+				  			results[id].url = data.results.bindings[i].url.value;
+				  		}
+					  	if (data.results.bindings[i].parent_url) {
+				  			results[id].url = data.results.bindings[i].parent_url.value;
+				  		}
+				  		
+				  		// wikispecies
+				  		if (data.results.bindings[i].wikispecies) {
+				  			results[id].wikispecies = data.results.bindings[i].wikispecies.value;
+				  			results[id].wikispecies = results[id].wikispecies.replace('https://species.wikimedia.org/wiki/', '');
+				  		}
+				  		
+				  		// codes
+				  		if (data.results.bindings[i].bcode) {
+				  			if (results[id].code.indexOf(data.results.bindings[i].bcode.value) === -1) {
+				  				results[id].code.push(data.results.bindings[i].bcode.value);
+				  			}
+				  		}
+				  		if (data.results.bindings[i].ihcode) {
+				  			if (results[id].code.indexOf(data.results.bindings[i].ihcode.value) === -1) {
+				  				results[id].code.push(data.results.bindings[i].ihcode.value);
+				  			}
+				  		}				  		
+				  		
+				  		
+				  		// location
+					  	if (data.results.bindings[i].coordinates) {
+							results[id].coordinates = data.results.bindings[i].coordinates.value;
+							results[id].coordinates = results[id].coordinates.replace(/Point\(/, '');
+							results[id].coordinates = results[id].coordinates.replace(/\)$/, '');
+							results[id].coordinates = results[id].coordinates.replace(/\s/, ',');
+				  		}
+					  	if (data.results.bindings[i].parent_coordinates) {
+							results[id].coordinates = data.results.bindings[i].parent_coordinates.value;
+							results[id].coordinates = results[id].coordinates.replace(/Point\(/, '');
+							results[id].coordinates = results[id].coordinates.replace(/\)$/, '');
+							results[id].coordinates = results[id].coordinates.replace(/\s/, ',');
+				  		}
+				  		
+				  		// map
+				  		if (results[id].coordinates) {
+							var url = 'https://api.mapbox.com/v4/mapbox.streets';
+							var marker = '/pin-s-circle+285A98(' + results[id].coordinates + ')';
+							var pt = '/' + results[id].coordinates;
+							var zoom = ',14';
+							var size = '/400x200@2x.png';
+							var token='?access_token=pk.eyJ1IjoicmRtcGFnZSIsImEiOiJjajJrdmJzbW8wMDAxMnduejJvcmEza2k4In0.bpLlN9O6DylOJyACE8IteA';
+		
+							results[id].map = url + marker + pt + zoom + size + token;
+						}
+				  	}
+				  	
+				  	console.log(JSON.stringify(results, null, 2));
+
+				  	//$('#output').html(JSON.stringify(results, null, 2));
+
+					// Render template 	
+					html = ejs.render(template_card, { data: results });
+
+					// Display
+					document.getElementById('results').innerHTML = html;
+				  	
+				  }
+				}
+			);
+
+		}		
+		
+		
+	
+	
+	</script>
+	
+</head>
+<body>
+	<div class="container">
+
+	<h1>Where is the damned collection?</h1>
+
+	<!-- search box -->
+	<div class="row">
+		<div class="input-field col s6">
+			<i class="material-icons prefix">search</i>
+			<input style="font-size:2em;" type="text" id="query"  placeholder="Search">
+			<label for="icon_prefix">Institution code</label>
+		</div>
+		<!-- <button class="btn-large type="submit" style="font-size:2em;" id="search" onclick="search();">Find</button> -->
+	</div>
+	
+	<div id="results">
+	</div>
+	
+	<div id="output">
+	</div>
+	
+	</div>
+
+</body>
+</html>

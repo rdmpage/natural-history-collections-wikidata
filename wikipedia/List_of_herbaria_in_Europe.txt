@@ -1,0 +1,1742 @@
+[[Image:Location-Europe-UNsubregions, Kosovo as part of Serbia.png|thumb|240px|right|Map of Europe coded by region according to the [[United Nations geoscheme for Europe]].]]
+This is a '''list of [[herbaria]] in Europe''', organized first by region where the herbarium is located (using the [[United Nations geoscheme for Europe]]), then within each region by size of the collection.  For other continents, see [[List of herbaria]].
+
+==Eastern Europe==
+The tables below list herbaria located in [[Eastern Europe]] as defined by the [[United Nations geoscheme for Europe]].
+{{-}}
+
+===Black Sea===
+The following table includes herbaria located in countries on the [[Black Sea]], including [[Bulgaria]], [[Moldova]], [[Romania]], and [[Ukraine]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in countries on the Black Sea'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| "Alexandru Ioan Cuza" University
+| 250,000
+| I
+| [[Romania]]
+| [[Iași]]
+| 
+|-
+| Herbarium Bulgarian Academy of Science
+| 160,000
+| SOM
+| [[Bulgaria]]
+| [[Sofia]]
+| [http://www.bio.bas.bg/botany/]
+|-
+| Herbarium Agricultural University of Plovdiv
+| 150,000
+| SOA
+| [[Bulgaria]]
+| [[Plovdiv]]
+| [http://botanica.ovo.bg/index/soa/0-25/]
+|-
+|  Herbarium Sofia University 
+|  106 000
+|  SO
+|  [[Bulgaria]]
+|  [[Sofia]]
+|
+|}
+{{-}}
+
+===Czech Republic===
+The following table includes herbaria located in the Czech Republic.
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Czech Republic'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Charles University in Prague]]
+| 2,200,000
+| PRC
+| Czech Republic
+| Prague
+| [https://botany.natur.cuni.cz/cevnate/prc/index.php]
+|-
+|}
+{{-}}
+
+===Hungary===
+The following table includes herbaria located in Hungary.
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Hungary'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+|[[Hungarian Natural History Museum]] - Department of Botany
+| 2,000,000
+| BP
+| Hungary
+| [[Budapest]]
+| [http://www.nhmus.hu/en/collections/department_of_botany]
+|-
+| Budakeszi Herbarium - International Dendrological Foundation
+| 250,000
+| BK
+| Hungary
+| [[Budakeszi]]
+| [http://dendrologia.eu/herbarium]
+|-
+|}
+{{-}}
+
+===Poland===
+The following table includes herbaria located in Poland.
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Poland'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Władysław Szafer Institute of Botany, Polish Academy of Sciences]]
+| 800,000
+| IB PAN
+| Poland
+| Kraków
+| [https://web.archive.org/web/20140107072835/http://www.ib-pan.krakow.pl/index.php/zaklady-i-pracownie/zaklad-systematyki]
+|-
+|}
+{{-}}
+
+===Russia===
+The following table includes herbaria located in European Russia.
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Russia'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Komarov Botanical Institute]]
+| 7,160,000
+| LE
+| Russia
+| [[Saint Petersburg|St. Petersburg]]
+| [http://www.binran.ru/]
+|-
+| [[Moscow State University]]
+| 1,011,253
+| MW
+| [[Russia]]
+| [[Moscow]]
+| [https://plant.mitotech.ru/]
+|-
+| Main Botanical Garden, Russia
+| 700,000 (644,337 mounted)
+| MHA
+| [[Russia]]
+| [[Moscow]]
+| [http://www.gbsad.ru/structura/herbar.php]
+|-
+| [[Saint Petersburg University]]
+| 700,000 (280,000 mounted)
+| LECB
+| [[Russia]]
+| [[Saint Petersburg]]
+| [http://www.bio.spbu.ru/faculty/collections/herbarium.php]
+|-
+| N. I. Vavilov Institute of Plant Industry
+| 380,000 (179,000 mounted)
+| WIR
+| Russia
+| [[Saint Petersburg]]
+| [http://www.vir.nw.ru/index_r.htm]
+|-
+| Southern Federal University
+| 350,000 (280,000 mounted)
+| RV
+| Russia
+| [[Rostov-on-Don]]
+| [http://biolog.sfedu.ru/bot.htm]
+|-
+| Komi Scientific Centre, Russian Academy of Sciences, Ural Department
+| 295,600
+| SYKO
+| Russia
+| [[Syktyvkar]], [[Komi Republic]]
+| [http://ib.komisc.ru/add/j2/index.php?option=com_content&task=view&id=106&Itemid=150&Itemid=139] [http://ib.komisc.ru/add/j2/index.php?option=com_content&task=view&id=125&Itemid=156]
+|-
+| Saint Petersburg S. M. Kirov Forestry Academy, I. P. Borodin Herbarium
+| 200,000
+| KFTA
+| Russia
+| [[Saint Petersburg]]
+| [https://www.webcitation.org/65hKBeH0T?url=http://ftacademy.ru/academy/museum/herbarium/], [http://try.taxon.pro/#!base0017/tx_xq09x5b6npr7xpps6b4ayn]
+|}
+{{-}}
+
+==Northern Europe==
+The tables below list herbaria located in [[Northern Europe]] as defined by the [[United Nations geoscheme for Europe]]: the [[British Isles]], [[Baltic states]], [[Scandinavia]], and [[Iceland]].
+
+===Baltic states===
+The following table includes herbaria located in the [[Baltic states]]: [[Estonia]], [[Latvia]], and [[Lithuania]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in the Baltic states'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Estonian University of Life Sciences]]
+| 336,000
+| TAA
+| [[Estonia]]
+| [[Tartu]]
+|
+|-
+| [[University of Tartu]]
+| 324,000
+| TU
+| [[Estonia]]
+| [[Tartu]]
+|
+|-
+| [[Vilnius University]]
+| 300,000
+| WI
+| [[Lithuania]]
+| [[Vilnius]]
+|
+|-
+| [[University of Latvia]], Riga
+| 176,000
+| RIG
+| [[Latvia]]
+| [[Riga]]
+|
+|-
+| [[University of Latvia]], Salaspils
+| 175,000
+| LATV
+| [[Latvia]]
+| [[Salaspils]]
+|
+|-
+| Institute of Botany, Lithuania
+| 130,000
+| BILAS
+| [[Lithuania]]
+| [[Vilnius]]
+|
+|-
+| Estonian Museum of Natural History
+| 100,000
+| TAM
+| [[Estonia]]
+| [[Tallinn]]
+|
+|-
+| Tallinn Botanic Garden
+| 85,000
+| TALL
+| [[Estonia]]
+| [[Tallinn]]
+| [http://www.tba.ee/]
+|-
+| National Botanic Garden of Latvia
+| 50,000
+| HBA
+| [[Latvia]]
+| [[Salaspils]]
+|
+|}
+{{-}}
+
+===British Isles===
+The following table includes herbaria located in the [[British Isles]], including Ireland.
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in the British Isles'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Royal Botanic Gardens, Kew]]
+| 7,000,000
+| K
+| UK
+| [[Kew]], England
+| [http://www.kew.org/]
+|-
+| [[Natural History Museum, London]]
+| 5,200,000
+| BM
+| UK
+| London, England
+| [http://www.nhm.ac.uk/]
+|-
+| [[Royal Botanic Garden, Edinburgh]]
+| 2,000,000
+| E
+| UK
+| [[Edinburgh]], [[Scotland]]
+| [http://elmer.rbge.org.uk/bgbase/vherb/bgbasevherb.php]
+|-
+| [[University of Cambridge]]
+| 1,000,000
+| CGE
+| UK
+| [[Cambridge]], England
+| [http://www.plantsci.cam.ac.uk]
+|-
+| [[University of Manchester]]
+| 1,000,000
+| MANCH
+| UK
+| [[Manchester]], England
+| [http://www.man.ac.uk/museum/]{{dead link|date=December 2017 |bot=InternetArchiveBot |fix-attempted=yes }}
+|-
+| National Botanic Gardens, Ireland
+| 600,000
+| DBN
+| Ireland
+| [[Dublin]]
+|
+|-
+| National Museums & Galleries of Wales
+| 550,000
+| NMW
+| UK
+| [[Cardiff]], [[Wales]]
+| [http://webarchive.loc.gov/all/20020915131529/http%3A//www.nmgw.ac.uk/]
+|-
+| [[Fielding-Druce Herbarium]], [[University of Oxford]]
+| 500,000
+| OXF
+| UK
+| [[Oxford]], England
+| [http://herbaria.plants.ox.ac.uk/bol/home/]
+|-
+| CABI Bioscience UK Centre
+| 385,000
+| IMI
+| UK
+| [[Surrey]], England
+| [http://www.cabi-bioscience.org]
+|-
+| World Museum Liverpool
+| 350,000
+| LIV
+| UK
+| [[Liverpool]], England
+|
+|-
+| Daubeny Herbarium, [[University of Oxford]]
+| 300,000
+| FHO
+| UK
+| [[Oxford]], England
+| [https://web.archive.org/web/20020414125947/http://www.plants.ox.ac.uk/herbarium/index.html]
+|-
+| [[University of Reading]]
+| 300,000
+| RNG
+| UK
+| [[Reading, Berkshire|Reading]], England
+| [http://www.herbarium.reading.ac.uk]
+|-
+| [[Trinity College, Dublin|Trinity College]]
+| 230,000
+| TCD
+| Ireland
+| [[Dublin]]
+|
+|-
+| [[University of Birmingham]]
+| 150,000
+| BIRM
+| UK
+| [[Birmingham]], England
+|
+|-
+| [[Royal Horticultural Society]] ([[RHS Garden Wisley]])
+| 140,000
+| WSY
+| UK
+| [[Wisley]], England
+|
+|-
+| [[University of Leicester]]
+| 125,000
+| LTR
+| UK
+| [[Leicester]], England
+|
+|-
+| [[University of Aberdeen]]
+| 120,000
+| ABD
+| UK
+| [[Aberdeen]], [[Scotland]]
+|
+|-
+| South London Botanical Institute
+| 100,000
+| SLBI
+| UK
+| London, England
+|
+|-
+| [[Nottingham Natural History Museum]]
+| 91,000
+| NOT
+| UK
+| [[Nottingham]], England
+|
+|-
+| Leicestershire Museums
+| 90,000
+| LSR
+| UK
+| [[Leicester]], England
+|
+|-
+| British Antarctic Survey
+| 40,000
+| AAS
+| UK
+| [[Cambridge]], England
+| [https://www.bas.ac.uk/data/our-data/collections/herbarium/]
+|-
+| [[Derby Museum and Art Gallery]]
+| 8,000
+| DBY
+| UK
+| [[Derby]], England
+| [http://www.derbymuseums.org]
+|-
+| [[Charterhouse School]] Herbarium
+| 8,000
+| GOD
+| UK
+| [[Godalming]], England
+| [http://ucjeps.berkeley.edu/god/]
+|}
+{{-}}
+
+===Scandinavia===
+The following table includes herbaria located in [[Scandinavia]], including Denmark and [[Iceland]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Scandinavia'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Swedish Museum of Natural History]] (Naturhistoriska riksmuseet)
+| 4,400,000
+| S
+| Sweden
+| [[Stockholm]]
+| [http://www.nrm.se/]
+|-
+| [[University of Helsinki]]
+| 3,000,000
+| H
+| Finland
+| [[Helsinki]]
+| [https://web.archive.org/web/20080615004626/http://www.fmnh.helsinki.fi/english/botany/index.htm]
+|-
+| [[Uppsala University]]
+| 3,000,000
+| UPS
+| Sweden
+| [[Uppsala]]
+| [https://web.archive.org/web/20080401102228/http://www-hotel.uu.se/evolmuseum/fytotek/]
+|-
+| [[University of Copenhagen]]
+| 2,510,000
+| C
+| Denmark
+| [[Copenhagen]]
+| [https://web.archive.org/web/20110719121208/http://www.botanicalmuseum.dk/bot/]
+|-
+| Botanical Museum, Lund
+| 2,500,000
+| LD
+| Sweden
+| [[Lund]]
+| [https://web.archive.org/web/20070705153143/http://www.biomus.lu.se/o.o.i.s/8510]
+|-
+| Botanical Museum, Oslo
+| 1,800,000
+| O
+| Norway
+| [[Oslo]]
+| [https://web.archive.org/web/20080615135137/http://www.nhm.uio.no/botanisk/bot-mus/index.html]
+|-
+| [[Göteborg University]]
+| 1,600,000
+| GB
+| Sweden
+| [[Göteborg]]
+|
+|-
+| [[University of Turku]]
+| 932,000
+| TUR
+| Finland
+| [[Turku]]
+| [https://web.archive.org/web/20030811222450/http://www.utu.fi/ml/biologia/kasvimuseo/]
+|-
+| [[University of Aarhus]]
+| 700,000
+| AAU
+| Denmark
+| [[Aarhus]]
+|
+|-
+| [[University of Bergen]]
+| 700,000
+| BG
+| Norway
+| [[Bergen]]
+|
+|-
+| [[University of Oulu]]
+| 500,000
+| OULU
+| Finland
+| [[Oulu]]
+|
+|-
+| [[Norwegian University of Science and Technology]]
+| 430,000
+| TRH
+| Norway
+| [[Trondheim]]
+|
+|-
+| [[University of Tromsoe]]
+| 320,000
+| TROM
+| Norway
+| [[Tromsoe]]
+|
+|-
+| Kuopio Natural History Museum
+| 253,000
+| KUO
+| Finland
+| [[Kuopio]]
+|
+|-
+| [[University of Jyväskylä]]
+| 200,000
+| JYV
+| Finland
+| [[Jyväskylä]]
+|
+|-
+| Icelandic Institute of Natural History
+| 170,000
+| ICEL
+| [[Iceland]]
+| [[Reykjavík]]
+|
+|-
+| [[Umeå University]]
+| 170,000
+| UME
+| Sweden
+| [[Umeå]]
+|
+|-
+| Biological Museum, Oskarshamn
+| 155,000
+| OHN
+| Sweden
+| [[Oskarshamn]]
+|
+|-
+| [[Royal Veterinary and Agricultural University]]
+| 90,000
+| CP
+| Denmark
+| [[Copenhagen]]
+|
+|-
+| Icelandic Institute of Natural History, Akureyri Division
+| 64,000
+| AMNH
+| [[Iceland]]
+| [[Akureyri]]
+|
+|}
+{{-}}
+
+==Southern Europe==
+The tables below list herbaria located in [[Southern Europe]] as defined by the [[United Nations geoscheme for Europe]].
+
+===Balkans===
+The following table includes herbaria located in the western and southern [[Balkans]], including [[Albania]], Greece and nations formerly part of [[Yugoslavia]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in the Balkans'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index">{{cite book | last=Holmgren | first=P. K. |author2=N. H. Holmgren  | year=1998, continuously updated | title= Index Herbariorum: A global directory of public herbaria and associated staff | place=New York | publisher= New York Botanical Garden | url=http://sciweb.nybg.org/science2/IndexHerbariorum.asp | accessdate=2008-06-18 }}</ref>
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| Herbarium of the Balkan Peninsula, Natural History Museum
+| 490,000
+| BEO
+| [[Serbia]]
+| [[Belgrade]]
+|
+|-
+| Goulandris Natural History Museum
+| 180,000
+| ATH
+| Greece
+| [[Kifissia]]
+|
+|-
+| Herbarium Croaticum, [[University of Zagreb]]
+| 180,000
+| ZA
+| [[Croatia]]
+| [[Zagreb]]
+|
+|-
+| [[University of Belgrade]]
+| 150,000
+| BEOU
+| [[Serbia]]
+| [[Belgrade]]
+|
+|-
+| [[University of Ljubljana]]
+| 150,000
+| LJU
+| [[Slovenia]]
+| [[Ljubljana]]
+|
+|-
+| [[University of Patras]]
+| 150,000
+| UPA
+| Greece
+| [[Patras]]
+|
+|-
+| National and Kapodistrian University of Athens
+| 117,000
+| ATHU
+| Greece
+| [[Athens]]
+|
+|-
+| Zemaljski Muzej Bosne I. Herzegovine
+| 110,000
+| SARA
+| [[Bosnia and Herzegovina]]
+| [[Sarajevo]]
+|
+|-
+| Herbarium Ivo and Marija Horvat, [[University of Zagreb]]
+| 78,000
+| ZAHO
+| [[Croatia]]
+| [[Zagreb]]
+|
+|-
+| [[University of Novi Sad]]
+| 60,000
+| BUNS
+| [[Serbia]]
+| [[Novi Sad]]
+|
+|-
+| Prirodoslovni Muzej Slovenije
+| 50,000
+| LJM
+| [[Slovenia]]
+| [[Ljubljana]]
+|
+|-
+| [[Aristotle University of Thessaloniki]]
+| 30,000
+| TAU
+| Greece
+| [[Thessaloniki]]
+|
+|-
+| [[Rudjer Boskovic Institute]]
+| 20,000
+| ADRZ
+| [[Croatia]]
+| [[Zagreb]]
+|
+|-
+| Croatian Mycological Society
+| 20,000
+| CNF
+| [[Croatia]]
+| [[Zagreb]]
+| [http://www.mycolsoc.hr]
+|-
+| Herbar Biokovskog Podrucja, Institut Planina i More
+| 20,000
+| MAKAR
+| [[Croatia]]
+| [[Makarska]]
+|
+|-
+| [[Agricultural University of Athens]]
+| 15,000
+| ACA
+| Greece
+| [[Athens]]
+|
+|}
+{{-}}
+
+===Italy===
+The following table includes herbaria located in Italy, including [[Sicily]] and [[Sardinia]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Italy'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index"/>
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| Museo di Storia Naturale dell'Università
+| 3,650,000
+| FI
+| Italy
+| [[Florence]]
+|
+|-
+| Università degli Studi di Roma La Sapienza
+| 1,120,000
+| RO
+| Italy
+| Rome
+|
+|-
+| Università degli Studi di Torino
+| 1,000,000
+| TO
+| Italy
+| [[Torino]]
+|
+|-
+| Herbarium Mediterraneum Panormitanum
+| 500,000
+| PAL
+| Italy
+| [[Palermo]], [[Sicily]]
+| [http://www.herbmedit.org]
+|-
+| Università degli Studi di Padova
+| 300,000
+| PAD
+| Italy
+| [[Padua]]
+|
+|-
+| [[University of Pisa|Università di Pisa]]
+| 300,000
+| PI
+| Italy
+| [[Pisa]]
+| [http://www.biologia.unipi.it]
+|-
+| Museo Civico di Storia Naturale
+| 270,000
+| VER
+| Italy
+| [[Verona]]
+|
+|-
+| [[University of Catania|Università di Catania]]
+| 200,000
+| CAT
+| Italy
+| [[Catania]], [[Sicily]]
+| [http://www.dipbot.unict.it]
+|-
+| Centro Studi Erbario Tropicale, Università degli Studi di Firenze
+| 200,000
+| FT
+| Italy
+| [[Florence]]
+|
+|-
+| Museo Tridentino di Scienze Naturali
+| 200,000
+| TR
+| Italy
+| [[Trento]], [[Trentino]]
+| [https://web.archive.org/web/20100118042319/http://www.mtsn.tn.it/]
+|-
+| Università degli Studi di Trieste
+| 200,000
+| TSB
+| Italy
+| [[Trieste]]
+|
+|-
+| [[University of Pavia|Università di Pavia]]
+| 180,000
+| PAV
+| Italy
+| [[Pavia]]
+|
+|-
+| Università Degli Studi di Napoli Federico II
+| 170,000
+| NAP
+| Italy
+| [[Naples]], [[Province of Naples|Napoli]]
+|
+|-
+| Centro Ricerche Floristiche Marche
+| 150,000
+| PESA
+| Italy
+| [[Pesaro]]
+|
+|-
+| [[University of Bologna|Università di Bologna]]
+| 130,000
+| BOLO
+| Italy
+| [[Bologna]]
+| [http://www.sma.unibo.it/erbario/]
+|-
+| Museo Friulano di Storia Naturale
+| 130,000
+| MFU
+| Italy
+| [[Udine]]
+|
+|-
+| Università degli Studi di Roma Tre
+| 118,000
+| URT
+| Italy
+| Rome
+|
+|-
+| Università di Sassari
+| 100,000
+| SS
+| Italy
+| [[Sassari]], [[Sardinia]]
+|
+|-
+| Museo Civico di Storia Naturale
+| 100,000
+| TSM
+| Italy
+| [[Trieste]]
+|
+|-
+| Università degli Studi di Cagliari
+| 80,000
+| CAG
+| Italy
+| [[Cagliari]], [[Sardinia]]
+| [http://www.ccb-sardegna.it/index.html]
+|-
+| [[University of Genoa|Università di Genova]]
+| 75,000
+| GE
+| Italy
+| [[Genoa]]
+|
+|-
+| [[University of Siena|Università di Siena]]
+| 75,000
+| SIENA
+| Italy
+| [[Siena]]
+| [https://web.archive.org/web/20080313183725/http://www.passus.it/Erbario/index.jsp]
+|-
+| Università degli Studi di Milano
+| 60,000
+| MI
+| Italy
+| [[Milan]]
+| [https://web.archive.org/web/19970704203938/http://www.unimi.it/ateneo/strutt/dipart/biodip/biodip.html]
+|-
+| Museo Civico di Storia Naturale Giacomo Doria
+| 55,000
+| GDOR
+| Italy
+| [[Genoa]]
+|
+|-
+| Museo Civico di Rovereto
+| 51,000
+| ROV
+| Italy
+| [[Rovereto]], [[Trentino]]
+| [http://www.museocivico.rovereto.tn.it]
+|-
+| Museo Regionale di Scienze Naturali
+| 50,000
+| MRSN
+| Italy
+| [[Torino]]
+|
+|-
+| Università degli Studi di Napoli
+| 50,000
+| PORUN
+| Italy
+| [[Portici]], [[Province of Naples|Napoli]]
+|
+|}
+{{-}}
+
+===Spain and Portugal===
+The following table includes herbaria located in Spain and Portugal, including the [[Canary Islands]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Spain and Portugal'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Real Jardín Botánico]]
+| 850,000
+| MA
+| Spain
+| [[Madrid]]
+| [http://www.rjb.csic.es]
+|-
+| [[University of Coimbra]]
+| 800,000
+| COI
+| Portugal
+| [[Coimbra]]
+| [http://www.uc.pt/herbario_digital]
+|-
+| Institut Botànic de Barcelona
+| 700,000
+| BC
+| Spain
+| [[Barcelona]]
+|
+|-
+| Instituto de Investigação Científica Tropical
+| 300,000
+| LISC
+| Portugal
+| [[Lisbon]]
+|
+|-
+| [[Universitat de Barcelona]]
+| 300,000
+| BCN
+| Spain
+| [[Barcelona]]
+|
+|-
+| [[University of Seville|Universitat de Sevilla]]
+| 300,000
+| SEV
+| Spain
+| [[Seville]]
+|
+|-
+| Instituto Pirenaico de Ecología, C.S.I.C.
+| 260,000
+| JACA
+| Spain
+| [[Jaca]]
+|
+|-
+| Museu Nacional de História Natural, Lisboa
+| 250,000
+| LISU
+| Portugal
+| [[Lisbon]]
+|
+|-
+| [[Universidad Complutense]]
+| 175,000
+| MAF
+| Spain
+| [[Madrid]]
+|
+|-
+| [[Universitat de València]]
+| 160,000
+| VAL
+| Spain
+| [[Valencia, Spain|Valencia]]
+| [http://www.jardibotanic.org/]
+|-
+| Museo de Ciencias Naturales de Alava
+| 140,000
+| VIT
+| Spain
+| [[Vitoria-Gasteiz]]
+|
+|-
+| [[Universidad de Salamanca]]
+| 110,000
+| SALA
+| Spain
+| [[Salamanca]]
+|
+|-
+| Estação Agronómica Nacional
+| 90,000
+| LISE
+| Portugal
+| [[Oeiras Municipality, Portugal|Oeiras]]
+|
+|-
+| [[Universidad de La Laguna]]
+| 83,000
+| TFC
+| Spain
+| [[La Laguna]], [[Canary Islands]]
+|
+|-
+| [[University of Córdoba (Spain)|Universidad de Córdoba]]
+| 80,000
+| COA
+| Spain
+| [[Córdoba, Spain|Córdoba]]
+| [http://www.uco.es/jardin-botanico]
+|-
+| Universidad de León
+| 78,000
+| LEB
+| Spain
+| [[León, Spain|León]]
+|
+|-
+| Alto de Zorroaga s.n.
+| 75,000
+| ARAN
+| Spain
+| [[Donostia-San Sebastián]]
+|
+|-
+| [[University of Porto|Universidade do Porto]]
+| 73,800
+| PO
+| Portugal
+| [[Porto]]
+|
+|-
+| Universidad de Santiago de Compostela
+| 71,000
+| SANT
+| Spain
+| [[Santiago de Compostela]], [[Galicia (Spain)|Galicia]]
+| [https://web.archive.org/web/20080428184822/http://www.usc.es/~hsant/]
+|-
+| [[Universidad de Murcia]]
+| 61,000
+| MUB
+| Spain
+| [[Murcia]]
+|
+|-
+| Universidad de Málaga
+| 55,000
+| MGC
+| Spain
+| [[Málaga]]
+| [http://webdeptos.uma.es/BiolVeg/00Indice.html]
+|-
+| [[Universidad de Alicante]]
+| 50,000
+| ABH
+| Spain
+| [[Alicante]]
+|
+|-
+| Jardín Botánico Atlántico, Ayuntamiento de Gijón
+| 50,000
+| JBAG
+| Spain
+| [[Gijón]], [[Asturias]]
+|
+|}
+{{-}}
+
+==Western Europe==
+The tables below list herbaria located in [[Western Europe]] as defined by the [[United Nations geoscheme for Europe]]: France, Germany, Austria, Switzerland, and the [[Low Countries]].
+
+===Austria and Switzerland===
+The following table includes herbaria located in Austria and  Switzerland, as well as [[Liechtenstein]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Austria and Switzerland'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index"/>
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| Conservatoire et Jardin botaniques de la Ville de Genève
+| 6,000,000
+| G
+| Switzerland
+| [[Geneva]]
+| [http://www.ville-ge.ch/cjb/]
+|-
+| Naturhistorisches Museum Wien
+| 5,000,000
+| W
+| Austria
+| [[Vienna]]
+| [http://www.nhm-wien.ac.at/nhm/Botanik/]
+|-
+| Eidgenössische Technische Hochschule Zürich
+| 2,000,000
+| ZT
+| Switzerland
+| [[Zürich]]
+| [http://www.zuerich-herbarien.ethz.ch]
+|-
+| [[Universität Zürich]]
+| 1,500,000
+| Z
+| Switzerland
+| [[Zürich]]
+| [http://www.systbot.unizh.ch/herbarium/]{{dead link|date=December 2017 |bot=InternetArchiveBot |fix-attempted=yes }}
+|-
+| [[Universität Wien]]
+| 1,400,000
+| WU
+| Austria
+| [[Vienna]]
+| [http://herbarium.botanik.univie.ac.at]
+|-
+| [[University of Graz|Karl-Franzens-Universität Graz]]
+| 800,000
+| GZU
+| Austria
+| [[Graz]]
+| [https://web.archive.org/web/20080526031850/http://www.kfunigraz.ac.at/botwww/home.htm]
+|-
+| Musée et Jardins Botaniques Cantonaux
+| 800,000
+| LAU
+| Switzerland
+| [[Lausanne]]
+| [http://www.botanique.vd.ch]
+|-
+| Oberösterreichischen Landesmuseums
+| 700,000
+| LI
+| Austria
+| [[Linz]]
+|
+|-
+| [[Universität Basel]]
+| 520,000
+| BAS, BASBG
+| Switzerland
+| [[Basel]]
+|
+|-
+| Université de Neuchâtel
+| 455,000
+| NEU
+| Switzerland
+| [[Neuchâtel]]
+|
+|-
+| [[University of Bern]]
+| 410,000
+| BERN
+| Switzerland
+| [[Bern]]
+| [https://web.archive.org/web/20080618050110/http://www.botanischergarten.ch/start.htm]
+|-
+| Steiermärkisches Landesmuseum Joanneum
+| 350,000
+| GJO
+| Austria
+| [[Graz]]
+| [http://www.museum-joanneum.at/botanik]
+|-
+| [[Tyrolean State Museum]]
+| 300,000
+| IBF
+| Austria
+| [[Innsbruck]]
+|
+|-
+| Museo cantonale di storia naturale
+| 200,000
+| LUG
+| Switzerland
+| [[Lugano]]
+|
+|-
+| Landesmuseum für Kärnten
+| 160,000
+| KL
+| Austria
+| [[Klagenfurt]]
+| [http://www.landesmuseum-ktn.at]
+|-
+| Haus der Natur
+| 100,000
+| SZB
+| Austria
+| [[Salzburg]]
+|
+|-
+| [[University of Innsbruck|Universität Innsbruck]]
+| 100,000
+| IB
+| Austria
+| [[Innsbruck]]
+| [http://webapp.uibk.ac.at]
+|-
+| Natur-Museum Luzern
+| 90,000
+| NMLU
+| Switzerland
+| [[Lucerne]]
+| [http://www.naturmuseum.ch]
+|-
+| [[University of Salzburg]]
+| 63,000
+| SZU
+| Austria
+| [[Salzburg]]
+|
+|-
+| Federal Research and Training Centre for Forests, <br/>Natural Hazards and Landscape (BFW)
+| 50,000
+| WFBVA
+| Austria
+| [[Vienna]]
+|
+|}
+{{-}}
+
+===France===
+The following table includes herbaria located in France (including [[Corsica]]) and [[Monaco]].
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in France'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| [[Muséum national d'histoire naturelle|Muséum National d'Histoire Naturelle]]
+| 9,500,000
+| P, PC
+| France
+| Paris
+| [https://web.archive.org/web/20110102194940/http://www.mnhn.fr/museum/foffice/science/science/ColEtBd/collectionsMuseum/collectionSci.xsp?i=1]
+|-
+| [[University of Montpellier|Université Montpellier]]
+| 4,000,000
+| MPU
+| France
+| [[Montpellier]]
+|
+|-
+| [[Claude Bernard University Lyon 1|Université Claude Bernard Lyon 1]]
+| 4,000,000
+| LY
+| France
+| [[Lyon]]
+| [http://herbier.univ-lyon1.fr]
+|-
+| Muséum d'Histoire Naturelle de Grenoble
+| 700,000
+| GRM
+| France
+| [[Grenoble]]
+|
+|-
+| Institut des Herbiers Universitaires de Clermont-Ferrand
+| 550,000
+| CLF
+| France
+| [[Clermont-Ferrand]]
+| [http://herbiers.univ-bpclermont.fr]
+|-
+| Muséum d'Histoire Naturelle d'Aix-en-Provence
+| 420,000
+| AIX
+| France
+| [[Aix-en-Provence]]
+|
+|-
+| Muséum d'Histoire Naturelle d'Autun
+| 400,000
+| AUT
+| France
+| [[Autun]]
+|
+|-
+| Muséum Requien
+| 400,000
+| AV
+| France
+| [[Avignon]]
+|
+|-
+| Jardin Botanique de la Ville de Bordeaux
+| 350,000
+| BORD
+| France
+| [[Bordeaux]]
+|
+|-
+| Muséum des sciences naturelles d'Angers
+| 350,000
+| ANG
+| France
+| [[Angers]]
+|
+|-
+| Institut de Botanique
+| 300,000
+| STR
+| France
+| [[Strasbourg]]
+|
+|-
+| Université Paul Sabatier
+| 300,000
+| TL
+| France
+| [[Toulouse]]
+|
+|-
+| Muséum-Jardin des Sciences
+| 250,000
+| MJSD
+| France
+| [[Dijon]]
+|
+|-
+| Université Catholiques de l'Ouest
+| 250,000
+| ANG
+| France
+| [[Angers]]
+|
+|-
+| Centre d'Étude et de Conservation des Resources Végétales
+| 200,000
+| GABAS
+| France
+| [[Bayonne]]
+|
+|-
+| Muséum d'Histoire Naturelle de Nice
+| 200,000
+| NICE
+| France
+| [[Nice]]
+|
+|-
+| Société Nationale des Sciences Naturelles et Mathématiques de Cherbourg
+| 200,000
+| CHE
+| France
+| [[Cherbourg]]
+|
+|-
+| [[Jardin botanique de Lyon|Jardin Botanique de la Ville de Lyon]]
+| 140,000
+| LYJB
+| France
+| [[Lyon]]
+| [https://web.archive.org/web/20110126053302/http://www.jardin-botanique-lyon.com/jbot/sections/en/in_the_gardens_wing/herbier/]
+|-
+| Campus scientifique de Beaulieu and Campus Villejean
+| 112,000
+| REN
+| France
+| [[Rennes]]
+|
+|-
+| Conservatoire Botanique National Alpin
+| 100,000
+| GAP
+| France
+| [[Gap, Hautes-Alpes|Gap]]
+|
+|-
+| Muséum d'Histoire Naturelle de Nantes
+| 100,000
+| NTM
+| France
+| [[Nantes]]
+|
+|}
+{{-}}
+
+===Germany===
+The following table includes herbaria located in Germany.
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in Germany'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index"/>
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| Botanischer Garten und Botanisches Museum Berlin-Dahlem,<br/>Zentraleinrichtung der Freien Universität Berlin
+| 3,000,000
+| B
+| Germany
+| Berlin
+| [http://www.bgbm.org]
+|-
+| [[University of Jena]]
+| 3,000,000
+| JE
+| Germany
+| [[Jena]]
+| [http://www2.uni-jena.de/biologie/spezbot/herbar/hhe.html]
+|-
+| Botanische Staatssammlung München
+| 2,500,000
+| M
+| Germany
+| [[Munich]]
+| [http://www.botanischestaatssammlung.de]
+|-
+| Biozentrum Klein-Flottbek
+| 1,400,000
+| HBG
+| Germany
+| [[Hamburg]]
+| [https://web.archive.org/web/20080615125938/http://www.biologie.uni-hamburg.de/bzf/syst/herbar2.htm]
+|-
+| Forschungsinstitut Senckenberg
+| 1,000,000
+| FR
+| Germany
+| [[Frankfurt am Main]]
+| [http://www.senckenberg.de/root/index.php?page_id=819]
+|-
+| Staatliches Museum für Naturkunde
+| 1,000,000
+| STU
+| Germany
+| [[Stuttgart]]
+|
+|-
+| [[University of Göttingen]]
+| 750,000
+| GOET
+| Germany
+| [[Göttingen]]
+| [http://www.sysbot.uni-goettingen.de]
+|-
+| Leibniz Institute of Plant Genetics and Crop Plant Research
+| 545,000
+| GAT
+| Germany
+| [[Gatersleben]]
+|
+|-
+| [[University of Halle-Wittenberg]]
+| 450,000
+| HAL
+| Germany
+| [[Halle, Saxony-Anhalt|Halle]]
+| [http://www.biologie.uni-halle.de/bot.html]{{dead link|date=December 2017 |bot=InternetArchiveBot |fix-attempted=yes }}
+|-
+| Übersee-Museum
+| 375,000
+| BREM
+| Germany
+| [[Bremen]]
+|
+|-
+| [[Technische Universität Dresden]]
+| 350,000
+| DR
+| Germany
+| [[Dresden]]
+|
+|-
+| [[University of Marburg]]
+| 300,000
+| MB
+| Germany
+| [[Marburg]]
+| [http://staff-www.uni-marburg.de/]
+|-
+| Westfälisches Museum für Naturkunde
+| 300,000
+| MSTR
+| Germany
+| [[Münster]]
+|
+|-
+| Staatliches Museum für Naturkunde Karlsruhe
+| 270,000
+| KR
+| Germany
+| [[Karlsruhe]]
+|
+|-
+| [[University of Tübingen]]
+| 250,000
+| TUB
+| Germany
+| [[Tübingen]]
+|
+|-
+| [[University of Greifswald]]
+| 250,000
+| GFW
+| Germany
+| [[Greifswald]]
+|
+|-
+| [[University of Heidelberg]]
+| 250,000
+| HEID
+| Germany
+| [[Heidelberg]]
+|
+|-
+| Staatliches Museum für Naturkunde Görlitz
+| 178,000
+| GLM
+| Germany
+| [[Görlitz]]
+|
+|-
+| [[University of Leipzig]]
+| 170,000
+| LZ
+| Germany
+| [[Leipzig]]
+| [http://www.uni-leipzig.de/~instbota]
+|-
+| [[University of Erlangen-Nuremberg]]
+| 158,000
+| ER
+| Germany
+| [[Erlangen]]
+| [https://web.archive.org/web/20001119115400/http://www.biologie.uni-erlangen.de/geobot/herbar/herbar.html]
+|-
+| [[Palatine Museum of Natural History]] (''Pfalzmuseum für Naturkunde'')
+| 150,000
+| POLL
+| Germany
+| [[Bad Dürkheim]]
+|
+|-
+| [[Ludwig Maximilian University of Munich]]
+| 140,000
+| MSB
+| Germany
+| [[München]]
+| [http://www.botanik.biologie.uni-muenchen.de/botsyst/]
+|-
+| [[University of Regensburg]]
+| 140,000
+| REG
+| Germany
+| [[Regensburg]]
+|
+|-
+| Museum für Naturkunde, Berlin
+| 100,000
+| BHUPM
+| Germany
+| Berlin
+| [https://web.archive.org/web/20070610135313/http://www.museum.hu-berlin.de/]
+|-
+| Museum Wiesbaden
+| 100,000
+| WIES
+| Germany
+| [[Wiesbaden]]
+| [http://www.nws-wiesbaden.de]
+|-
+| Universität Hohenheim (210)
+| 100,000
+| HOH
+| Germany
+| [[Stuttgart]]
+|
+|-
+| Bundesamt für Naturschutz
+| 90,000
+| BNL
+| Germany
+| [[Bonn]]
+|
+|-
+| [[University of Kiel]] (Christian-Albrechts-Universität)
+| 90,000
+| KIEL
+| Germany
+| [[Kiel]]
+|
+|}
+{{-}}
+
+===Low Countries===
+The following table includes herbaria located in Belgium, Luxembourg, Netherlands and Cyprus
+
+{| class="wikitable sortable" align="left" style="margin-left:1em"
+|+'''Herbaria in the Low Countries'''
+|-
+! style="background:lightgreen" align="center" | Name
+! style="background:lightgreen" align="center" | No. Specimens<ref name="Index" />
+! style="background:lightgreen" align="center" | Abbr.
+! style="background:lightgreen" align="center" | Country
+! style="background:lightgreen" align="center" | City
+! style="background:lightgreen" align="center" | Website
+|-
+| Naturalis Biodiversity Center (Nationaal Herbarium Nederland)
+| 5,700,000
+| L, U, WAG
+| Netherlands
+| [[Leiden]]
+| [http://www.naturalis.nl/]
+|-
+| [[National Botanic Garden of Belgium|Botanic Garden, Meise]]
+| 3,500,000
+| BR
+| Belgium
+| [[Meise]]
+| [http://www.br.fgov.be/RESEARCH/COLLECTIONS/HERBARIUM/simplesearch.php]
+|
+|-
+| [[Université de Liège]]
+| 400,000
+| LG
+| Belgium
+| [[Liège]]
+|
+|-
+| Gent University
+| 250,000
+| GENT
+| Belgium
+| [[Ghent]]
+| [https://web.archive.org/web/20081209080903/http://www.rug.ac.be/]
+|
+|-
+| Université Libre de Bruxelles
+| 160,000
+| BRLU
+| Belgium
+| [[Brussels]]
+| [http://herbarium.ulb.ac.be]
+|-
+| Adviesbureau voor Bryologie en Lichenologie
+| 50,000
+| ABL
+| Netherlands
+| [[Soest, Netherlands|Soest]]
+|
+|-
+| State University of Groningen
+| 50,000
+| GRO
+| Netherlands
+| [[Haren (Groningen)|Haren]]
+|
+|-
+| Musée national d'histoire naturelle
+| 50,000
+| LUX
+| [[Luxembourg]]
+| [[Luxembourg (city)|Luxembourg]]
+|
+|-
+| Natuurhistorisch Museum Maastricht
+| 50,000
+| MAAS
+| Netherlands
+| [[Maastricht]]
+|
+|-
+| [[Near East University Herbarium]]
+| 6,500
+| NEUN
+| [[Cyprus]]
+| [[Nicosia]]
+| [http://herbaryum.neu.edu.tr/]
+|}
+{{-}}
+
+== References ==
+{{Reflist}}
+
+{{DEFAULTSORT:Herbaria in Europe}}
+[[Category:Biology-related lists]]
+[[Category:Nature-related lists]]
+[[Category:Lists of organisations based in Europe]]
+[[Category:Herbaria|*]]

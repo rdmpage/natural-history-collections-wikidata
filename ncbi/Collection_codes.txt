@@ -1,0 +1,688 @@
+coll_id	|	inst_id	|	coll_name	|	coll_code	|	coll_size	|	collection_type	|	coll_status	|	coll_url	|	comments	|	qualifier_type
+
+7536	|	6	|	Malacology Collection	|	Malacology	|	0	|	museum	|	0	|	http://www.ansp.org/research/systematics-evolution/collections/malacology/	|	      	|	specimen_voucher	|	
+7671	|	6	|	Herpetology collection	|	HRP	|	34827	|	museum	|	0	|		|		|	specimen_voucher	|	
+7676	|	6	|	Ornithology collection	|	ORN	|	174350	|	museum	|	0	|		|		|	specimen_voucher	|	
+7677	|	6	|	Ichthyology Collection	|	FISH	|	146747	|	museum	|	0	|		|		|	specimen_voucher	|	
+7678	|	6	|	Mammal collection	|	MAM	|	19159	|	museum	|	0	|		|		|	specimen_voucher	|	
+7421	|	10	|	Arachnida (Mites, Ticks, Spiders)	|	Arachnida	|	0	|	museum	|	0	|	http://www.canacoll.org/Arach/Main/arachnid.htm	|	      	|	specimen_voucher	|	
+7422	|	10	|	Coleoptera (Beetles)	|	Coleoptera	|	0	|	museum	|	0	|	http://www.canacoll.org/Coleo/Main/coleopt.htm	|	      	|	specimen_voucher	|	
+7423	|	10	|	Diptera (Flies)	|	Diptera	|	0	|	museum	|	0	|	http://www.canacoll.org/Diptera/Main/diptera.htm	|	      	|	specimen_voucher	|	
+7424	|	10	|		|	Hemiptera	|	0	|	      	|	0	|	http://www.canacoll.org/Hemip/Main/hemipter.htm	|	      	|	      	|	
+7425	|	10	|	Hymenoptera (Sawflies, Parasitic Wasps, Ants, Wasps, Bees)	|	Hymenoptera	|	0	|	museum	|	0	|	http://www.canacoll.org/Hymenoptera/Hymenoptera_Home.htm	|	      	|	specimen_voucher	|	
+7426	|	10	|	Lepidoptera (Butterflies, Moths)	|	Lepidoptera	|	0	|	museum	|	0	|	http://www.canacoll.org/Lep/Main/lepidopt.htm#personnel	|	      	|	specimen_voucher	|	
+7427	|	10	|	Miscellaneous Insect Orders	|	Miscellaneous	|	0	|	museum	|	0	|	http://www.canacoll.org/Misc/Pages/minor_o.htm	|	      	|	specimen_voucher	|	
+7428	|	10	|	Nematoda (Roundworms)	|	Nematoda	|	0	|	museum	|	0	|	http://www.canacoll.org/Nem/Main/nem.htm	|	      	|	specimen_voucher	|	
+7443	|	28	|	Ichtyologie	|	IC	|	134313	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ic/item/search	|		|	specimen_voucher	|	
+7483	|	28	|	Crustaceans	|	IU	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/iu/item/search	|		|	specimen_voucher	|	
+7340	|	28	|	Molluscs	|	IM	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/im/item/search	|		|	specimen_voucher	|	
+7341	|	28	|	Vascular plants 	|	P	|	0	|	museum	|	0	|		|	= MNHNP = MNHP (Laboratoire de Palontologie/Laboratoire des Amphibiens et Reptiles)	|	specimen_voucher	|	
+7631	|	28	|	Annelids, Polychaetes and Sipuncula 	|	IA	|	0	|	museum	|	0	|	http://www.mnhn.fr/fr/collections/ensembles-collections/invertebres-marins/annelides	|		|	specimen_voucher	|	
+7643	|	28	|	Chimiotheque 	|	CH	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ch/item/search	|		|	specimen_voucher	|	
+7644	|	28	|	Cyanobacteria 	|	PMC	|	0	|	culture collection	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/pmc/item/search	|		|	culture_collection	|	
+7645	|	28	|	Unicellular eukaryotes 	|	CEU	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ceu/item/search	|		|	specimen_voucher	|	
+7646	|	28	|	Extractotheque 	|	CX	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/cx/item/search	|		|	specimen_voucher	|	
+7647	|	28	|	Microalgae	|	ALCP	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/search	|		|	specimen_voucher,culture_collection	|	
+7648	|	28	|	Fungal strains 	|	RF	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/rf/item/search	|		|	specimen_voucher,culture_collection	|	
+7649	|	28	|	Frozen vertebrates tissues & cells 	|	TCCV	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/tccv/item/search	|		|	specimen_voucher	|	
+7650	|	28	|	Apterygota and springtails	|	EA	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ea/item/search	|		|	specimen_voucher	|	
+7651	|	28	|	Arachnids: Spiders 	|	AR	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ar/item/search	|		|	specimen_voucher	|	
+7652	|	28	|	Arachnids : Scorpions 	|	RS	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/rs/item/search	|		|	specimen_voucher	|	
+7653	|	28	|	Bryozoans Brachiopods 	|	IB	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ib/item/search	|		|	specimen_voucher	|	
+7654	|	28	|	Insects - Coleoptera	|	EC	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ec/item/search	|		|	specimen_voucher	|	
+7655	|	28	|	Insects - Diptera	|	ED	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ed/item/search	|		|	specimen_voucher	|	
+7656	|	28	|	Insects - Hemiptera	|	EH	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/eh/item/search	|		|	specimen_voucher	|	
+7657	|	28	|	Insects - Hymenoptera  	|	EY	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ey/item/search	|		|	specimen_voucher	|	
+7658	|	28	|	Insects - Lepidoptera	|	EL	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/el/item/search	|		|	specimen_voucher	|	
+7659	|	28	|	Insects - Orthoptera	|	EO	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/eo/item/search	|		|	specimen_voucher	|	
+7660	|	28	|	Insects - Small orders & Odonates	|	EP	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ep/item/search	|		|	specimen_voucher	|	
+7661	|	28	|	Myriapods 	|	MY	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/my/item/search	|		|	specimen_voucher	|	
+7662	|	28	|	Nematodes  	|	IN	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/in/item/search	|		|	specimen_voucher	|	
+7663	|	28	|	Porifera	|	IP	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ip/item/search	|		|	specimen_voucher	|	
+7664	|	28	|	Protists	|	IR  	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ir/item/search	|		|	specimen_voucher	|	
+7665	|	28	|	Tunicates/ascidians	|	IT  	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/it/item/search	|		|	specimen_voucher	|	
+7666	|	28	|	Birds	|	ZO	|	32658	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/zo/item/search	|		|	specimen_voucher	|	
+7667	|	28	|	Reptiles and amphibians 	|	RA	|	193345	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ra/item/search	|		|	specimen_voucher	|	
+7669	|	28	|	Vertebrates - Others  	|	ZA	|	1660	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/za/item/search	|		|	specimen_voucher	|	
+7597	|	28	|	Echinoderms	|	IE	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ie/item/search	|		|	specimen_voucher	|	
+7600	|	28	|	Cnidarians 	|	IK	|	0	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/ik/item/search	|		|	specimen_voucher	|	
+7542	|	28	|	Mammal 	|	M	|	78362	|	museum	|	0	|	https://science.mnhn.fr/institution/mnhn/collection/zm/item/search	|		|	specimen_voucher	|	
+7329	|	31	|	Franco Andreone Zoological Collection	|	FAZC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7327	|	53	|	Division of Amphibians and Reptiles	|	Herp	|	571949	|	museum	|	0	|	http://vertebrates.si.edu/herps/index.html	|		|	specimen_voucher	|	
+7285	|	53	|	Entomology Collection	|	ENT	|	0	|	museum	|	0	|	http://entomology.si.edu/	|		|	specimen_voucher	|	
+7286	|	53	|	National Fish Collection	|	FISH	|	402499	|	museum	|	0	|	http://vertebrates.si.edu/fishes/fishes_collections.html	|		|	specimen_voucher	|	
+7263	|	53	|	Laboratories of Analytical Biology	|	LAB	|	0	|	DNA bank	|	0	|	      	|	      	|	bio_material	|	
+7350	|	53	|	Department of Invertebrate Zoology	|	IZ	|	0	|	museum	|	0	|	http://invertebrates.si.edu/	|	= USNM:Invert	|	specimen_voucher	|	
+7351	|	53	|	Division of Birds	|	Birds	|	493197	|	museum	|	0	|	http://vertebrates.si.edu/birds/index.html	|		|	specimen_voucher	|	
+7352	|	53	|	Division of Mammals	|	MAMM	|	587639	|	museum	|	0	|	http://vertebrates.si.edu/mammals/index.html	|		|	specimen_voucher	|	
+7864	|	53	|	Herpetology image collection	|	Herp Image	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7865	|	53	|	Herpetology tissue collection	|	Herp Tissue	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7348	|	61	|	Mammal Collection	|	Mamm	|	0	|	museum	|	0	|	http://zmmu.msu.ru/eng/r_m_m.htm	|	      	|	specimen_voucher	|	
+7492	|	61	|	Bird Collection	|	Birds	|	0	|	museum	|	0	|	http://zmmu.msu.ru/eng/r_o_m.htm	|	      	|	specimen_voucher	|	
+7493	|	61	|	Ampibia and Reptilia Collection	|	Herps	|	0	|	museum	|	0	|	http://zmmu.msu.ru/eng/r_r_m.htm	|	      	|	specimen_voucher	|	
+7494	|	61	|	Fishes Collection	|	Fishes	|	0	|	museum	|	0	|	http://zmmu.msu.ru/eng/r_p_m.htm	|	      	|	specimen_voucher	|	
+7495	|	61	|	Insects Collection	|	Insects	|	0	|	museum	|	0	|	http://zmmu.msu.ru/eng/r_e_m.htm	|	      	|	specimen_voucher	|	
+7496	|	61	|	Invertebrates Collection	|	Invertebrates	|	0	|	museum	|	0	|	http://zmmu.msu.ru/eng/r_i_m.htm	|	      	|	specimen_voucher	|	
+7288	|	112	|	Annelid Collection	|	Annelid	|	0	|	museum	|	0	|	http://nature.ca/collections/inverts_e.cfm	|	      	|	specimen_voucher	|	
+7289	|	112	|	Mollusc Collection	|	Mollusc	|	0	|	museum	|	0	|	http://nature.ca/collections/inverts_e.cfm	|	      	|	specimen_voucher	|	
+7290	|	112	|	Crustacean Collection	|	Crustacean	|	0	|	museum	|	0	|	http://nature.ca/collections/inverts_e.cfm	|	      	|	specimen_voucher	|	
+7291	|	112	|	Insect Collection	|	Insect	|	0	|	museum	|	0	|	http://nature.ca/collections/inverts_e.cfm	|	      	|	specimen_voucher	|	
+7292	|	112	|	Parasite Collection	|	Parasite	|	0	|	museum	|	0	|	http://nature.ca/collections/inverts_e.cfm	|	= CMNPA	|	specimen_voucher	|	
+7293	|	112	|	General Invertebrate Collextion	|	GenInvert	|	0	|	museum	|	0	|	http://nature.ca/collections/inverts_e.cfm	|	collection contains groups such as the cnidarians, various free-living helminths and non-segmented worms	|	specimen_voucher	|	
+7294	|	112	|	Fish Collection	|	Fish	|	0	|	museum	|	0	|	http://nature.ca/collections/verts_e.cfm	|		|	specimen_voucher	|	
+7295	|	112	|	Amphibian and Reptile Collection	|	Herp	|	37667	|	museum	|	0	|	http://nature.ca/collections/verts_e.cfm	|		|	specimen_voucher	|	
+7296	|	112	|	Bird Collection	|	Bird	|	100970	|	museum	|	0	|	http://nature.ca/collections/verts_e.cfm	|		|	specimen_voucher	|	
+7297	|	112	|	Mammal Collection	|	Mammal	|	59469	|	museum	|	0	|	http://nature.ca/collections/verts_e.cfm	|		|	specimen_voucher	|	
+7690	|	113	|	Birds Collection	|	Birds	|	33144	|	museum	|	0	|		|		|	specimen_voucher	|	
+7626	|	130	|	Parasite collection 	|	Para	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7391	|	130	|	Ornithology Collections	|	Bird	|	47962	|	museum	|	0	|		|		|	specimen_voucher	|	
+7392	|	130	|	Mammology Collection	|	Mamm	|	17162	|	museum	|	0	|		|		|	specimen_voucher	|	
+7692	|	149	|	Fish collection	|	I	|	25535	|	museum	|	0	|		|		|	specimen_voucher	|	
+7693	|	149	|	Herps Collection	|	HERP	|	15389	|	museum	|	0	|		|		|	specimen_voucher	|	
+7694	|	149	|	Mammals Collection	|	M	|	39529	|	museum	|	0	|		|		|	specimen_voucher	|	
+7637	|	281	|	Porifera collection	|	PORa	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7527	|	281	|	Invertebrate Zoology Collection	|	IZ	|	166454	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/InvertZoo/	|		|	specimen_voucher	|	
+7528	|	281	|	Malacology Collection	|	Mala	|	376455	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/Malacology/	|		|	specimen_voucher	|	
+7529	|	281	|	Mammalogy Collection	|	Mamm	|	89351	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/Mammalogy/	|		|	specimen_voucher	|	
+7530	|	281	|	Ornithology Collection	|	Orn	|	321891	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/Ornithology/index.html	|	= Bird	|	specimen_voucher	|	
+7531	|	281	|	Invertebrate Paleontology Collection	|	IP	|	193542	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/InvertPaleo/	|		|	specimen_voucher	|	
+7532	|	281	|	Entomology Collection	|	Ent	|	368943	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/Entomology/	|		|	specimen_voucher	|	
+7533	|	281	|	Cryogenic Collection	|	Cryo	|	8779	|	frozen tissue collection	|	0	|		|		|	specimen_voucher	|	
+7309	|	281	|	Ichthyology Collection	|	Ich	|	173842	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/Ichthyology/researchcoll.html	|	= Fish	|	specimen_voucher	|	
+7248	|	281	|	Herpetology Collection	|	Herp	|	347601	|	museum	|	0	|	http://www.mcz.harvard.edu/Departments/Herpetology/ 	|	= A = R	|	specimen_voucher	|	
+7166	|	362	|	Herpetology Collection	|	Herp	|	272249	|	museum	|	0	|		|		|	specimen_voucher	|	
+7167	|	362	|	Egg Collection	|	Egg	|	14910	|	museum	|	0	|		|		|	specimen_voucher	|	
+7168	|	362	|	Image Collection	|	Img	|	0	|	images	|	0	|	      	|	      	|	bio_material	|	
+7169	|	362	|	Mammal Collection	|	Mamm	|	235786	|	museum	|	0	|		|		|	specimen_voucher	|	
+7170	|	362	|	Bird Collection	|	Bird	|	187528	|	museum	|	0	|		|		|	specimen_voucher	|	
+7171	|	362	|	Notebook Page Collection	|	Page	|	0	|	images	|	0	|	      	|	      	|	bio_material	|	
+7187	|	362	|	Milton Hildebrand collection	|	Hild	|	657	|	museum	|	0	|		|		|	specimen_voucher	|	
+7707	|	366	|	Birds collection	|	Birds	|	20921	|	museum	|	0	|		|		|	specimen_voucher	|	
+7708	|	366	|	Fish collection	|	Fishes	|	92562	|	museum	|	0	|		|		|	specimen_voucher	|	
+7709	|	366	|	Herpetology Collection	|	Herp	|	48654	|	museum	|	0	|		|		|	specimen_voucher	|	
+7710	|	366	|	Mammal collection	|	Mammals 	|	17713	|	museum	|	0	|		|		|	specimen_voucher	|	
+7551	|	380	|	Mammal collection	|	Mamm	|	0	|	museum	|	0	|	http://www.nmnaturalhistory.org/bioscience-collections	|	      	|	specimen_voucher	|	
+7582	|	386	|	Tissue Collection	|	Z	|	0	|	frozen tissue collection	|	0	|	      	|		|	specimen_voucher	|	
+7451	|	386	|	Arachnology 	|	K	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7452	|	386	|	Buprestidae	|	BUP	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7453	|	386	|	Coleoptera	|	COL	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7454	|	386	|	Crustacea	|	J	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7455	|	386	|	Diptera	|	DIP	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7456	|	386	|	DNA Products	|	G	|	0	|	DNA bank	|	0	|	      	|	      	|	bio_material	|	
+7457	|	386	|	Entomology - Australian Voucher Specimens	|	AV	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7458	|	386	|	Entomlogy Type Collection	|	T	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7459	|	386	|	Hemiptera	|	HEM	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7460	|	386	|	Herpetology	|	D	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7461	|	386	|	Herpetology - Donald Thompson Collection	|	DTD	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7462	|	386	|	Heteroptera	|	HET	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7463	|	386	|	Hygrobatidae	|	H	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7464	|	386	|	Hymenoptera	|	HYM	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7465	|	386	|	Ichthyology	|	A	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7466	|	386	|	Invertebrates Collection	|	F	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7467	|	386	|	Isoptera	|	ISO	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7468	|	386	|	Lepidoptera	|	LEP	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7469	|	386	|	Mammology	|	C	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7470	|	386	|	Mecoptera	|	MEC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7471	|	386	|	Megaloptera	|	MEG	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7472	|	386	|	Neuroptera	|	NEU	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7473	|	386	|	Northofagus Project	|	NOH	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7474	|	386	|	Odonata	|	ODO	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7475	|	386	|	Ornithology	|	B	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7476	|	386	|	Ornithology - Donald Thompson Collection	|	DTB	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7477	|	386	|	Ornithology - Eggs	|	BE	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7478	|	386	|	Ornithology - H.L. White Collection	|	HLW	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7479	|	386	|	Paleontology & Paleobotany	|	P	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7480	|	386	|	Trichoptera	|	TRI	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7639	|	460	|	Bird collection	|	Birds	|	49262	|	museum	|	0	|		|		|	specimen_voucher	|	
+7640	|	460	|	Entomology collection	|	ENT	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7641	|	460	|	Herpetology collection	|	HERP	|	76325	|	museum	|	0	|		|		|	specimen_voucher	|	
+7642	|	460	|	Mammal collection	|	Mamm	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7552	|	528	|	Mammal collection	|	Mamm	|	41819	|	museum	|	0	|	http://nhmu.utah.edu/vertebrate-zoology	|		|	specimen_voucher	|	
+7699	|	528	|	Birds collection	|	Bird	|	20741	|	museum	|	0	|		|		|	specimen_voucher	|	
+7700	|	528	|		|	HERP	|	22431	|	museum	|	0	|		|		|	specimen_voucher	|	
+7226	|	571	|	Invertebrate Collections: Arachnology	|	Arachnology	|	0	|	museum	|	0	|	http://www.austmus.gov.au/collections/arachnology/index.cfm	|		|	specimen_voucher	|	
+7227	|	571	|	Invertebrate Collections: Entomology	|	Entomology	|	0	|	museum	|	0	|	http://www.austmus.gov.au/collections/entomology/index.cfm	|		|	specimen_voucher	|	
+7228	|	571	|	Invertebrate Collections: Malacology	|	Malacology	|	0	|	museum	|	0	|	http://www.austmus.gov.au/collections/malacology/index.cfm	|	      	|	specimen_voucher	|	
+7229	|	571	|	Invertebrate Collections: Marine and other invertebrates	|	Marine_Invertebrates	|	0	|	museum	|	0	|	http://www.austmus.gov.au/collections/marineinverts/index.cfm	|	      	|	specimen_voucher	|	
+7230	|	571	|	Vertebrate Collections: Herpetology	|	Herpetology	|	0	|	museum	|	0	|	http://www.austmus.gov.au/herpetology/index.htm	|	      	|	specimen_voucher	|	
+7231	|	571	|	Vertebrate Collections: Ichthyology	|	Ichthyology	|	0	|	museum	|	0	|	http://www.austmus.gov.au/fishes/collections/index.cfm	|	      	|	specimen_voucher	|	
+7232	|	571	|	Vertebrate Collections: Mammalogy	|	Mammalogy	|	0	|	museum	|	0	|	http://www.austmus.gov.au/mammals/collections/index.htm	|	      	|	specimen_voucher	|	
+7233	|	571	|	Vertebrate Collections: Ornithology	|	Ornithology	|	0	|	museum	|	0	|	http://www.austmus.gov.au/birds/collections/index.htm	|	      	|	specimen_voucher	|	
+7234	|	571	|	Palaeontology Collection	|	Palaeontology	|	0	|	museum	|	0	|	http://www.austmus.gov.au/palaeontology/collections/index.htm	|	      	|	specimen_voucher	|	
+7235	|	571	|	Earth Sciences: Mineralogy and Petrology Collection	|	Mineralogy	|	0	|	museum	|	0	|	http://www.austmus.gov.au/geoscience/collections/index.htm	|	      	|	specimen_voucher	|	
+7236	|	571	|	Evolutionary Biology Unit Tissue Collection	|	EBU	|	0	|	frozen tissue collection	|	0	|	http://australianmuseum.net.au/Frozen-Tissue-Collection/	|	      	|	specimen_voucher,bio_material	|	
+7243	|	573	|	Herpetology collection	|	Herp	|	349178	|	museum	|	0	|		|		|	specimen_voucher	|	
+7328	|	573	|	Ichthyology Collection	|	Fish	|	0	|	museum	|	0	|	http://research.amnh.org/vz/ichthyology/collection-information	|	      	|	specimen_voucher	|	
+7571	|	573	|	Ornithology Collection	|	ORN	|	833709	|	museum	|	0	|		|		|	specimen_voucher	|	
+7635	|	573	|	Mammal collection	|	M	|	290333	|	museum	|	0	|		|		|	specimen_voucher	|	
+7593	|	573	|	Fossil Mammal Collection	|	FM	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7604	|	573	|	Reptile Collection	|	R	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7691	|	599	|	Birds collection	|	Bird	|	76380	|	museum	|	0	|		|		|	specimen_voucher	|	
+7553	|	636	|	Crustacea Department	|	Crustacea	|	0	|	museum	|	0	|	http://www.nhm.org/site/research-collections/crustacea	|		|	specimen_voucher	|	
+7554	|	636	|	Echinoderms Department	|	Echinoderms	|	0	|	museum	|	0	|	http://www.nhm.org/site/research-collections/echinoderms	|		|	specimen_voucher	|	
+7555	|	636	|	Entomology Department	|	Entomology	|	0	|	museum	|	0	|	http://www.nhm.org/site/research-collections/entomology	|		|	specimen_voucher	|	
+7556	|	636	|	Section of Herpetology	|	Herpetology	|	0	|	museum	|	0	|	http://www.nhm.org/site/research-collections/herpetology	|		|	specimen_voucher	|	
+7557	|	636	|	Ichthyology Department	|	Ichthyology	|	0	|	museum	|	0	|	      	|	http://www.nhm.org/site/research-collections/ichthyology	|	specimen_voucher	|	
+7558	|	636	|	Malacology Department	|	Malacology	|	0	|	museum	|	0	|	http://www.nhm.org/site/research-collections/malacology	|		|	specimen_voucher	|	
+7559	|	636	|	Mammalogy Department	|	Mammalogy	|	0	|	museum	|	0	|	http://www.nhm.org/site/research-collections/mammalogy	|		|	specimen_voucher	|	
+7560	|	636	|	Ornithology Department	|	Ornithology	|	0	|	museum	|	0	|	http://www.nhm.org/site/research-collections/ornithology	|		|	specimen_voucher	|	
+7568	|	652	|	Invertebrate collection	|	Invertebrate	|	43857	|	museum	|	0	|		|		|	specimen_voucher	|	
+7244	|	652	|	Herpetology collection	|	Herp	|	26143	|	museum	|	0	|		|		|	specimen_voucher	|	
+7507	|	663	|	Coleccion de Tejidos y ADN	|	ADN	|	0	|	DNA bank	|	0	|	http://www.mncn.csic.es/Menu/Coleccionesydocumentacin/Colecciones/TejidosyADN/seccion=1208&idioma=es_ES.do	|	      	|	specimen_voucher,bio_material	|	
+7519	|	663	|	Coleccion de anfibios y reptiles	|	Herpeto	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7520	|	663	|	Coleccion de aves	|	Ornit	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7521	|	663	|	Coleccion de entomologia	|	Ent	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7522	|	663	|	Coleccion de ictiologia	|	ICTIO	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7523	|	663	|	Coleccion de invertebrados	|	Inverte	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7524	|	663	|	Coleccion de malacologia	|	Malac	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7525	|	663	|	Colession de mamiferos	|	Mam	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7396	|	670	|	Amphibian Collection	|	A	|	0	|	museum	|	0	|		|	= MNKA	|	specimen_voucher	|	
+7339	|	670	|	Reptile Collection	|	R	|	0	|	museum	|	0	|		|	= MNKR	|	specimen_voucher	|	
+7434	|	684	|	Amphibian Collection	|	Amp	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7574	|	684	|	Ornithology Collection	|	Ornith	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7336	|	711	|	Amphibian Collection	|	A	|	0	|	museum	|	0	|		|	= QCAZ-A	|	specimen_voucher	|	
+7337	|	711	|	Reptile Collection	|	R	|	0	|	museum	|	0	|		|	= QCAZ-R	|	specimen_voucher	|	
+7482	|	715	|	Mammal collection 	|	MAM 	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7207	|	715	|	Insect collection	|	INS	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7208	|	715	|	Coelomate collection	|	COEL	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7209	|	715	|	bird collection	|	AVES	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7210	|	715	|	fish collection	|	PISC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7211	|	715	|	bryozoan collection	|	BRY	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7212	|	715	|	poriferan collection	|	POR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7213	|	715	|	brachiopod collection	|	BRA	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7214	|	715	|	mollusc collection	|	MOL	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7215	|	715	|	Acari collection	|	ACA	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7216	|	715	|	crustacean collection	|	CRUS	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7217	|	715	|	decapod collection	|	CRUS.D	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7732	|	723	|	Amphibia fossil Collection	|	Amphibia fossil	|	14	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7733	|	723	|	Anatomie Collection	|	Anatomie	|	4022	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7736	|	723	|	Arachnologie Collection	|	Arachnologie	|	72929	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7737	|	723	|	Arachnologie fossil Collection	|	Arachnologie fossil	|	98	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7738	|	723	|	Aschelminthes Collection	|	Aschelminthes	|	436	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7739	|	723	|	Aves fossil Collection	|	Aves fossil	|	12	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7740	|	723	|	Bernstein Collection	|	Bernstein	|	8482	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7741	|	723	|	Brachiopoda fossil Collection	|	Brachiopoda fossil	|	2860	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7742	|	723	|	Bryozoa Collection	|	Bryozoa	|	32483	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7743	|	723	|	Chaetognatha Collection	|	Chaetognatha	|	42	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7744	|	723	|	Clitellata Collection	|	Clitellata	|	1653	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7745	|	723	|	Cnidaria Collection	|	Cnidaria	|	10663	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7746	|	723	|	Cnidaria fossil Collection	|	Cnidaria fossil	|	3119	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7747	|	723	|	Coleoptera Collection	|	Coleoptera	|	14558	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7752	|	723	|	Ctenophora Collection	|	Ctenophora	|	92	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7753	|	723	|	Diptera Collection	|	Diptera	|	468	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7754	|	723	|	Echinodermata Collection	|	Echinodermata	|	4511	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7755	|	723	|	Echinodermata fossil Collection	|	Echinodermata fossil	|	2191	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7756	|	723	|	Echiura Collection	|	Echiura	|	26	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7757	|	723	|	Ephemeroptera Collection	|	Ephemeroptera	|	127	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7758	|	723	|	Foraminifera Collection	|	Foraminifera	|	3524	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7759	|	723	|	Graptolithina fossil Collection	|	Graptolithina fossil	|	1000	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7760	|	723	|	Hemichordata Collection	|	Hemichordata	|	32	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7749	|	723	|	Copepoda Collection	|	Copepoda	|	80	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7750	|	723	|	Crustacea Collection	|	Crustacea	|	39966	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7763	|	723	|	Herpetologie Collection	|	Herpetologie	|	42665	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7765	|	723	|	Hunsruckschiefer Collection	|	Hunsruckschiefer	|	950	|	museum	|	0	|		|		|	specimen_voucher	|	
+7766	|	723	|	Hymenoptera Collection	|	Hymenoptera	|	9454	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7767	|	723	|	Hyolithen Collection	|	Hyolithen	|	25	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7768	|	723	|	Ichthyologie Collection	|	Ichthyologie	|	28137	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7770	|	723	|	Insecta fossil Collection	|	Insecta fossil	|	1246	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7771	|	723	|	Lepidoptera Collection	|	Lepidoptera	|	462	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7773	|	723	|	Loricifera Collection	|	Loricifera	|	5	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7774	|	723	|	Malakologie Collection	|	Malakologie	|	51228	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7777	|	723	|	Mammalia fossil Grossauger Collection	|	Mammalia fossil Grossauger	|	1	|	museum	|	0	|		|		|	specimen_voucher	|	
+7778	|	723	|	Mammalia fossil Kleinsauger Collection	|	Mammalia fossil Kleinsauger	|	6638	|	museum	|	0	|		|		|	specimen_voucher	|	
+7779	|	723	|	Mammalogie Collection	|	Mammalogie	|	92134	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7781	|	723	|	Mantodea Collection	|	Mantodea	|	22	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7783	|	723	|	Mineralogie Collection	|	Mineralogie	|	12721	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7784	|	723	|	Myriapoda Collection	|	Myriapoda	|	1647	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7786	|	723	|	Nemertini Collection	|	Nemertini	|	61	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7787	|	723	|	Odonata Collection	|	Odonata	|	282	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7788	|	723	|	Onychophora Collection	|	Onychophora	|	23	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7795	|	723	|	Ostracoda Collection	|	Ostracoda	|	901	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7796	|	723	|	Otolithen Collection	|	Otolithen	|	3065	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7797	|	723	|	Palaoanthropologie Collection	|	Palaoanthropologie	|	1698	|	museum	|	0	|		|		|	specimen_voucher	|	
+7798	|	723	|	Palaoherpetologie Collection	|	Palaoherpetologie	|	200	|	museum	|	0	|		|		|	specimen_voucher	|	
+7799	|	723	|	Pantopoda Collection	|	Pantopoda	|	14	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7800	|	723	|	Pentastomida Collection	|	Pentastomida	|	58	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7801	|	723	|	Phoronida Collection	|	Phoronida	|	8	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7802	|	723	|	Pisces fossil Collection	|	Pisces fossil	|	1162	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7803	|	723	|	Plathelminthes Collection	|	Plathelminthes	|	1560	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7804	|	723	|	Plecoptera Collection	|	Plecoptera	|	1154	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7805	|	723	|	Polychaeta Collection	|	Polychaeta	|	17649	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7806	|	723	|	Porifera Collection	|	Porifera	|	4641	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7807	|	723	|	Reptilia fossil Collection	|	Reptilia fossil	|	76	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7808	|	723	|	Sedimentologie Collection	|	Sedimentologie	|	4	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7810	|	723	|	Sipuncula Collection	|	Sipuncula	|	233	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7811	|	723	|	Strepsiptera Collection	|	Strepsiptera	|	429	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7812	|	723	|	Stromatolithen Collection	|	Stromatolithen	|	70	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7813	|	723	|	Tardigrada Collection	|	Tardigrada	|	44	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7814	|	723	|	Tentakulita fossil Collection	|	Tentakulita fossil	|	353	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7815	|	723	|	Thysanoptera Collection	|	Thysanoptera	|	19626	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7816	|	723	|	Trichoptera Collection	|	Trichoptera	|	14009	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7817	|	723	|	Trilobita Collection	|	Trilobita	|	692	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7818	|	723	|	Tunicata Collection	|	Tunicata	|	812	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7819	|	723	|	Xiphosura Collection	|	Xiphosura	|	11	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7790	|	723	|	Ornithologie-Alkohol Collection	|	Ornithologie-Alkohol	|	4033	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7791	|	723	|	Ornithologie-Balge Collection	|	Ornithologie-Balge	|	71511	|	museum	|	0	|		|		|	specimen_voucher	|	
+7792	|	723	|	Ornithologie-Skelette Collection	|	Ornithologie-Skelette	|	19296	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7793	|	723	|	Orthoptera Collection	|	Orthoptera	|	1	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7782	|	724	|	Mesozoa Collection	|	Mesozoa	|	1	|	      	|	      	|	      	|	      	|	specimen_voucher	|	
+7562	|	731	|	Collection of Amphibians and Reptiles 	|	Herp	|	0	|	museum	|	0	|	http://brtc.tamu.edu/collections/herpetology_collection/	|	      	|	specimen_voucher	|	
+7563	|	731	|	Collection of Birds	|	Birds	|	0	|	museum	|	0	|	http://brtc.tamu.edu/collections/ornithology/	|	      	|	specimen_voucher	|	
+7564	|	731	|	 Mammal collection	|	Mamm	|	0	|	museum	|	0	|	http://brtc.tamu.edu/collections/mammals/	|	      	|	specimen_voucher	|	
+7565	|	731	|	Collection of Fishes	|	Fish	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7566	|	731	|	Collection of Marine Invertebrate	|	Invrt	|	0	|	museum	|	0	|	https://brtc.tamu.edu/	|		|	specimen_voucher	|	
+7855	|	734	|	Herpetology Collection	|	Herpetology 	|	94474	|	museum	|	0	|		|		|	specimen_voucher	|	
+7856	|	734	|	Ichthyology Collection	|	Ichthyology 	|	60109	|	museum	|	0	|		|		|	specimen_voucher	|	
+7342	|	737	|	Fish Collection	|	Fish	|	0	|	museum	|	0	|	http://www.museum.tulane.edu/collections/fishes.shtml	|	      	|	specimen_voucher	|	
+7344	|	737	|	Ornithological Collection	|	Birds	|	0	|	museum	|	0	|	http://www.museum.tulane.edu/collections/birds.shtml	|	      	|	specimen_voucher	|	
+7345	|	737	|	Amphibian And Reptile Collection	|	Herptiles	|	0	|	museum	|	0	|	http://www.museum.tulane.edu/collections/herps.shtml	|	      	|	specimen_voucher	|	
+7346	|	737	|	Invertebrate Collection	|	Invertebrates	|	0	|	museum	|	0	|	http://www.museum.tulane.edu/collections/inverts.shtml	|	      	|	specimen_voucher	|	
+7347	|	737	|	Mammal Collection	|	Mammals	|	0	|	museum	|	0	|	http://www.museum.tulane.edu/collections/mammals.shtml	|	      	|	specimen_voucher	|	
+7584	|	741	|	University of Colorado Museum Mammal Collection	|	Mamm	|	16994	|	museum	|	0	|	http://arctos.database.museum/SpecimenSearch.cfm	|		|	specimen_voucher	|	
+7585	|	741	|	University of Colorado Museum Bird Collection	|	Bird	|	12124	|	museum	|	0	|		|		|	specimen_voucher	|	
+7587	|	741	|	University of Colorado Museum Fish collection	|	Fish	|	3551	|	museum	|	0	|		|		|	specimen_voucher	|	
+7588	|	741	|	University of Colorado Museum Amplibian and Reptile collection	|	Herp	|	65744	|	museum	|	0	|		|		|	specimen_voucher	|	
+7537	|	748	|	Mollusk Collection	|	MC	|	0	|	museum	|	0	|	http://www.lsa.umich.edu/ummz/mollusks/collections/default.asp	|	      	|	specimen_voucher	|	
+7718	|	748	|	Birds Collection	|	Birds	|	211063	|	museum	|	0	|		|		|	specimen_voucher	|	
+7719	|	748	|	Herpetology Collection	|	Herpetology	|	197469	|	museum	|	0	|		|		|	specimen_voucher	|	
+7720	|	748	|	Mammal collection	|	Mammal	|	128001	|	museum	|	0	|		|		|	specimen_voucher	|	
+7578	|	755	|	Reptile collection	|	R	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7432	|	755	|	Amphibian Collection	|	A	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7605	|	756	|	Entomology Collection	|	Ento	|	0	|	museum	|	0	|	http://arctos.database.museum/utep_ento	|		|	specimen_voucher	|	
+7606	|	756	|	Ornithology Collection	|	Bird	|	3047	|	museum	|	0	|	http://arctos.database.museum/utep_bird	|		|	specimen_voucher	|	
+7607	|	756	|	Earth Science  fossils Collections	|	ES	|	0	|	museum	|	0	|	http://arctos.database.museum/utep_es	|		|	specimen_voucher	|	
+7608	|	756	|	Ichthyology collection	|	Fish	|	242	|	museum	|	0	|	http://arctos.database.museum/utep_fish	|		|	specimen_voucher	|	
+7609	|	756	|	Invertebrates - Molluscs Collections	|	INV	|	0	|	museum	|	0	|	http://arctos.database.museum/utep_inv	|		|	specimen_voucher	|	
+7610	|	756	|	Herbarium	|	Herb	|	0	|	museum	|	0	|	http://arctos.database.museum/utep_herb	|		|	specimen_voucher	|	
+7611	|	756	|	Zooplankton collections	|	Zoo	|	0	|	museum	|	0	|	http://arctos.database.museum/utep_zoo	|		|	specimen_voucher	|	
+7723	|	756	|	Herpetology collection	|	Herps	|	45597	|	museum	|	0	|		|		|	specimen_voucher	|	
+7724	|	756	|	Mammal collection	|	Mammal	|	8436	|	museum	|	0	|		|		|	specimen_voucher	|	
+7632	|	760	|	Mammal Collection	|	Mamm	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7638	|	760	|	Reptile Collection	|	R	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7726	|	762	|	Vertebrate Paleontology 	|	VP	|	72963	|	museum	|	0	|		|		|	specimen_voucher	|	
+7330	|	762	|	Entomology Collection	|	ENT	|	0	|	museum	|	0	|	http://www.peabody.yale.edu/collections/ent/index.html	|	      	|	specimen_voucher	|	
+7331	|	762	|	Invertebrate Zoology Collection	|	IZ	|	0	|	museum	|	0	|	http://www.peabody.yale.edu/collections/iz/index.html	|	      	|	specimen_voucher	|	
+7332	|	762	|	Herpetology Collection	|	HER	|	42593	|	museum	|	0	|	http://peabody.research.yale.edu/COLLECTIONS/her/	|		|	specimen_voucher	|	
+7333	|	762	|	Ichthyology Collection	|	ICH	|	30561	|	museum	|	0	|	http://peabody.research.yale.edu/COLLECTIONS/ich/	|		|	specimen_voucher	|	
+7334	|	762	|	Mammology Collection	|	MAM	|	15738	|	museum	|	0	|	http://peabody.research.yale.edu/COLLECTIONS/mam/	|		|	specimen_voucher	|	
+7335	|	762	|	Ornithology Collection	|	ORN	|	148254	|	museum	|	0	|	http://peabody.research.yale.edu/COLLECTIONS/orn/	|		|	specimen_voucher	|	
+7449	|	767	|	Coleoptera collection 	|	COL	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7547	|	767	|	Ichthyological Collection	|	ICH	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7548	|	767	|	fish collection of Jeorg Freyhof	|	FSJF	|	0	|	museum	|	0	|	http://joerg-freyhof.de/tutorials-mainmenu-52/46-fischsammlung-joerg-freyhof	|	      	|	specimen_voucher	|	
+7602	|	776	|	Porifera collection	|	POR	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7820	|	777	|	Bryozoa Collection	|	Bryozoa	|	141	|	museum	|	0	|		|		|	specimen_voucher	|	
+7821	|	777	|	Cnidaria Collection	|	Cnidaria	|	345	|	museum	|	0	|		|		|	specimen_voucher	|	
+7822	|	777	|	Crustacea Collection	|	Crustacea	|	28761	|	museum	|	0	|		|		|	specimen_voucher	|	
+7823	|	777	|	Echinodermata Collection	|	Echinodermata	|	665	|	museum	|	0	|		|		|	specimen_voucher	|	
+7824	|	777	|	Hydrozoa Collection	|	Hydrozoa	|	123	|	museum	|	0	|		|		|	specimen_voucher	|	
+7825	|	777	|	Porifera Collection	|	Porifera	|	801	|	museum	|	0	|		|		|	specimen_voucher	|	
+7826	|	777	|	Vermes Collection	|	Vermes	|	28193	|	museum	|	0	|		|		|	specimen_voucher	|	
+7727	|	784	|	Amphibians and Reptiles collection 	|	R	|	15835	|	museum	|	0	|		|		|	specimen_voucher	|	
+7728	|	784	|	Aves collection	|	AVES	|	9605	|	museum	|	0	|		|		|	specimen_voucher	|	
+7729	|	784	|	Fish Collection	|	Fisk	|	70229	|	museum	|	0	|		|		|	specimen_voucher	|	
+7353	|	792	|	Lepidoptera	|	Lep	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7354	|	792	|	Mollusca	|	Mol	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7713	|	793	|	Amphibian collection	|	AMP	|	23484	|	museum	|	0	|		|		|	specimen_voucher	|	
+7714	|	793	|	Birds collection	|	AVE	|	2403	|	museum	|	0	|		|		|	specimen_voucher	|	
+7715	|	793	|	Mammal collection	|	MAM	|	2789	|	museum	|	0	|		|		|	specimen_voucher	|	
+7716	|	793	|	Fish collection	|	PIS	|	13479	|	museum	|	0	|		|		|	specimen_voucher	|	
+7717	|	793	|		|	REP	|	4026	|	museum	|	0	|		|		|	specimen_voucher	|	
+7672	|	959	|	Fish collection	|	Fish	|	66983	|	museum	|	0	|		|		|	specimen_voucher	|	
+7576	|	1010	|	Australian National Fish Collection	|	Ichthyology	|	33070	|	museum	|	0	|	http://www.csiro.au/places/ps7u	|		|	specimen_voucher	|	
+7325	|	1013	|	Reptile Collection	|	R	|	0	|	museum	|	0	|		|	= CUMZR	|	specimen_voucher	|	
+7298	|	1077	|	Coleccion Nacional de Helmintos	|	CNHE	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7299	|	1077	|	Coleccion Nacional de Moluscos	|	CNMO	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7300	|	1077	|	Coleccion Nacional de Acaros	|	CNAC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7301	|	1077	|	Coleccion Nacional de Aracnidos	|	CNAN	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7302	|	1077	|	Coleccion Nacional de Crustaceos	|	CNCR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7303	|	1077	|	Coleccion Nacional de Insectos	|	CNIN	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7304	|	1077	|	Coleccion Nacional de Peces	|	CNPE	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7305	|	1077	|	Coleccion Nacional de Anfibios y Reptiles	|	CNAR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7306	|	1077	|	Coleccion Nacional de Aves	|	CNAV	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7307	|	1077	|	Coleccion Nacional de Mamiferos	|	CNMA	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7444	|	1077	|	Coleccion de Fotocolectas Biologicas	|	CFB	|	0	|	photos	|	0	|	      	|	      	|	bio_material	|	
+7445	|	1077	|	Herbario Nacional	|	MEXU	|	0	|	herbarium	|	0	|		|		|	specimen_voucher	|	
+7397	|	1128	|	Herpetology Collection	|	H	|	346859	|	museum	|	0	|	http://herpetology.biodiversity.ku.edu/	|	= KU:HE = KUH = KU:KUH	|	specimen_voucher	|	
+7398	|	1128	|	Invertebrate Paleontology Collection	|	IP	|	0	|	museum	|	0	|	http://invertebratepaleontology.biodiversity.ku.edu/	|	= KUMIP = KU:KUMIP	|	specimen_voucher	|	
+7399	|	1128	|	Invertebrate Zoology Collection	|	IZ	|	0	|	museum	|	0	|	http://invertebratezoology.biodiversity.ku.edu/	|	      	|	specimen_voucher	|	
+7400	|	1128	|	Mammology Collection	|	M	|	167516	|	museum	|	0	|	http://mammalogy.biodiversity.ku.edu/	|		|	specimen_voucher	|	
+7401	|	1128	|	Ornithology Collection	|	O	|	121999	|	museum	|	0	|	http://ornithology.biodiversity.ku.edu/	|		|	specimen_voucher	|	
+7402	|	1128	|	Paleobotany Collection	|	PB	|	0	|	museum	|	0	|	http://paleobotany.biodiversity.ku.edu/	|	      	|	specimen_voucher	|	
+7403	|	1128	|	Vertebrate Paleontology Collection	|	VP	|	0	|	museum	|	84710	|	http://vertebratepaleontology.biodiversity.ku.edu/	|		|	specimen_voucher	|	
+7237	|	1128	|	Ichthyology collection	|	I	|	41811	|	museum	|	0	|	http://nhm.ku.edu/fishes/collect.html	|	= KUI = KU:KUI	|	specimen_voucher	|	
+7238	|	1128	|	Ichthyology tissue collection	|	IT	|	10982	|	frozen tissue collection	|	0	|	http://nhm.ku.edu/fishes/collect.html	|	= KUIT	|	specimen_voucher,bio_material	|	
+7441	|	1217	|	Herpetological Tissue Collection	|	TD	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7442	|	1217	|	Tissue collection	|	T	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7313	|	1260	|	Birds	|	OR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7314	|	1260	|	Crustacea	|	CR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7315	|	1260	|	Fish	|	P	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7316	|	1260	|	Fossil Vertebrates	|	S	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7317	|	1260	|	Spiders	|	AS	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7318	|	1260	|	Insects	|	AI	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7319	|	1260	|	Marine Mammals	|	MM	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7320	|	1260	|	Molluscs	|	M	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7321	|	1260	|	Reptiles	|	RE	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7322	|	1260	|	Amphibians	|	AM	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7323	|	1260	|	Tissue Collection	|	TS	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7324	|	1260	|	Tissue Collection	|	TSA	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7711	|	1286	|	Icthyology collection	|	Fishes	|	19219	|	museum	|	0	|		|		|	specimen_voucher	|	
+7712	|	1286	|	Herpetological collection	|	Herps	|	58475	|	museum	|	0	|		|		|	specimen_voucher	|	
+7549	|	1302	|	Mammal Collection	|	Mamm	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7615	|	1302	|	Ornithology Collection	|	Ornith	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7280	|	1320	|	Benthic Invertebrates Collection	|	BIC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7255	|	1371	|	Herpetology Collection	|	Herpetology	|	173058	|	museum	|	0	|	http://specifyportal.flmnh.ufl.edu/herps/	|		|	specimen_voucher	|	
+7256	|	1371	|	Fish Collection	|	Ichthyology	|	228880	|	museum	|	0	|	http://www.flmnh.ufl.edu/databases/fish/default.htm	|		|	specimen_voucher	|	
+7257	|	1371	|	Invertebrate Zoology and Malacology Collection	|	Invertebrate	|	0	|	museum	|	0	|	http://www.flmnh.ufl.edu/databases/mala/intro.htm	|	      	|	specimen_voucher	|	
+7258	|	1371	|	Mammalogy Collection	|	Mammalogy	|	33725	|	museum	|	0	|	http://www.flmnh.ufl.edu/databases/mammals/intro.htm	|		|	specimen_voucher	|	
+7259	|	1371	|	Ornithology Skins and Skeletons Collection	|	Ornithology	|	89877	|	museum	|	0	|	http://www.flmnh.ufl.edu/databases/birds/intro.htm	|		|	specimen_voucher	|	
+7534	|	1371	|		|	Porifera	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7509	|	1390	|	Coleccion Nacional de Aves 	|	CNAV	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7510	|	1390	|	Coleccion Nacional de Helmintos	|	CNHE	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7511	|	1390	|	Coleccion Nacional de Moluscos	|	CNMO	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7512	|	1390	|	Coleccion Nacional de Acaros	|	CNAC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7513	|	1390	|	Coleccion Nacional de Aracnidos	|	CNAN	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7514	|	1390	|	Coleccion Nacional de Crustaceos	|	CNCR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7515	|	1390	|	Coleccion Nacional de Insectos	|	CNIN	|	0	|	museum	|	0	|	http://www.ibiologia.unam.mx/cnin/	|		|	specimen_voucher	|	
+7516	|	1390	|	Coleccion Nacional de Peces	|	CNPE	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7517	|	1390	|	Coleccion Nacional de Anfibios	|	CNAR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7518	|	1390	|	Coleccion Nacional de Mamiferos	|	CNMA	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7630	|	1390	|	Coleccion Nacional de Nematodos 	|	CNNE	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7376	|	1390	|	Coleccion Nacional del Phylum Porifera Gerardo Green	|	CNPGG	|	0	|	museum	|	0	|	http://www.conabio.gob.mx/informacion/catalogo_autoridades/doctos/esponjas.html	|	      	|	specimen_voucher	|	
+7721	|	1394	|	Herpetology Collection	|	Herpetology	|	6801	|	museum	|	0	|		|		|	specimen_voucher	|	
+7722	|	1394	|	Mammalogy collection	|	Mammal	|	413	|	museum	|	0	|		|		|	specimen_voucher	|	
+7634	|	1503	|	Reptile collection	|	R	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7612	|	1639	|	Ornithology collection	|	ORNITH	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7860	|	1763	|	University of California Insect Survey	|	UCIS   	|	0	|	museum	|	0	|		|	 CIS<USA-CA>  was removed per submitter's request (there were no records annoated as CIS<USA-CA>	|	specimen_voucher	|	
+7861	|	1763	|	Essig Museum of Entomology	|	EMEC	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7613	|	1805	|	Collection of Trypanosoma from Wild and Domestic Mammals and Vectors	|	ColTryp	|	0	|	culture collection	|	0	|	http://coltryp.fiocruz.br/	|		|	culture_collection	|	
+7491	|	1883	|	Mollusca Collection	|	Moll	|	0	|	museum	|	0	|	http://www.nhmus.hu/en/department_of_zoology/collection/mollusca_collection	|	      	|	culture_collection	|	
+7448	|	2281	|	Zoological collection of the Department of Biology and Biotechnology 	|	BAU	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7287	|	2292	|	Department of Life Science	|	ZOOL	|	0	|	museum	|	0	|		|	= NCHUZOOL	|	specimen_voucher	|	
+7431	|	2526	|	Herpetology Collection	|	H	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7731	|	2542	|	Acari fossil Collection	|	Acari fossil	|	4	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7735	|	2542	|	Arachnologie Collection	|	Arachnologie	|	10120	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7748	|	2542	|	Collembola Collection	|	Collembola	|	6812	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7794	|	2542	|	Orthoptera Collection	|	Orthoptera	|	34	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7809	|	2542	|	Siphonaptera fossil Collection	|	Siphonaptera fossil	|	1	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7764	|	2542	|	Heteroptera Collection	|	Heteroptera	|	20	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7776	|	2542	|	Malakologie Collection	|	Malakologie	|	7	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7543	|	2700	|	National Small Grains Collection	|	NSGC	|	0	|	germplasm repository	|	0	|	http://www.ars.usda.gov/main/docs.htm?docid=2884	|	      	|	specimen_voucher,bio_material	|	
+7430	|	2700	|	US National Parasite Collection	|	USNPC	|	0	|	museum	|	0	|	http://www.anri.barc.usda.gov/bnpcu/index.asp	|	      	|	specimen_voucher	|	
+7393	|	2700	|	Plant Genetic Resources Unit 	|	PGRU	|	0	|	herbarium	|	0	|	http://www.ars.usda.gov/main/site_main.htm?modecode=19-10-05-00	|	      	|	specimen_voucher,bio_material	|	
+7310	|	2700	|	Corvallis Fragaria Catalog	|	CFRA	|	0	|	seed bank	|	0	|	http://www.ars-grin.gov/cor/catalogs/fraseed.html	|	      	|	bio_material	|	
+7311	|	2700	|	National Clonal Germplasm Repository	|	NCGR	|	0	|	germplasm repository	|	0	|	http://www.ars.usda.gov/main/site_main.htm?modecode=53-58-15-00	|	      	|	bio_material	|	
+7183	|	2700	|	Germplasm Resources Information Network	|	GRIN	|	0	|	germplasm repository	|	0	|	http://www.ars-grin.gov/	|	      	|	bio_material	|	
+7550	|	2709	|	Burke Museum's mammal collection	|	Mamm	|	55651	|	museum	|	0	|		|	http://www.burkemuseum.org/mammalogy	|	specimen_voucher	|	
+7572	|	2709	|	Ornithology Collection	|	ORN	|	100958	|	museum	|	0	|		|		|	specimen_voucher	|	
+7725	|	2709	|	Herpetology Collection	|	HERP	|	8372	|	museum	|	0	|		|		|	specimen_voucher	|	
+7184	|	2779	|	Herptile collection	|	HERP	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7185	|	2779	|	Bird collection	|	BIRD	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7186	|	2779	|	Mammal collection	|	MAMM	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7182	|	2779	|	Fish Collections	|	ICHT	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7679	|	2799	|	Herpetology Collection	|	Reptiles	|	14646	|	museum	|	0	|	https://www.angelo.edu/dept/biology/asnhc/amphibian_reptile_collections.php	|	Reptiles collection code is used for Amphibia as well	|	specimen_voucher	|	
+7680	|	2799	|	Mammalogy Collection	|	Mammals	|	16217	|	museum	|	0	|	https://www.angelo.edu/dept/biology/asnhc/mammal_collection.php	|		|	specimen_voucher	|	
+7681	|	2799	|	Ornithology Collection	|	Birds	|	2052	|	museum	|	0	|		|		|	specimen_voucher	|	
+7674	|	2810	|	Herpetology collection	|	Herpetology	|	159	|	museum	|	0	|		|		|	specimen_voucher	|	
+7675	|	2810	|	Ornithology collection	|	Ornithology	|	2911	|	museum	|	0	|		|		|	specimen_voucher	|	
+7191	|	2843	|	bird collection	|	Bird	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7312	|	2843	|	Mammal Collection	|	Mammal	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7682	|	2848	|	Ornithology Collection	|	Birds	|	7735	|	museum	|	0	|		|		|	specimen_voucher	|	
+7683	|	2850	|	Mammala collection	|	Mammals	|	12217	|	museum	|	0	|		|		|	specimen_voucher	|	
+7567	|	2858	|	Reptile Collection	|	Rept	|	0	|	museum	|	0	|	http://arctos.database.museum/cumv_rept	|	= Herpetology	|	specimen_voucher	|	
+7265	|	2858	|	Fish Collection	|	Fish	|	91253	|	museum	|	0	|	http://arctos.database.museum/cumv_fish	|	= Ichthyology	|	specimen_voucher	|	
+7266	|	2858	|	Amphibian Collection	|	Amph	|	26789	|	museum	|	0	|	http://arctos.database.museum/cumv_amph	|	 = Herpetology	|	specimen_voucher	|	
+7267	|	2858	|	Bird Collection	|	Bird	|	56800	|	museum	|	0	|	http://arctos.database.museum/cumv_bird	|	= Ornithology	|	specimen_voucher	|	
+7268	|	2858	|	Mammal Collection	|	Mamm	|	22551	|	museum	|	0	|	http://arctos.database.museum/cumv_mamm	|	= Mammalogy	|	specimen_voucher	|	
+7827	|	2906	|	Amphibian Collection	|	Amphibian 	|	718	|	museum	|	0	|		|		|	specimen_voucher	|	
+7828	|	2906	|	Birds collection	|	Birds	|	283	|	museum	|	0	|		|		|	specimen_voucher	|	
+7829	|	2906	|	Mammals collection	|	Mammal	|	8633	|	museum	|	0	|		|		|	specimen_voucher	|	
+7830	|	2906	|	Reptile collection	|	Reptile	|	702	|	museum	|	0	|		|		|	specimen_voucher	|	
+7695	|	2919	|	Ichthyology Collection	|	Fish	|	1952	|	museum	|	0	|		|		|	specimen_voucher	|	
+7696	|	2919	|	Mammalogy Collection	|	Mammals	|	12289	|	museum	|	0	|		|		|	specimen_voucher	|	
+7697	|	2919	|	Ornithology collection	|	Aves	|	12051	|	museum	|	0	|		|		|	specimen_voucher	|	
+7698	|	2919	|	Herpetology collection	|	HERP	|	2502	|	museum	|	0	|		|		|	specimen_voucher	|	
+7501	|	2933	|	Herpetology Collection	|	Herpetology	|	98523	|	museum	|	0	|		|		|	specimen_voucher	|	
+7502	|	2933	|	Ichthyology Collection	|	Ichthyology	|	17672	|	museum	|	0	|		|		|	specimen_voucher	|	
+7503	|	2933	|	Mammal Collection	|	Mammalogy	|	39183	|	museum	|	0	|		|		|	specimen_voucher	|	
+7504	|	2933	|	Bird Collection	|	Ornithology	|	180988	|	museum	|	0	|		|		|	specimen_voucher	|	
+7505	|	2933	|	Frozen Tissue Collection	|	FrozenTissue	|	100000	|	frozen tissue collection	|	0	|		|		|	specimen_voucher	|	
+7446	|	2952	|	Bird Collection	|	Bird	|	62765	|	museum	|	0	|	http://college.oxy.edu/mlz/mlz-bird-and-mammal-collections/	|		|	specimen_voucher	|	
+7447	|	2952	|	Mammal Collection	|	Mamm	|	2174	|	museum	|	0	|	http://college.oxy.edu/mlz/mlz-bird-and-mammal-collections/	|		|	specimen_voucher	|	
+7673	|	2954	|	Bird collection	|	Bird	|	48114	|	museum	|	0	|		|		|	specimen_voucher	|	
+7390	|	2967	|	Herpetology Collection	|	Herp	|	17621	|	museum	|	0	|		|		|	specimen_voucher	|	
+7284	|	2967	|	Parasitology Collection	|	Para	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7198	|	2967	|	Bird Collection	|	Bird	|	41768	|	museum	|	0	|		|		|	specimen_voucher	|	
+7199	|	2967	|	Mammal Collection	|	Mamm	|	300368	|	museum	|	0	|		|		|	specimen_voucher	|	
+7249	|	2967	|	Fish Collection	|	Fishes	|	99074	|	museum	|	0	|		|	this collection is not yet Arctos-accessible.	|	specimen_voucher	|	
+7847	|	3009	|	Amphibian collection	|	Amphibian	|	28310	|	museum	|	0	|		|		|	specimen_voucher	|	
+7848	|	3009	|	Birds Collection	|	Birds	|	21615	|	museum	|	0	|		|		|	specimen_voucher	|	
+7849	|	3009	|	Fish collection	|	Fish	|	3769	|	museum	|	0	|		|		|	specimen_voucher	|	
+7850	|	3009	|	Mammals Collection	|	Mammal	|	65437	|	museum	|	0	|		|		|	specimen_voucher	|	
+7851	|	3009	|	Reptile Collection	|	Reptile 	|	30509	|	museum	|	0	|		|		|	specimen_voucher	|	
+7852	|	3009	|	Eggs collection	|	Eggs	|	3769	|	museum	|	0	|		|		|	specimen_voucher	|	
+7842	|	3013	|	Fish collection	|	Fish	|	99850	|	museum	|	0	|		|		|	specimen_voucher	|	
+7843	|	3013	|	Amphibian collection	|	Amphibian	|	4996	|	museum	|	0	|		|		|	specimen_voucher	|	
+7844	|	3013	|	Bird Collection	|	Bird	|	26014	|	museum	|	0	|		|		|	specimen_voucher	|	
+7845	|	3013	|	Mammal collection	|	Mammal 	|	6868	|	culture collection	|	0	|		|		|	culture_collection	|	
+7846	|	3013	|	Reptile Collection	|	Reptile	|	2391	|	museum	|	0	|		|		|	specimen_voucher	|	
+7180	|	3031	|	Mammal Collection	|	Mamm	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7204	|	3164	|	bird collection	|	Bird	|	1339	|	museum	|	0	|		|		|	specimen_voucher	|	
+7205	|	3164	|	Fish Collection	|	Fish	|	379	|	museum	|	0	|		|		|	specimen_voucher	|	
+7206	|	3164	|	mammal collection	|	Mamm	|	6888	|	museum	|	0	|		|		|	specimen_voucher	|	
+7544	|	3181	|	Fish Collection	|	Fish	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7545	|	3181	|	Invertebrate Zoology	|	IZ	|	0	|	museum	|	0	|	http://www.bishopmuseum.org/research/natsci/invert/invertzoo.html 	|	      	|	specimen_voucher	|	
+7579	|	3210	|	Entomology collection	|	ENT	|	1306919	|	museum	|	0	|		|		|	specimen_voucher	|	
+7858	|	3210	|	Plants collection	|	BOT	|	1392507	|	herbarium	|	0	|		|		|	specimen_voucher	|	
+7859	|	3210	|	Zoological Collection	|	ZOO	|	708670	|	museum	|	0	|		|		|	specimen_voucher	|	
+7686	|	3218	|	Herpetology collection	|	HERP	|	20957	|	museum	|	0	|		|		|	specimen_voucher	|	
+7687	|	3218	|	 Ichthyology collection	|	Fish	|	29	|	museum	|	0	|		|		|	specimen_voucher	|	
+7688	|	3218	|	 Mammalogy Collection	|	 Mammal	|	5342	|	museum	|	0	|		|		|	specimen_voucher	|	
+7689	|	3218	|	Ornithology Collection	|	Bird	|	26588	|	museum	|	0	|		|		|	specimen_voucher	|	
+7616	|	3267	|	Botany Department	|	F	|	25535	|	herbarium	|	0	|		|		|	specimen_voucher	|	
+7270	|	3267	|	Arthropod Collection	|	ARTH	|	0	|	museum	|	0	|	http://emuweb.fieldmuseum.org/arthropod/Query.php 	|	      	|	specimen_voucher	|	
+7271	|	3267	|	Herpetology Collection	|	HERP	|	15389	|	museum	|	0	|	http://fm1.fieldmuseum.org/collections/search.cgi?dest=herps	|		|	specimen_voucher	|	
+7272	|	3267	|	Ichthyology Collection	|	ICHTHY	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7273	|	3267	|	Invertebrate Collection	|	INVRT	|	0	|	museum	|	0	|	http://emuweb.fieldmuseum.org/iz/Query.php 	|	      	|	specimen_voucher	|	
+7274	|	3267	|	Mammal Collection	|	MAMM	|	39529	|	museum	|	0	|		|		|	specimen_voucher	|	
+7275	|	3267	|	Ornithology Collection	|	AVES	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7506	|	3301	|	Collection of Microscopic Fungi	|	CMF	|	0	|	culture collection	|	0	|	http://web.natur.cuni.cz/fccm/cmfisba.pdf	|	      	|	culture_collection,bio_material	|	
+7508	|	3415	|	Entomology Collection	|	ENT	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7359	|	3428	|	Annelid Collection	|	W	|	0	|	museum	|	0	|	http://www.nt.gov.au/nreta/museums/collection/science/invert/annelida.html	|	      	|	specimen_voucher	|	
+7360	|	3428	|	Malacology Collection	|	P	|	0	|	museum	|	0	|	http://www.nt.gov.au/nreta/museums/collection/science/invert/mollusca.html	|	      	|	specimen_voucher	|	
+7361	|	3428	|	Arachnid Collection	|	A	|	0	|	museum	|	0	|	http://www.nt.gov.au/nreta/museums/collection/science/invert/arachnida.html	|	      	|	specimen_voucher	|	
+7362	|	3428	|	Cnidarian Collection	|	C	|	0	|	museum	|	0	|	http://www.nt.gov.au/nreta/museums/collection/science/invert/cnidaria.html	|	      	|	specimen_voucher	|	
+7363	|	3428	|	Crustacean Collection	|	Cr	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7364	|	3428	|	Minor Invertebrate Collection	|	D	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7365	|	3428	|	Ascidian Collection	|	E	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7366	|	3428	|	Bryozoan Collection	|	G	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7367	|	3428	|	Insect Collection	|	I	|	0	|	museum	|	0	|	http://www.nt.gov.au/nreta/museums/collection/science/invert/insecta.html	|	      	|	specimen_voucher	|	
+7368	|	3428	|	Myriapod Collection	|	M	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7369	|	3428	|	Pycnogonid Collection	|	N	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7370	|	3428	|	Echinoderm Collection	|	Q	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7371	|	3428	|	Herpetology Collection	|	R	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7372	|	3428	|	Fish Collection	|	S	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7373	|	3428	|	Bird Collection	|	T	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7374	|	3428	|	Mammal Collection	|	U	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7375	|	3428	|	Poriferan Collection	|	Z	|	0	|	museum	|	0	|	http://www.nt.gov.au/nreta/museums/collection/science/invert/porifera.html	|	      	|	specimen_voucher	|	
+7705	|	3430	|	Birds collection	|	ZO	|	13968	|	museum	|	0	|		|		|	specimen_voucher	|	
+7706	|	3430	|	Mammal collection	|	ZM	|	14165	|	museum	|	0	|		|		|	specimen_voucher	|	
+7338	|	3467	|	Invertebrate Zoology Collection	|	IZ	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7355	|	3467	|	Ornithology Collection	|	ORN	|	169086	|	museum	|	0	|		|		|	specimen_voucher	|	
+7276	|	3467	|	Mammal Collection	|	MAM	|	118315	|	museum	|	0	|		|	= ROM:MAMM	|	specimen_voucher	|	
+7247	|	3467	|	Herpetology collection	|	HERP	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7220	|	3467	|	Fish collection	|	ICH	|	100410	|	museum	|	0	|		|		|	specimen_voucher	|	
+7221	|	3467	|	Entomology collection	|	ENT	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7420	|	3515	|	Ornithology Collection	|	O	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7429	|	3515	|	Amphibian Collection	|	A	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7730	|	3613	|	Crustacea Collection	|	Crustacea	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7589	|	3689	|	Prokaryotic collection	|	PROK	|	0	|	culture collection	|	0	|		|		|	specimen_voucher,culture_collection	|	
+7590	|	3689	|	Mold collection	|	MOLD	|	0	|	culture collection	|	0	|		|		|	specimen_voucher,culture_collection	|	
+7591	|	3689	|	Yeast Collection	|	YEAST	|	0	|	culture collection	|	0	|		|		|	specimen_voucher,culture_collection	|	
+7573	|	3986	|	Collection of Amphibians and Reptiles	|	H	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7356	|	3986	|	Laboratorio de Micologia Medica Divisao de Microbiologia e Nutricao	|	LMM	|	0	|	culture collection	|	0	|		|	= INPA	|	culture_collection	|	
+7357	|	3986	|	Crustacea Collection	|	CR	|	0	|	museum	|	0	|	http://www.biodiversidadeamazonica.net/crustaceos	|	      	|	specimen_voucher	|	
+7862	|	3986	|		|	ICT	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7450	|	4654	|		|	germplasm bank	|	0	|	germplasm repository	|	0	|	      	|	      	|	bio_material	|	
+7250	|	4861	|	Invertebrate collection	|	INV	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7636	|	4861	|	Reptie collection	|	R	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7831	|	4928	|	Birds Collection	|	Birds	|	3253	|	museum	|	0	|		|		|	specimen_voucher	|	
+7832	|	4928	|	Mammals Collection	|	Mammal	|	1157	|	museum	|	0	|		|		|	specimen_voucher	|	
+7603	|	5110	|	Fungi collection	|	Fungi	|	0	|	herbarium	|	0	|	      	|		|	specimen_voucher	|	
+7570	|	5457	|	The Protozoan collection of the National Museum	|	P	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7279	|	5474	|	Zoological Collection	|	ZC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7239	|	5555	|	Evertebrata Varia (Invertebrates other than Insects)	|	EVAR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7240	|	5555	|	Insect collection	|	INS	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7241	|	5555	|	Vertebrate collection	|	VERT	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7627	|	6151	|	Algal Collection	|	ALGAS	|	0	|	herbarium	|	0	|	      	|		|	specimen_voucher	|	
+7628	|	6151	|	Bryophyta Collection	|	BRIOFITOS	|	0	|	herbarium	|	0	|	      	|		|	specimen_voucher	|	
+7629	|	6151	|	Mushroom Collection	|	HONGOS	|	0	|	herbarium	|	0	|	      	|		|	specimen_voucher	|	
+7188	|	6163	|	algae collection	|	Algae	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7189	|	6163	|	lichen collection	|	Lich	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7190	|	6163	|	bryophyte collection	|	Bryo	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7580	|	6194	|	Laboratory Plant-Pathogen Interaction	|	LIPP	|	0	|	      	|	0	|	      	|		|	culture_collection	|	
+7433	|	6212	|	Collecion Herpetologica	|	H	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7223	|	6529	|	Center for Biological Defense	|	CBD	|	0	|	culture collection	|	0	|	http://www.bt.usf.edu/	|	= CBD<USA>	|	culture_collection	|	
+7535	|	6777	|	Zoology Collection	|	Z	|	0	|	museum	|	0	|		|	= SYSZ	|	specimen_voucher	|	
+7404	|	6832	|	Fungi collection	|	Fungi	|	0	|	herbarium	|	0	|	http://www.rjb.csic.es/jardinbotanico/jardin/index.php?Cab=109&len=en&Pag=191&Pag=191	|	      	|	specimen_voucher	|	
+7405	|	6832	|	Historical fungi colleciton	|	FunHist	|	0	|	herbarium	|	0	|	http://www.rjb.csic.es/jardinbotanico/jardin/index.php?Cab=109&len=en&Pag=191&Pag=191	|	      	|	specimen_voucher	|	
+7406	|	6832	|	Lichen collection	|	Lichen	|	0	|	herbarium	|	0	|	http://www.rjb.csic.es/jardinbotanico/jardin/index.php?Cab=109&len=en&Pag=191&Pag=190	|	      	|	specimen_voucher	|	
+7407	|	6832	|	Bryophyte collection	|	Musci	|	0	|	herbarium	|	0	|	http://www.rjb.csic.es/jardinbotanico/jardin/index.php?Cab=109&len=en&Pag=190&Pag=411	|	      	|	specimen_voucher	|	
+7408	|	6832	|	Liverwort collection	|	Hepat	|	0	|	herbarium	|	0	|	http://www.rjb.csic.es/jardinbotanico/jardin/index.php?Cab=109&len=en&Pag=190&Pag=411	|	      	|	specimen_voucher	|	
+7409	|	6832	|	Algae collection	|	Algae	|	0	|	herbarium	|	0	|	      	|	http://www.rjb.csic.es/jardinbotanico/jardin/index.php?Cab=109&len=en&Pag=411&Pag=189	|	specimen_voucher	|	
+7277	|	6866	|	Section of Mammals	|	M	|	0	|	museum	|	0	|	http://www.carnegiemnh.org/mammals/index.html	|	      	|	specimen_voucher	|	
+7278	|	6866	|	Section of Birds	|	O	|	205967	|	museum	|	0	|	http://www.carnegiemnh.org/birds/index.html	|		|	specimen_voucher	|	
+7684	|	6866	|	Herpetology Collection	|	Herps	|	170040	|	museum	|	0	|		|		|	specimen_voucher	|	
+7685	|	6866	|	Vertebrate Paleontology Collection	|	VertPaleo	|	79254	|	museum	|	0	|		|		|	specimen_voucher	|	
+7546	|	6934	|	 International Cooperative Biodiversity Groups	|	ICBG-Panama	|	0	|	culture collection	|	0	|	      	|	      	|	culture_collection	|	
+7596	|	6955	|	Fungal Collection	|	F	|	0	|	herbarium	|	0	|	      	|		|	specimen_voucher	|	
+7484	|	7052	|	Museum of Biodiversity Amphibians & Reptiles Collection	|	Herps	|	0	|	museum	|	0	|	http://www.sci.sdsu.edu/collections/herps.htm	|	      	|	specimen_voucher	|	
+7485	|	7052	|	Museum of Biodiversity Birds Collection	|	Birds	|	0	|	museum	|	0	|	http://www.sci.sdsu.edu/collections/birds.htm	|	      	|	specimen_voucher	|	
+7486	|	7052	|	Museum of Biodiversity Fish Collection	|	Fish	|	0	|	museum	|	0	|	http://www.sci.sdsu.edu/collections/fish.htm	|	      	|	specimen_voucher	|	
+7487	|	7052	|	Museum of Biodiversity Mammal Collection	|	Mammals	|	0	|	museum	|	0	|	http://www.sci.sdsu.edu/collections/mammals.htm	|	      	|	specimen_voucher	|	
+7488	|	7052	|	Museum of Biodiversity Terrestrial Arthropod Collection	|	Arthropods	|	0	|	museum	|	0	|	http://www.sci.sdsu.edu/collections/terrestrialarthropods.htm	|	      	|	specimen_voucher	|	
+7489	|	7052	|	Herbarium	|	Herbarium	|	0	|	herbarium	|	0	|	http://www.sci.sdsu.edu/collections/herbarium.htm	|	      	|	specimen_voucher	|	
+7490	|	7052	|	Greenhouse	|	Greenhouse	|	0	|	botanical garden	|	0	|	http://www.sci.sdsu.edu/greenhouse/	|	      	|	bio_material	|	
+7377	|	7121	|	Anthropology Collection	|	ANTH	|	0	|	museum	|	0	|	http://research.calacademy.org/anthro/collections	|	      	|	specimen_voucher	|	
+7378	|	7121	|	Botany Collection	|	BOT	|	0	|	herbarium	|	0	|	http://research.calacademy.org/botany/collections	|	      	|	specimen_voucher	|	
+7379	|	7121	|	Diatom collection	|	DIA	|	0	|	herbarium	|	0	|	http://researcharchive.calacademy.org/research/diatoms/hanna_db/index.asp	|	      	|	specimen_voucher	|	
+7380	|	7121	|	Dudley Stanford Collection	|	DS	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7381	|	7121	|	Egg & Nest Collection	|	EGG	|	0	|	museum	|	0	|	http://research.calacademy.org/om/collections	|	      	|	specimen_voucher	|	
+7382	|	7121	|	Entomology Type Collection	|	TYPE	|	0	|	museum	|	0	|	http://research.calacademy.org/ent/collections	|	= CASTYPE ; = CAS:CASTYPE	|	specimen_voucher	|	
+7383	|	7121	|	Indiana University fish collection	|	IU	|	0	|	museum	|	0	|	http://research.calacademy.org/ichthyology/collections	|	      	|	specimen_voucher	|	
+7384	|	7121	|	Invertebrate Zoology collection	|	IZ	|	0	|	museum	|	0	|	http://research.calacademy.org/izg/collections 	|	= CASIZ	|	specimen_voucher	|	
+7385	|	7121	|	Mammalogy Collection	|	MAM	|	31986	|	museum	|	0	|	http://research.calacademy.org/om/collections 	|		|	specimen_voucher	|	
+7386	|	7121	|	Ornithology Collection	|	ORN	|	99447	|	museum	|	0	|	http://research.calacademy.org/om/collections 	|		|	specimen_voucher	|	
+7387	|	7121	|	Stanford University Collection of amphibians	|	SUA	|	0	|	museum	|	0	|	http://research.calacademy.org/herp/collections 	|	      	|	specimen_voucher	|	
+7388	|	7121	|	Stanford University Collection of reptiles	|	SUR	|	0	|	museum	|	0	|	http://research.calacademy.org/herp/collections	|	      	|	specimen_voucher	|	
+7389	|	7121	|	Stanford University Collection of fish	|	SU	|	0	|	museum	|	0	|	http://research.calacademy.org/ichthyology/collections 	|	      	|	specimen_voucher	|	
+7269	|	7121	|	Ichthyology collection	|	ICH	|	207513	|	museum	|	0	|	http://research.calacademy.org/research/ichthyology/collection/index.asp	|		|	specimen_voucher	|	
+7245	|	7121	|	Herpetology collection	|	HERP	|	315594	|	museum	|	0	|	http://research.calacademy.org/herp/collections 	|		|	specimen_voucher	|	
+7246	|	7121	|	Entomology collection	|	ENT	|	0	|	museum	|	0	|	http://research.calacademy.org/ent/collections 	|	= CASENT ; = CAS:CASENT	|	specimen_voucher	|	
+7837	|	7159	|	Anfibios Collection	|	Anfibios	|	9794	|	museum	|	0	|		|		|	specimen_voucher	|	
+7838	|	7159	|	Aves collection	|	Aves	|	7697	|	museum	|	0	|		|		|	specimen_voucher	|	
+7839	|	7159	|	Mamiferos collection	|	Mamiferos	|	3578	|	museum	|	0	|		|		|	specimen_voucher	|	
+7840	|	7159	|	Peixes Collection	|	Peixes	|	12145	|	museum	|	0	|		|		|	specimen_voucher	|	
+7841	|	7159	|	Repteis Collection	|	Repteis	|	3927	|	museum	|	0	|		|		|	specimen_voucher	|	
+7614	|	7188	|	Fungal Collection	|	F	|	0	|	herbarium	|	0	|		|		|	specimen_voucher	|	
+7575	|	7224	|	Fungal Endophytes Collection of the  Research Group of Agronomy	|	FECRGA	|	0	|	culture collection	|	0	|	      	|	      	|	culture_collection	|	
+7498	|	7242	|	Entomology Collection	|	ENT	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7540	|	7272	|	Cowan Tetrapod Collection	|	CTC	|	0	|	museum	|	0	|	http://www.beatymuseum.ubc.ca/collections/vertebrate	|	      	|	specimen_voucher	|	
+7541	|	7272	|	Fish Collection	|	Fish	|	0	|	museum	|	0	|	http://www.beatymuseum.ubc.ca/collections/fish	|	      	|	specimen_voucher	|	
+7595	|	7272	|	Spencer Entomological Museum	|	SEM	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7853	|	7423	|	Mammals collection	|	Mammal	|	968	|	museum	|	0	|		|		|	specimen_voucher	|	
+7854	|	7423	|	Ornithology collection	|	Ornithology	|	3945	|	museum	|	0	|		|		|	specimen_voucher	|	
+7202	|	7457	|	UAM Herbarium	|	Herb	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7203	|	7457	|	paleontology collection	|	Paleo	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7172	|	7457	|	Mammal Collection	|	Mamm	|	133389	|	museum	|	0	|		|		|	specimen_voucher	|	
+7173	|	7457	|	Bird Collection	|	Bird	|	31580	|	museum	|	0	|		|		|	specimen_voucher	|	
+7174	|	7457	|	Bryozoan Collection	|	Bryo	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7175	|	7457	|	Marine Arthropod Collection	|	Crus	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7176	|	7457	|	Fish Collection	|	Fish	|	10041	|	museum	|	0	|		|		|	specimen_voucher	|	
+7177	|	7457	|	Amphibian and Reptile Collection	|	Herp	|	486	|	museum	|	0	|		|		|	specimen_voucher	|	
+7178	|	7457	|	Insect Collection	|	Ento	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7179	|	7457	|	Mollusc Collection	|	Moll	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7264	|	7457	|	Earth Science	|	ES	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7866	|	7457	|	Invertebrate Collection	|	Inv	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7192	|	7477	|	bird tissue collection	|	Bird	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7193	|	7477	|	entomology tissue collection	|	Ento	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7194	|	7477	|	fish tissue collection	|	Fish	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7195	|	7477	|	herpetology tissue collection	|	Herp	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7196	|	7477	|	mammal tissue collection	|	Mamm	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7197	|	7478	|	Lepidoptera collection	|	Ento	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7200	|	7479	|	bird collection	|	Bird	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7201	|	7479	|	mammal tissue collection	|	Mamm	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7218	|	7485	|	Ontario Insect Collection	|	DEBU	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7219	|	7485	|	Biodiversity Institute of Ontario 	|	BIO	|	0	|	DNA bank	|	0	|		|	= BIOUG	|	bio_material	|	
+7222	|	7492	|	Marine Mammal Molecular Genetics Laboratory	|	MMMGL	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	specimen_voucher	|	
+7224	|	7497	|	Entomology Collection	|	ENT	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7242	|	7505	|	ZooPlantLab	|	ZPL	|	0	|	museum	|	0	|	http://www.zooplantlab.btbs.unimib.it/	|	      	|	specimen_voucher	|	
+7538	|	7513	|	Cochin Unit	|	CHN	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7251	|	7520	|	CIAT Rhizobium Collection 	|	Rhizobium	|	0	|	culture collection	|	0	|	http://isa.ciat.cgiar.org/urg/main.do	|	      	|	culture_collection	|	
+7252	|	7520	|	CIAT Bean Collection	|	Bean	|	0	|	germplasm repository	|	0	|	http://isa.ciat.cgiar.org/urg/main.do	|	      	|	bio_material	|	
+7253	|	7520	|	CIAT Cassava Collection	|	Cassava	|	0	|	germplasm repository	|	0	|	http://isa.ciat.cgiar.org/urg/main.do	|	      	|	bio_material	|	
+7254	|	7520	|	CIAT Forages Collection	|	Forage	|	0	|	germplasm repository	|	0	|	http://isa.ciat.cgiar.org/urg/main.do	|	      	|	bio_material	|	
+7262	|	7522	|	Vector Control Research Unit	|	VCRU	|	0	|	museum	|	0	|	http://www.usm.my/vcru/vcu.html	|	      	|	specimen_voucher	|	
+7581	|	7523	|	Subcollection Fungi	|	SF	|	0	|	culture collection	|	0	|	      	|		|	culture_collection	|	
+7395	|	7544	|	Fish Collection	|	Fish	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7281	|	7551	|	SEAMAP Ichthyoplankton Collection	|	SEAMAP	|	0	|	culture collection	|	0	|	      	|	      	|	culture_collection	|	
+7282	|	7551	|	Ichthyology Collection	|	Ichthyology	|	0	|	museum	|	0	|	http://research.myfwc.com/features/view_article.asp?id=30886	|	      	|	specimen_voucher	|	
+7283	|	7551	|	Invertebrate Collection	|	Invertebrate	|	0	|	museum	|	0	|	http://research.myfwc.com/features/view_article.asp?id=30920	|	      	|	specimen_voucher	|	
+7308	|	7585	|	Marine Forensics	|	MarFor	|	0	|	frozen tissue collection	|	0	|	http://www.chbr.noaa.gov/default.aspx?category=mf&pageName=forensics 	|	      	|	specimen_voucher	|	
+7358	|	7625	|	Collection of Germplasms of Agaricus bisporus	|	CGAB	|	0	|	germplasm repository	|	0	|	http://www.bordeaux-aquitaine.inra.fr/mycsa_eng/des_ressources_biologiques_uniques/la_collection_d_agarics_cgab	|	      	|	culture_collection,bio_material	|	
+7326	|	7627	|	Canadian National Plant Germplasm System	|	CN	|	0	|	germplasm repository	|	0	|	      	|	      	|	bio_material	|	
+7349	|	7648	|	Rickettsial Diseases Division	|	RDD	|	0	|	culture collection	|	0	|	http://www.med.navy.mil/sites/nmrc/pages/id_rd.htm	|	      	|	culture_collection	|	
+7394	|	7676	|	Ocean Genome Resource	|	OGR	|	0	|	frozen tissue collection	|	0	|	      	|	      	|	bio_material	|	
+7410	|	7685	|	Pisces  and Coelenterata	|	P	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7411	|	7685	|	Mollusca collection	|	MO	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7412	|	7685	|	Arthropoda collection	|	AR	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7413	|	7685	|	Echinodermata	|	EC	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7414	|	7685	|	Invertebrata	|	IV	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7415	|	7685	|	Sea weed	|	S	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7416	|	7690	|	LWL-DNA- und Gewebearchiv	|	DNA	|	0	|	DNA bank	|	0	|	      	|	      	|	bio_material	|	
+7417	|	7691	|	Amphibian collection	|	A	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7617	|	7693	|	Mammal collection	|	Mamm	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7618	|	7693	|	Herpetology Collection	|	Herp	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7619	|	7693	|	Bird Collection	|	Bird	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7418	|	7695	|	Entomology Collection	|	Ento	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7419	|	7695	|	Herbarium	|	Herb	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7439	|	7715	|	Herpetological Collection	|	HC	|	0	|	museum	|	0	|		|	= UKMHC	|	specimen_voucher	|	
+7435	|	7717	|	Mammal Collection	|	Mamm	|	6314	|	museum	|	0	|		|		|	specimen_voucher	|	
+7436	|	7717	|	Bird Collection	|	Bird	|	2273	|	museum	|	0	|		|		|	specimen_voucher	|	
+7437	|	7717	|	Herpetology Collection	|	Herp	|	8	|	museum	|	0	|		|		|	specimen_voucher	|	
+7438	|	7717	|	Fish Collection	|	Fish	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7440	|	7719	|	Ichthyology Collection	|	I	|	0	|	museum	|	0	|		|	= KAUM-I 	|	specimen_voucher	|	
+7481	|	7750	|	Alaska Science Center	|	ASC	|	0	|	museum	|	0	|	http://pubs.usgs.gov/fs/2007/3019/	|	      	|	specimen_voucher	|	
+7497	|	7780	|	KOPRI Culture Collection of Polar Microorganisms	|	KCCPM	|	0	|	culture collection	|	0	|	      	|	      	|	culture_collection	|	
+7499	|	7792	|	Gifu prefectural Museum Zoological collection	|	Z	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7500	|	7792	|	Gifu prefectural Museum herbarium	|	B	|	0	|	herbarium	|	0	|	      	|	      	|	specimen_voucher	|	
+7833	|	7805	|	Birds collection	|	Birds	|	878	|	museum	|	0	|		|		|	specimen_voucher	|	
+7834	|	7805	|	Herpetology Collection	|	Herps	|	61	|	museum	|	0	|		|		|	specimen_voucher	|	
+7835	|	7805	|	Mammals collection	|	Mammal	|	187	|	museum	|	0	|		|		|	specimen_voucher	|	
+7836	|	7805	|	Eggs Collection	|	Eggs	|	119	|	museum	|	0	|		|		|	specimen_voucher	|	
+7599	|	7832	|	Fungal collection	|	Fungos	|	0	|	herbarium	|	0	|		|		|	specimen_voucher	|	
+7601	|	7908	|	Porifera collection	|	POR	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7577	|	7938	|		|	Moll	|	0	|	museum	|	0	|	      	|	      	|	specimen_voucher	|	
+7751	|	7938	|	Crustacea Collection	|	Crustacea	|	2462	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7769	|	7938	|	Ichthyologie Collection	|	Ichthyologie	|	28103	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7780	|	7938	|	Mammalogie Collection	|	Mammalogie	|	237	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7775	|	7938	|	Malakologie Collection	|	Malakologie	|	43152	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7772	|	7938	|	Lepidoptera Collection	|	Lepidoptera	|	1575	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7785	|	7938	|	Myriapoda Collection	|	Myriapoda	|	8	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7789	|	7938	|	Ornithologie Collection	|	Ornithologie	|	6714	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7734	|	7938	|	Arachnida Collection	|	Arachnida	|	2540	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7761	|	7938	|	Hemiptera Collection	|	Hemiptera	|	7	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7762	|	7938	|	Herpetologie Collection	|	Herpetologie	|	16495	|	museum	|	      	|	      	|	      	|	specimen_voucher	|	
+7583	|	7965	|	Entomology collection	|	ENT	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7863	|	8009	|	Fish collection	|	Pisces	|	0	|	museum	|	0	|		|		|	specimen_voucher	|	
+7598	|	8211	|	Philippine Mollusk Symbiont-International Cooperative Biodiversity Group	|	PMS-ICBG 	|	0	|	culture collection	|	0	|	      	|		|	culture_collection	|	
+7620	|	8500	|	Archaeozoology Collection	|	AC	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7621	|	8500	|	Bird Collection	|	BC	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7622	|	8500	|	Entomology Collection	|	EC	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7623	|	8500	|	Herpetology Collection	|	HC	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7624	|	8500	|	Invertebrate Collection	|	IC	|	0	|	museum	|	0	|	      	|		|	specimen_voucher	|	
+7625	|	8500	|	Mammal Collection	|	MC	|	0	|	museum	|	0	|	      	|	his is South Africa's largest collection of mammals, collected primarily from the southern African subregion. Collections date back to the early 1900's. Much of the collection is dried specimens, but there is also a fairly large wet collection. The following additional codes associated with the collection reflect the former (Transvaal Museum) and current (Ditsong National Museum of Natural History) names of the museum: CR, DNMNH-M, TM-M, and TMSA	|	specimen_voucher	|	
+7701	|	8513	|	Herpetile collection	|	Herp	|	3087	|	museum	|	0	|		|		|	specimen_voucher	|	
+7702	|	8513	|	Fish collection	|	Pisc	|	9684	|	museum	|	0	|		|		|	specimen_voucher	|	
+7703	|	8513	|	Mammal collection	|	Mam	|	19309	|	museum	|	0	|		|		|	specimen_voucher	|	
+7704	|	8513	|	The avian collection	|	BI	|	121897	|	museum	|	0	|		|		|	specimen_voucher	|	
+7857	|	8543	|	Ichthyology Collection	|	Ichthyology	|	150169	|	museum	|	0	|		|		|	specimen_voucher	|	

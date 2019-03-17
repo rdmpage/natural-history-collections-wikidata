@@ -1,5 +1,7 @@
 <?php
 
+// Wikidata lookup functions
+
 require_once (dirname(__FILE__) . '/fingerprint.php');
 require_once (dirname(__FILE__) . '/lcs.php');
 require_once (dirname(__FILE__) . '/utils.php');
@@ -128,6 +130,35 @@ function wikidata_item_from_wikispecies_repository($code)
 	return $item;
 }
 
+//----------------------------------------------------------------------------------------
+// Do we have Wikidata item with this URL?
+function wikidata_item_from_url($website)
+{
+	$item = '';
+	
+	$sparql = 'SELECT * WHERE { ?repository wdt:P856 <' . $website . '> }';
+	
+	$url = 'https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=' . urlencode($sparql);
+	$json = get($url, '', 'application/json');
+	
+	if ($json != '')
+	{
+		$obj = json_decode($json);
+		
+		//print_r($obj);
+		
+		if (isset($obj->results->bindings))
+		{
+			if (count($obj->results->bindings) == 1)	
+			{
+				$item = $obj->results->bindings[0]->repository->value;
+				$item = preg_replace('/https?:\/\/www.wikidata.org\/entity\//', '', $item);
+			}
+		}
+	}
+	
+	return $item;
+}
 
 //----------------------------------------------------------------------------------------
 // get Wikidata record
@@ -234,6 +265,18 @@ function get_wikidata_entity($qid)
 							$entity->type[] = 'national museum';
 							break;
 							
+						case 'Q43501':
+							$entity->type[] = 'zoo';
+							break;
+							
+						case 'Q167346':
+							$entity->type[] = 'botanical garden';
+							break;
+							
+						case 'Q3918':
+							$entity->type[] = 'university';
+							break;
+							
 						default:
 							$entity->type[] = $claim->mainsnak->datavalue->value->id;
 							break;					
@@ -291,17 +334,20 @@ function get_wikidata_entity($qid)
 			case 'P159':
 				foreach ($claims as $claim)
 				{
-					foreach ($claim->qualifiers as $k => $qualifier)
+					if (isset($claim->qualifiers))
 					{
-						switch ($k)
+						foreach ($claim->qualifiers as $k => $qualifier)
 						{
-							case 'P625':
-								$entity->latitude = $qualifier[0]->datavalue->value->latitude;
-								$entity->longitude = $qualifier[0]->datavalue->value->longitude;								
-								break;
+							switch ($k)
+							{
+								case 'P625':
+									$entity->latitude = $qualifier[0]->datavalue->value->latitude;
+									$entity->longitude = $qualifier[0]->datavalue->value->longitude;								
+									break;
 						
-							default:
-								break;
+								default:
+									break;
+							}
 						}
 					}
 				}			
@@ -348,7 +394,7 @@ function get_wikidata_entity($qid)
 
 //----------------------------------------------------------------------------------------
 // Find in Wikidata
-function wikidata_reconcile($text, $type = null, $properties = array())
+function wikidata_reconcile($text, $type = null, $properties = array(), $debug = false)
 {
 	$query = new stdclass;
 	$query->query = $text;
@@ -374,9 +420,10 @@ function wikidata_reconcile($text, $type = null, $properties = array())
 	
 	$obj = json_decode($json);
 	
-	print_r($obj);
-	
-	
+	if ($debug)
+	{
+		print_r($obj);
+	}
 	
 	$items = array();
 	
@@ -506,8 +553,13 @@ if (0)
 	$text = 'Museo Nacional de Historia Natural';
 	$type = null;
 	
-	$text = 'Conservatoire et Jardin botaniques de la Ville de Genève';
-	$type = 'Q167346';
+	$text = 'Neuchatel Musee d\'Histoire Naturel';
+	$text = 'Muséum d\'histoire naturelle de Neuchâtel';
+	$type = null;
+	
+	
+	//$text = 'Conservatoire et Jardin botaniques de la Ville de Genève';
+	//$type = 'Q167346';
 	
 	// Properties don't exclude non-matching things from results,
 	// but do affect order of results (those that have property appear earlier)
@@ -529,7 +581,7 @@ if (0)
 		$properties[] = $property;
 	}
 	
-	if (1)
+	if (0)
 	{	
 		// Property value as string
 		$property = new stdclass;

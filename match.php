@@ -1,5 +1,7 @@
 <?php
 
+// Match to Wikidata using reconciliation service
+
 require_once(dirname(__FILE__) . '/adodb5/adodb.inc.php');
 require_once(dirname(__FILE__) . '/wikidata.php');
 
@@ -13,9 +15,13 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 
 $db->EXECUTE("set names 'utf8'"); 
 
-$sql = 'SELECT * FROM collections WHERE id LIKE "https://plants.jstor.org/partner/%" AND wikidata IS NULL';
+$sql = 'SELECT * FROM nodes WHERE id LIKE "jstor%"';
 
-$sql .= ' AND country="Japan"';
+$sql .= ' AND country="Mexico"';
+
+$sql = 'SELECT * FROM nodes WHERE name LIKE "%normal%"';
+
+$sql = 'SELECT * FROM nodes WHERE name LIKE "%Peru%"';
 
 $result = $db->Execute($sql);
 if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
@@ -29,8 +35,24 @@ while (!$result->EOF)
 	
 	
 	$text = $record->name;
+	
+	/*
+	if ($record->country != '')
+	{
+		$text .= ' ' . $record->country;
+	}
+	*/
+	
+	// test to find match to parent if we can't match herbarium
+	//$text = trim(str_replace('Herbario', '', $text));
+	
+	
 	$type = 'Q181916'; // herbarium
+	
+	$type = 'Q43229'; // organization
+	
 	$type = null;
+	
 	$properties = array();
 	
 	if (1)
@@ -41,8 +63,10 @@ while (!$result->EOF)
 		$property->v = $record->country;
 		$properties[] = $property;
 	}
+	
+	echo "-- $text\n";
 		
-	$items = wikidata_reconcile($text, $type, $properties);
+	$items = wikidata_reconcile($text, $type, $properties, true);
 	
 	if (count($items) == 1)
 	{

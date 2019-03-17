@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Where is the damned collection?</title>
+	
+	<script src="jquery-1.11.2.min.js"></script>
+	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">	
+	
+	<script>
+        //--------------------------------------------------------------------------------
+		// http://stackoverflow.com/a/11407464
+		$(document).keypress(function(event){
+			var keycode = (event.keyCode ? event.keyCode : event.which);
+			if(keycode == '13'){
+				$('#search').click();   
+			}
+		});    
+		
+        //--------------------------------------------------------------------------------
+		function search() {
+			var query = document.getElementById('query').value;
+		
+						var sparql = `SELECT DISTINCT * 
+WHERE 
+{ 
+	{
+  		?repository wdt:P5858 "CODE" . 
+  	}
+  	UNION
+  	{
+    	<https://species.wikimedia.org/wiki/CODE> schema:about ?repository .
+   	}  
+  
+  ?repository rdfs:label ?label .
+  
+  #?repository ?p ?o .
+  
+  OPTIONAL {
+   ?repository wdt:P195|wdt:P137|wdt:P749 ?parent .
+    OPTIONAL { ?parent wdt:P18 ?parent_image . } 
+    OPTIONAL { ?parent wdt:P17 ?parent_country . ?parent_country rdfs:label ?parent_country_label . FILTER (lang(?parent_country_label) = 'en') } 
+    OPTIONAL { ?parent wdt:P625 ?parent_coordinates . }   
+    OPTIONAL { ?parent wdt:P2002 ?parent_twitter . } 
+    OPTIONAL { ?parent wdt:P2427 ?parent_grid . } 
+    OPTIONAL { ?parent wdt:P3500 ?parent_ringgold . } 
+    OPTIONAL { ?parent wdt:P5818 ?parent_bgci . } 
+    OPTIONAL { ?parent wdt:P2427 ?parent_grid . } 
+    OPTIONAL { ?parent wdt:P856 ?parent_url . }
+  }
+  
+  OPTIONAL { ?repository schema:description ?description . FILTER (lang(?description) = 'en')  } 
+
+  
+  
+  OPTIONAL { ?repository wdt:P18 ?image . } 
+  OPTIONAL { ?repository wdt:P17 ?country . ?country rdfs:label ?country_label . FILTER (lang(?country_label) = 'en') }  
+  OPTIONAL { ?repository wdt:P625 ?coordinates . }  
+  OPTIONAL { ?repository wdt:P2002 ?twitter . } 
+  OPTIONAL { ?repository wdt:P2427 ?grid . } 
+  OPTIONAL { ?repository wdt:P3500 ?ringgold . } 
+  OPTIONAL { ?repository wdt:P5818 ?bgci . } 
+  OPTIONAL { ?repository wdt:P2427 ?grid . } 
+  OPTIONAL { ?repository wdt:P856 ?url . }
+  
+  OPTIONAL { ?wikispecies schema:about ?repository; schema:isPartOf <https://species.wikimedia.org/> } 
+  
+  
+  # FILTER (lang(?label) = 'en') . 
+}`;
+
+			sparql = sparql.replace(/CODE/g, query);
+			
+			console.log(sparql);
+			
+			$('#card').html('');
+			$('#output').html('');
+	
+			$.getJSON('https://query.wikidata.org/bigdata/namespace/wdq/sparql?query=' + encodeURIComponent(sparql),
+				function(data){
+				  if (data.results.bindings.length != 0) {
+				  	console.log(JSON.stringify(data.results.bindings, null, 2));
+				  	
+				  	//$('#output').html(JSON.stringify(data.results.bindings, null, 2));
+				  	
+				  	
+				  	var results = {};
+				  	for (var i in data.results.bindings) {
+				  		var id = data.results.bindings[i].repository.value;
+				  		id = id.replace('http://www.wikidata.org/entity/', '');
+				  		
+				  		if (!results[id]) {
+				  			results[id] = {};
+				  			results[id].name = {};
+				  			results[id].description = {};
+				  		}
+				  		results[id].wikidata = data.results.bindings[i].repository.value;
+				  		
+				  		// label
+				  		if (data.results.bindings[i].label) {
+				  			results[id].name[data.results.bindings[i].label['xml:lang']] = data.results.bindings[i].label.value
+				  		}				  		
+
+				  		// description
+				  		if (data.results.bindings[i].description) {
+				  			results[id].description[data.results.bindings[i].description['xml:lang']] = data.results.bindings[i].description.value
+				  		}				  		
+				  		
+				  		// identifiers
+				  		if (data.results.bindings[i].grid) {
+				  			results[id].grid = data.results.bindings[i].grid.value;
+				  		}
+					  	if (data.results.bindings[i].parent_grid) {
+				  			results[id].grid = data.results.bindings[i].parent_grid.value;
+				  		}
+
+				  		if (data.results.bindings[i].ringgold) {
+				  			results[id].ringgold = data.results.bindings[i].ringgold.value;
+				  		}
+					  	if (data.results.bindings[i].parent_ringgold) {
+				  			results[id].ringgold = data.results.bindings[i].parent_ringgold.value;
+				  		}
+
+						// twitter
+				  		if (data.results.bindings[i].twitter) {
+				  			results[id].ringgold = data.results.bindings[i].twitter.value;
+				  		}
+					  	if (data.results.bindings[i].parent_ringgold) {
+				  			results[id].twitter = data.results.bindings[i].parent_twitter.value;
+				  		}
+
+						// url
+				  		if (data.results.bindings[i].url) {
+				  			results[id].url = data.results.bindings[i].url.value;
+				  		}
+					  	if (data.results.bindings[i].parent_url) {
+				  			results[id].url = data.results.bindings[i].parent_url.value;
+				  		}
+				  		
+
+
+				  	}
+				  	
+				  	console.log(JSON.stringify(results, null, 2));
+				  	
+				  	
+				  	
+				  	
+				  	var html = '';
+				  	
+				  	for (var i in data.results.bindings) {
+				  	html += '<div style="margin:10px;border:1px solid rgb(228,228,228);width:400px;">';
+				  	
+				  	
+				  	
+				  	// Map
+					 if (data.results.bindings[i].coordinates) {
+						var coordinates = data.results.bindings[i].coordinates.value;
+						coordinates = coordinates.replace(/Point\(/, '');
+						coordinates = coordinates.replace(/\)$/, '');
+						coordinates = coordinates.replace(/\s/, ',');
+												   
+						var url = 'https://api.mapbox.com/v4/mapbox.streets';
+						var marker = '/pin-s-circle+285A98(' + coordinates + ')';
+						var pt = '/' + coordinates;
+						var zoom = ',14';
+						var size = '/400x160@2x.png';
+						var token='?access_token=pk.eyJ1IjoicmRtcGFnZSIsImEiOiJjajJrdmJzbW8wMDAxMnduejJvcmEza2k4In0.bpLlN9O6DylOJyACE8IteA';
+		
+						html += '<div>';
+						html += '<img src="' + url + marker + pt + zoom + size + token + '" width="400"/>';
+						html += '</div>';
+					 }
+					 
+					 if (data.results.bindings[i].parent_coordinates) {
+						var coordinates = data.results.bindings[i].parent_coordinates.value;
+						coordinates = coordinates.replace(/Point\(/, '');
+						coordinates = coordinates.replace(/\)$/, '');
+						coordinates = coordinates.replace(/\s/, ',');
+												   
+						var url = 'https://api.mapbox.com/v4/mapbox.streets';
+						var marker = '/pin-s-circle+285A98(' + coordinates + ')';
+						var pt = '/' + coordinates;
+						var zoom = ',14';
+						var size = '/400x160@2x.png';
+						var token='?access_token=pk.eyJ1IjoicmRtcGFnZSIsImEiOiJjajJrdmJzbW8wMDAxMnduejJvcmEza2k4In0.bpLlN9O6DylOJyACE8IteA';
+		
+						html += '<div>';
+						html += '<img src="' + url + marker + pt + zoom + size + token + '" width="400"/>';
+						html += '</div>';
+					 }
+					 
+					 /*
+				  	// Image
+				  	if (data.results.bindings[i].image) {
+				  		html += '<div>';
+				  		html += '<img width="300" src="' + data.results.bindings[i].image.value + '" >';
+				  		html += '</div>';
+				  	}
+				  	*/
+				  	
+				  	html += '<div style="padding:20px;">';
+				  	
+				  	if (data.results.bindings[i].repository) {
+				  		html += '<div><a href="' + data.results.bindings[i].repository.value + '" target="_new">' + data.results.bindings[i].repository.value.replace('http://www.wikidata.org/entity/', '') + '</a></div>';
+				  	}
+				  	
+				  	
+				  	if (data.results.bindings[i].label) {
+				  		html += '<div style="font-size:1.5em;">' + data.results.bindings[i].label.value + '</div>';
+				  	}
+
+				  	if (data.results.bindings[i].description) {
+				  		html += '<div>' + data.results.bindings[i].description.value + '</div>';
+				  	}
+				  	
+				  	
+				  	// identifiers
+				  	var grid = '';
+				  	if (data.results.bindings[i].grid) {
+				  		grid = data.results.bindings[i].grid.value;
+				  	}
+				  	if (data.results.bindings[i].parent_grid) {
+				  		grid = data.results.bindings[i].parent_grid.value;
+				  	}
+				  	
+				  	if (grid != '') {
+				  		html += '<div>';
+				  		html += grid;
+				  		html += '</div>';
+				  	}
+
+				  	var ringold = '';
+				  	if (data.results.bindings[i].ringold) {
+				  		ringold = data.results.bindings[i].ringold.value;
+				  	}
+				  	if (data.results.bindings[i].parent_ringold) {
+				  		ringold = data.results.bindings[i].parent_ringold.value;
+				  	}
+				  	
+				  	if (ringold != '') {
+				  		html += '<div>';
+				  		html += ringold;
+				  		html += '</div>';
+				  	}
+
+					// Web
+				  	var url = '';
+				  	if (data.results.bindings[i].url) {
+				  		url = data.results.bindings[i].url.value;
+				  	}
+				  	if (data.results.bindings[i].parent_url) {
+				  		url = data.results.bindings[i].parent_url.value;
+				  	}
+				  	
+				  	if (url != '') {
+				  		html += '<div style="margin-bottom:5px;">';
+				  		html += '<a href="' + url + '" target="_new">';
+				  		html += '<i class="fas fa-globe-africa fa-lg"></i>';
+				  		html += url;
+				  		html += '</a>';
+				  		html += '</div>';
+				  	}
+				  	
+					// Twitter
+				  	var twitter = '';
+				  	if (data.results.bindings[i].twitter) {
+				  		twitter = data.results.bindings[i].twitter.value;
+				  	}
+				  	if (data.results.bindings[i].parent_twitter) {
+				  		twitter = data.results.bindings[i].parent_twitter.value;
+				  	}
+				  	
+				  	if (twitter != '') {
+				  		html += '<div>';
+				  		html += '<a href="https://twitter.com/' + twitter + '" target="_new">';
+				  		html += '<i class="fab fa-twitter-square fa-lg"></i>';
+				  		html += '@' + twitter;
+				  		html += '</a>';
+				  		html += '</div>';
+				  	}
+				  	
+					var wikispecies = '';
+				  	if (data.results.bindings[i].wikispecies) {
+				  		wikispecies = data.results.bindings[i].wikispecies.value;
+				  	}
+								  					  	
+				  	
+				  	if (wikispecies != '') {
+				  		html += '<div style="margin-bottom:5px;">';
+				  		html += '<a href="' + wikispecies + '" target="_new">';
+				  		html += wikispecies;
+				  		html += '</a>';
+				  		html += '</div>';
+				  	}
+
+				  	
+				  	
+				  	html += '</div>';
+					 html += '</div>';
+				  	
+				  	}
+				  	
+				  	$('#card').html(html);
+				  	
+				  	
+				  }
+				}
+			);
+
+		}
+		
+	</script>
+	
+</head>
+<body>
+	<h1>Where is the damned collection?</h1>
+
+	<!-- search box -->
+	<div style="width:100%;padding-bottom:20px;">
+		<input style="font-size:2em;" type="text" id="query" value="" placeholder="Search">
+		<button style="font-size:2em;" id="search" onclick="search();">Find</button>
+	</div>
+	
+	<div id="card">
+	
+	</div>
+
+	<!--
+	<div style="border:1px solid rgb(242,242,242);font-family:Courier;font-size:10px;white-space:pre;overflow:auto;background-color:rgb(242,242,242);" id="output"></div> 
+	-->
+
+</body>
+</html>
