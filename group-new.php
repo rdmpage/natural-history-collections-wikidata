@@ -1,7 +1,7 @@
 <?php
 
 // Match nodes 
-// Get set of candidates (using various rules) then check match
+// Get set of candidates (using various rules) then check match and extract components
 
 
 require_once(dirname(__FILE__) . '/adodb5/adodb.inc.php');

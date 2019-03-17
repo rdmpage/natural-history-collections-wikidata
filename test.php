@@ -32,6 +32,7 @@ function compare_two_strings($str1, $str2)
 	return $score;
 }
 
+//----------------------------------------------------------------------------------------
 $stopwords = array(
 'a', 'and', 'in', 'the', 'of',
 'de', 'y',
