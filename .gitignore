@@ -1,5 +1,7 @@
 
 .DS_Store
 
+*.sql
+
 junk/
 www/junk
