@@ -1,6 +1,6 @@
 <?php
 
-// Get Wikidata record that matches a repository code
+// Get Wikidata records either by directly fetching, or by running SPARQL queries
 
 require_once(dirname(__FILE__) . '/wikidata.php');
 
@@ -262,6 +262,9 @@ $terms = array(
 
 );
 
+// herbaria SELECT * WHERE { ?repository wdt:P31 wd:Q181916 }
+
+
 $mode = 2;
 
 
@@ -286,7 +289,6 @@ foreach ($terms as $term)
 	{
 		$item = $term;
 	}
-
 
 	if ($mode == 3)
 	{

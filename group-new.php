@@ -1,7 +1,8 @@
 <?php
 
 // Match nodes 
-// Get set of candidates (using various rules) then check match and extract components
+// Get set of candidates (using various rules) then check matches and extract components.
+// Should then add these to overall graph
 
 
 require_once(dirname(__FILE__) . '/adodb5/adodb.inc.php');
@@ -227,11 +228,12 @@ function compare_candidates($one, $two)
 
 //--------------------------------------------------------------------------------------------------
 
-
+$cutoff = 2; // minimum weight of an edge to be included in output
 
 $candidates = array();
 
 
+// Candidates based on code
 if (1)
 {
 	$code = 'ENCB';
@@ -245,6 +247,9 @@ if (1)
 	$code = 'FT';
 	
 	$code = 'UT';
+	$code = 'CIB';
+	
+	$code = 'VEN';
 
 	$sql = 'SELECT * FROM nodes WHERE code="' . $code . '"';
 
@@ -315,19 +320,17 @@ if (1)
 	}
 }
 
+// Candidates based on fulltext search
 if (0)
 {
-
 	$candidates = fsearch('Jardim Botânico Tropical');
-
-
 }
 
 print_r($candidates);
 
 $n = count($candidates);
 
-// matrix
+// initialise matrix
 $m = array();
 
 for ($i = 0; $i < $n; $i++)
@@ -340,15 +343,11 @@ for ($i = 0; $i < $n; $i++)
 	$m[] = $row;
 }
 
-
-
+// compare candidates using multiple criteria
 for ($i = 1; $i < $n; $i++)
 {
 	for ($j = 0; $j < $i; $j++)
 	{
-		// compare
-		//echo "[$i,$j]\n";
-		
 		$score = compare_candidates($candidates[$i], $candidates[$j]);
 		$m[$i][$j] = $score;
 		$m[$j][$i] = $score;
@@ -369,9 +368,10 @@ for ($i = 0; $i < $n; $i++)
 	echo "\n";
 }
 
-// filter
+// filter based on cutoff
+// insures matrix comprises 0,1 and filters out low-scoring matches
 echo "\nFiltered\n";
-$cutoff = 3;
+
 for ($i = 1; $i < $n; $i++)
 {
 	for ($j = 0; $j < $i; $j++)
@@ -387,7 +387,6 @@ for ($i = 1; $i < $n; $i++)
 			$m[$j][$i] = 0;				
 		}
 	}
-
 }
 
 // dump matrix

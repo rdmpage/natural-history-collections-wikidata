@@ -1,6 +1,6 @@
 <?php
 
-// Get Wikidata record that matches a repository code
+// Get Wikidata record that matches a Wikispecies item (url + repository code )
 
 require_once(dirname(__FILE__) . '/wikidata.php');
 

@@ -1,6 +1,6 @@
 <?php
 
-// Dump the graph of repositories
+// Dump complete graph of repositories as DOT file
 
 require_once(dirname(__FILE__) . '/adodb5/adodb.inc.php');
 

@@ -1,6 +1,6 @@
 <?php
 
-// Import JSTOR into nodes table
+// Import JSTOR partners into nodes table
 
 //----------------------------------------------------------------------------------------
 // http://stackoverflow.com/a/5996888/9684

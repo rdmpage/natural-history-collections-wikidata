@@ -109,8 +109,7 @@ while (!feof($file_handle))
 							$entity->id = $v;
 							$entity->id = 'grbio' . str_replace('http://grbio.org/', '', $entity->id);
 							break;
-				
-				
+								
 						case 'Institutional Code/Acronym':
 							$entity->code = $v;
 							break;
@@ -131,15 +130,13 @@ while (!feof($file_handle))
 							break;
 
 						case 'URL for main institutional website':
-							$entity->url = $v;
-							
+							$entity->url = $v;							
 							
 							if (!preg_match('/^https?:\/\//', $entity->url))
 							{
 								$entity->url = 'http://' . $entity->url;
 							}
-		
-		
+				
 							$parts = parse_url($entity->url);
 							$entity->host = $parts['host'];
 							$entity->host = preg_replace('/^www\d?\./', '', $entity->host);					
@@ -151,6 +148,10 @@ while (!feof($file_handle))
 
 						case 'Cool URI':
 							$entity->cool_uri = $v;
+							break;
+
+						case 'Institutional LSID':
+							$entity->lsid = $v;
 							break;
 						
 						case 'Country':

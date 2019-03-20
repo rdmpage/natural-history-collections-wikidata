@@ -1,6 +1,6 @@
 <?php
 
-// Dump the graph of repositories
+// Dump the subgraph of repositories corresponding to a subset of nodes
 
 require_once(dirname(__FILE__) . '/adodb5/adodb.inc.php');
 
@@ -72,6 +72,8 @@ while (!$result->EOF)
 	
 	$result->MoveNext();	
 }
+
+// edges may link to nodes outside initial SQL node set, so let's fetch these
 
 foreach ($extra_nodes as $extra_id)
 {

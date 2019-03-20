@@ -1,5 +1,7 @@
 <?php
 
+// Use reconciliation to get possible matcing Wikidata records, and add to nodes and edges
+
 require_once(dirname(__FILE__) . '/adodb5/adodb.inc.php');
 require_once(dirname(__FILE__) . '/wikidata.php');
 
@@ -15,22 +17,38 @@ $db->EXECUTE("set names 'utf8'");
 
 $sql = 'SELECT * FROM nodes WHERE code="JMC"';
 
+$sql = 'SELECT * FROM nodes WHERE name = "Botanische Staatssammlung München"';
+
 
 $result = $db->Execute($sql);
 if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
 while (!$result->EOF) 
 {
-	$text = $result->fields['name'];
+	$record = new stdclass;
+	$record->id 		= $result->fields['id'];
+	$record->code 		= $result->fields['code'];
+	$record->name 		= $result->fields['name'];
+	$record->country 	= $result->fields['country'];
+	
+	$text = $record->name;
 
-	$type = null;
+	$type = 'Q181916'; // herbarium
+	
+	$type = 'Q43229'; // organization
+	
+	$type = 'Q167346'; // botanical garden
+	
+	//$type = null;
+	
+	
 	$properties = array();
-
-	if (1)
+	
+	if ($record->country != '')
 	{	
 		// Property value as string
 		$property = new stdclass;
 		$property->pid = "P17";
-		$property->v = $result->fields['country'];
+		$property->v = $record->country;
 		$properties[] = $property;
 	}
 	
