@@ -110,7 +110,8 @@ function fsearch($text)
 
 
 //--------------------------------------------------------------------------------------------------
-function compare_candidates($one, $two)
+// if strict then some failures to match mean we set score to 0 and bail out
+function compare_candidates($one, $two, $strict = false)
 {
 	$score = 0;
 	
@@ -130,8 +131,11 @@ function compare_candidates($one, $two)
 	{
 		if ($namespace1 == $namespace2)
 		{
-			$score = 0;
-			return $score;
+			if ($strict)
+			{
+				$score = 0;
+				return $score;
+			}
 		}
 	}
 	
@@ -144,8 +148,11 @@ function compare_candidates($one, $two)
 		}
 		else
 		{
-			$score = 0;
-			return $score;			
+			if ($strict)
+			{
+				$score = 0;
+				return $score;
+			}
 		}		
 	}
 	
@@ -193,14 +200,20 @@ function compare_candidates($one, $two)
 	// same type?
 	if (isset($one->type) && isset($two->type))
 	{
-		if ($one->type == $two->type)
+	
+		//print_r(array_intersect($one->type, $two->type));
+	
+		if (count(array_intersect($one->type, $two->type)) != 0)
 		{
 			$score += 1;
 		}
 		else
 		{
-			$score = 0;
-			return $score;			
+			if ($strict)
+			{
+				$score = 0;
+				return $score;
+			}
 		}
 	}
 	
@@ -213,8 +226,11 @@ function compare_candidates($one, $two)
 		}
 		else
 		{
-			$score = 0;
-			return $score;			
+			if ($strict)
+			{
+				$score = 0;
+				return $score;
+			}
 		}
 	}
 	
@@ -250,6 +266,11 @@ if (1)
 	$code = 'CIB';
 	
 	$code = 'VEN';
+	
+	//$code = 'ABS';
+	
+	$code = 'ACC';
+	$code = 'ACM';
 
 	$sql = 'SELECT * FROM nodes WHERE code="' . $code . '"';
 
@@ -265,10 +286,15 @@ if (1)
 		{
 			$obj->code = $result->fields['code'];
 		}
+
+		if ($result->fields['unique_code'] != '')
+		{
+			$obj->unique_code = $result->fields['unique_code'];
+		}
 		
 		if ($result->fields['item_type'] != '')
 		{
-			$obj->type = $result->fields['item_type'];
+			$obj->type = preg_split('/;\s*/', $result->fields['item_type']);
 		}		
 
 		if ($result->fields['country'] != '')
