@@ -2880,6 +2880,11 @@ $page_names = array(
 'UCR'
 );
 
+$page_names = array(
+//'MZL'
+'IEGU'
+);
+
 $force = true;
 
 
@@ -2929,6 +2934,9 @@ while (count($page_names) > 0)
 				$obj->name = $m['name'];			
 				$obj->name = str_replace("'''", "", $obj->name);
 			}
+			
+			// to do
+			// '''IEGU''': Institute of Entomology, Guizhou University, Guiyang, Guizhou Province, China. 
 		
 			// Handle templates
 			// 		

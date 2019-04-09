@@ -264,6 +264,31 @@ $terms = array(
 
 // herbaria SELECT * WHERE { ?repository wdt:P31 wd:Q181916 }
 
+$terms = array(
+'Q5946290'
+);
+
+// zoological museum SELECT * WHERE { ?repository wdt:P31 wd:Q26959059. }
+$terms = array(
+'Q220266',
+'Q220267',
+'Q220268',
+'Q220274',
+'Q220280',
+'Q250369',
+'Q322160',
+'Q765870',
+'Q1974813',
+'Q3868187',
+'Q3924939',
+'Q11787289',
+'Q12011265',
+'Q16746897',
+'Q25750532',
+'Q27902481',
+'Q47075407',
+'Q57204521'
+);
 
 $mode = 2;
 

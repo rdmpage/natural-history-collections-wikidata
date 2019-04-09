@@ -2,6 +2,42 @@
 
 Natural history collections linked to Wikidata
 
+## Twitter,blogs, and other conversations
+
+https://twitter.com/dpsSpiders/status/1108752958106279936
+
+https://iphylo.blogspot.com/2016/08/grbio-call-for-community-curation-what.html
+
+https://discourse.gbif.org/t/collections-catalogue-grbio/688
+
+## Quickstatements
+
+https://tools.wmflabs.org/quickstatements
+
+## NCBI
+
+Find repositories by acronym
+
+https://www.ncbi.nlm.nih.gov/biocollections/?term=MCZ
+
+Collections in a repository (281 = MCZ)
+
+https://www.ncbi.nlm.nih.gov/biocollections/281
+
+Find sequences from material in a collection (= 281)
+
+https://www.ncbi.nlm.nih.gov/nuccore?term="collection_281"[Properties]
+
+
+## Other examples
+
+https://www.idigbio.org/content/shining-new-light-world’s-collections 
+
+https://www.idigbio.org/portal/collections
+
+https://www.tdwg.org/community/cd/
+
+
 ## Rethink
 
 OK, we need to think about this more clearly. Model as a graph where nodes are records from all the source datasets (JSTOR, NCBI, Wikidata, GrBio, etc.). Edges are matches between nodes based on various criteria (e.g., shared code, reconciliation with Wikidata, matching URLs, etc.). Get components of graph to get clusters corresponding to repositories. Need to handle cases where cluster may include > 1 repository (e.g., duplicate codes), and cases where we have multiple Wikidata records for same thing (e.g., Wikispecies page for code has a Wikidata page and so does the repository). May need to think about maximum weighted matching, etc. within a component.

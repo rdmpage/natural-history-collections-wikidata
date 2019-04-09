@@ -114,7 +114,7 @@ while (!feof($file_handle))
 							break;
 							
 						case 'address':
-							$entity->additional_name = $v;
+							$entity->address = $v;
 							break;
 							
 						case 'unique_name':

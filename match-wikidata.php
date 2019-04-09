@@ -15,22 +15,24 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 
 $db->EXECUTE("set names 'utf8'"); 
 
-$sql = 'SELECT * FROM nodes WHERE code="JMC"';
 
-$sql = 'SELECT * FROM nodes WHERE name = "Botanische Staatssammlung München"';
-
-
-$result = $db->Execute($sql);
-if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
-while (!$result->EOF) 
-{
-	$record = new stdclass;
-	$record->id 		= $result->fields['id'];
-	$record->code 		= $result->fields['code'];
-	$record->name 		= $result->fields['name'];
-	$record->country 	= $result->fields['country'];
-	
+//----------------------------------------------------------------------------------------
+function match_record($record)
+{	
 	$text = $record->name;
+	
+	/*
+	if (isset($record->additional_name))
+	{
+		$text .= ' ' . $record->additional_name;
+	}
+	*/
+	
+	// look for higher
+	/*
+	$text = preg_replace('/herbar\w+/ui', '', $text);
+	$text = trim($text);
+	*/
 
 	$type = 'Q181916'; // herbarium
 	
@@ -38,12 +40,51 @@ while (!$result->EOF)
 	
 	$type = 'Q167346'; // botanical garden
 	
-	//$type = null;
+	$type = 'Q33506'; // museum
+	
+	$type = null;
+	
+	// try and be clever and guess type from name
+	
+	if (!$type)
+	{
+		if (preg_match('/museum/i', $text))
+		{
+			$type = 'Q33506'; // museum
+			//$type = 'Q1970365'; // natural history museum
+			//$type = 'Q866133'; // university museum
+			//$type = 'Q17431399'; // national museum
+		}	
+	}
+
+	if (!$type)
+	{
+		if (preg_match('/herbar/i', $text))
+		{
+			$type = 'Q181916'; // herbarium
+		}	
+	}
+
+	if (!$type)
+	{
+		if (preg_match('/garden/i', $text))
+		{
+			$type = 'Q167346'; // botanical garden
+		}	
+	}
+	
+	if (!$type)
+	{
+		if (preg_match('/univer/i', $text))
+		{
+			$type = 'Q3918'; // university
+		}	
+	}
 	
 	
 	$properties = array();
 	
-	if ($record->country != '')
+	if (isset($record->country))
 	{	
 		// Property value as string
 		$property = new stdclass;
@@ -52,9 +93,9 @@ while (!$result->EOF)
 		$properties[] = $property;
 	}
 	
-	//echo $text . "\n";
+	echo "-- $text\n";
 		
-	$items = wikidata_reconcile($text, $type, $properties);
+	$items = wikidata_reconcile($text, $type, $properties, true);
 	
 	if (count($items) == 1)
 	{
@@ -121,16 +162,75 @@ while (!$result->EOF)
 			}
 		}
 	
+		if (isset($entity->latitude))
+		{
+			$keys[] = 'latitude';
+			$values[] = $entity->latitude;
+		}
+
+		if (isset($entity->longitude))
+		{
+			$keys[] = 'longitude';
+			$values[] = $entity->longitude;
+		}
+	
+	
 		// node
 		echo 'REPLACE INTO nodes(' . join(',', $keys) . ') VALUES (' . join(',', $values) . ');' . "\n";			
 		
 		// edge
-		echo 'REPLACE INTO edges(source, target, reason) VALUES("' . $result->fields['id'] . '", "' . $item . '", "reconcile");' . "\n";
-
-		
-		
+		echo 'REPLACE INTO edges(source, target, reason) VALUES("' . $record->id . '", "' . $item . '", "reconcile");' . "\n";
 	}	
+}
+
+$sql = 'SELECT * FROM nodes WHERE code="JMC"';
+
+$sql = 'SELECT * FROM nodes WHERE name = "Botanische Staatssammlung München"';
+
+
+$sql = 'SELECT * FROM nodes WHERE name = "Taiwan Forestry Research Institute"';
+
+$sql = 'SELECT * FROM nodes WHERE name = "South China Botanical Garden"';
+
+$sql = 'SELECT * FROM nodes WHERE name = "Queensland Institute of Medical Research"';
+
+$sql = 'SELECT * FROM nodes WHERE additional_name LIKE "%herbarium%" and country="Australia"';
+
+$sql = 'SELECT * FROM nodes WHERE name LIKE "%idaho%"';
+
+$sql = 'SELECT * FROM nodes WHERE id  LIKE "jstor%"';
+
+$sql = 'SELECT * FROM nodes WHERE code = "AC"';
+
+$sql = 'SELECT * FROM nodes WHERE code = "HULE"';
+$sql = 'SELECT * FROM nodes WHERE code = "HUSC"';
+$sql = 'SELECT * FROM nodes WHERE code = "CMUH"';
+$sql = 'SELECT * FROM nodes WHERE code = "NMBE" AND id NOT LIKE "wikispecies%" AND id NOT LIKE "Q%"';
+
+$sql = 'SELECT * FROM nodes WHERE id  LIKE "jstor%"';
+
+
+
+$result = $db->Execute($sql);
+if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
+while (!$result->EOF) 
+{
+	$record = new stdclass;
+	$record->id 		= $result->fields['id'];
+	$record->code 		= $result->fields['code'];
+	$record->name 		= $result->fields['name'];
+		
+	if ($result->fields['country'] != '')
+	{
+		$record->country 	= $result->fields['country'];
+	}
+
+	if ($result->fields['additional_name'] != '')
+	{
+		$record->additional_name 	= $result->fields['additional_name'];
+	}
 	
+	match_record($record);	
 	
 	$result->MoveNext();	
 

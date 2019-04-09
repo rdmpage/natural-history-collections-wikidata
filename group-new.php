@@ -20,10 +20,9 @@ $ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
 
 $db->EXECUTE("set names 'utf8'"); 
 
-
 //--------------------------------------------------------------------------------------------------
-// Find candidates that match a search string
-function fsearch($text)
+// Find candidates with same code
+function same_code($code)
 {
 	$candidates = array();
 
@@ -35,10 +34,9 @@ function fsearch($text)
 	
 	$db->EXECUTE("set names 'utf8'"); 
 
-	$sql = 'SELECT id, code, item_type, country, name, additional_name, wikispecies, host, address, latitude, longitude MATCH (name) AGAINST ("' . addcslashes($text, '"') . '") AS score 
-	FROM nodes AS score 
-	WHERE MATCH (name) AGAINST ("' . addcslashes($text, '"') . '")
-	ORDER BY score DESC LIMIT 10';
+	$sql = 'SELECT * FROM nodes WHERE code="' . $code . '"';
+	
+	//echo $sql . "\n";
 
 	$result = $db->Execute($sql);
 	if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
@@ -55,7 +53,97 @@ function fsearch($text)
 		
 		if ($result->fields['item_type'] != '')
 		{
-			$obj->type = $result->fields['item_type'];
+			$obj->type = preg_split('/;\s*/', $result->fields['item_type']);
+		}		
+
+		if ($result->fields['country'] != '')
+		{
+			$obj->country = $result->fields['country'];
+		}
+
+		if ($result->fields['name'] != '')
+		{
+			$obj->name = $result->fields['name'];
+		}
+		
+		// extended name?
+		if ($result->fields['additional_name'] != '')
+		{
+			$obj->name .= ' ' . $result->fields['additional_name'];
+		}
+		
+		if ($result->fields['wikispecies'] != '')
+		{
+			$obj->wikispecies = $result->fields['wikispecies'];
+		}
+
+		if ($result->fields['host'] != '')
+		{
+			$obj->host = $result->fields['host'];
+		}	
+
+		if ($result->fields['address'] != '')
+		{
+			$obj->address = $result->fields['address'];
+		}	
+
+		if ($result->fields['latitude'] != '')
+		{
+			$obj->latitude = $result->fields['latitude'];
+		}	
+
+		if ($result->fields['longitude'] != '')
+		{
+			$obj->longitude = $result->fields['longitude'];
+		}	
+	
+		$candidates[] = $obj;
+
+		$result->MoveNext();
+	}
+	
+	return $candidates;	
+}
+
+
+
+//--------------------------------------------------------------------------------------------------
+// Find candidates that match a search string
+function fsearch($text)
+{
+	$candidates = array();
+
+	$db = NewADOConnection('mysqli');
+	$db->Connect("localhost", 'root' , '' , 'grbio');
+	
+	// Ensure fields are (only) indexed by column name
+	$ADODB_FETCH_MODE = ADODB_FETCH_ASSOC;
+	
+	$db->EXECUTE("set names 'utf8'"); 
+
+	$sql = 'SELECT id, code, item_type, country, name, additional_name, wikispecies, host, address, latitude, longitude, MATCH (name) AGAINST ("' . addcslashes($text, '"') . '") AS score 
+	FROM nodes AS score 
+	WHERE MATCH (name) AGAINST ("' . addcslashes($text, '"') . '")
+	ORDER BY score DESC LIMIT 10';
+	
+	//echo $sql . "\n";
+
+	$result = $db->Execute($sql);
+	if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
+	while (!$result->EOF) 
+	{
+		$obj = new stdclass;
+		
+		$obj->id = $result->fields['id'];
+		
+		if ($result->fields['code'] != '')
+		{
+			$obj->code = $result->fields['code'];
+		}
+		
+		if ($result->fields['item_type'] != '')
+		{
+			$obj->type = preg_split('/;\s*/', $result->fields['item_type']);
 		}		
 
 		if ($result->fields['country'] != '')
@@ -156,6 +244,24 @@ function compare_candidates($one, $two, $strict = false)
 		}		
 	}
 	
+	// same unique code?
+	if (isset($one->unique_code) && isset($two->unique_code))
+	{
+		if ($one->unique_code == $two->unique_code)
+		{
+			$score += 1;
+		}
+		else
+		{
+			if ($strict)
+			{
+				$score = 0;
+				return $score;
+			}
+		}		
+	}
+	
+	
 	// wikispecies link?
 	if (isset($one->wikispecies) && isset($two->wikispecies))
 	{
@@ -220,7 +326,7 @@ function compare_candidates($one, $two, $strict = false)
 	// strings match?
 	if (isset($one->name) && isset($two->name))
 	{
-		if (do_strings_match($one->name, $two->name))
+		if (do_strings_match($one->name, $two->name, 0.7))
 		{
 			$score += 1;
 		}
@@ -241,228 +347,174 @@ function compare_candidates($one, $two, $strict = false)
 
 
 
+//----------------------------------------------------------------------------------------
+function go($candidates, $reason)
+{
+	$cutoff = 2; // minimum weight of an edge to be included in output
+	$strict = true;
 
-//--------------------------------------------------------------------------------------------------
 
-$cutoff = 2; // minimum weight of an edge to be included in output
+	$n = count($candidates);
 
-$candidates = array();
+	// initialise matrix
+	$m = array();
+
+	for ($i = 0; $i < $n; $i++)
+	{
+		$row = array();
+		for ($j = 0; $j < $n; $j++)
+		{
+			$row[] = 0;
+		}
+		$m[] = $row;
+	}
+
+	// compare candidates using multiple criteria
+	for ($i = 1; $i < $n; $i++)
+	{
+		for ($j = 0; $j < $i; $j++)
+		{
+			$score = compare_candidates($candidates[$i], $candidates[$j], $strict);
+			$m[$i][$j] = $score;
+			$m[$j][$i] = $score;
+		}
+
+	}
+
+	// get maximum score
+	$max_score = 0;
+	for ($i = 0; $i < $n; $i++)
+	{
+		for ($j = 0; $j < $n; $j++)
+		{
+			$max_score  = max($max_score, $m[$i][$j]);
+		}
+	}
 
 
-// Candidates based on code
+	// dump matrix
+	if (0)
+	{
+		echo "\nRaw\n";
+		for ($i = 0; $i < $n; $i++)
+		{
+			echo $i . '| ';
+	
+			for ($j = 0; $j < $n; $j++)
+			{
+				echo ' ' . $m[$i][$j];
+			}
+			echo "\n";
+		}
+	}
+
+	echo "-- maximum score = $max_score\n";
+
+	$cutoff = max($max_score - 1, 1);
+
+	echo "-- cutoff = $cutoff\n";
+
+
+	// filter based on cutoff
+	// insures matrix comprises 0,1 and filters out low-scoring matches
+
+	for ($i = 1; $i < $n; $i++)
+	{
+		for ($j = 0; $j < $i; $j++)
+		{
+			if ($m[$i][$j] >= $cutoff)
+			{
+				$m[$i][$j] = 1;
+				$m[$j][$i] = 1;		
+			}
+			else
+			{
+				$m[$i][$j] = 0;
+				$m[$j][$i] = 0;				
+			}
+		}
+	}
+
+	// dump matrix
+	if (0)
+	{
+		for ($i = 0; $i < $n; $i++)
+		{
+			echo $i . '| ';
+	
+			for ($j = 0; $j < $n; $j++)
+			{
+				echo ' ' . $m[$i][$j];
+			}
+			echo "\n";
+		}
+	}
+
+	// components
+	$c = get_components($m);
+
+	//print_r($c);
+
+	// SQL
+
+	foreach ($c as $component)
+	{
+		if (count($component) > 1)
+		{
+			$n = count($component);
+		
+			for ($i = 1; $i < $n; $i++)
+			{
+				for ($j = 0; $j < $i; $j++)
+				{
+					// echo $component[$j] . '-' . $component[$i] . "\n";
+				
+					$source = $candidates[$component[$j]]->id;
+					$target = $candidates[$component[$i]]->id;
+				
+					echo 'REPLACE INTO edges(source, target, reason) VALUES("' . $source . '", "' . $target . '", "' . $reason . '");' . "\n";
+				}
+			}
+		}
+	}
+}
+
+
+
+//----------------------------------------------------------------------------------------
+
+
+$reason = 'unknown';
+
+// Candidates based on sharing same code
 if (1)
 {
-	$code = 'ENCB';
-	//$code = 'UCR';
-	//$code = 'USM';
-	//$code = 'AEI';
-	
-	$code = 'AAU';
-	$code = 'CEPEC';
-	
-	$code = 'FT';
-	
-	$code = 'UT';
-	$code = 'CIB';
-	
-	$code = 'VEN';
-	
-	//$code = 'ABS';
-	
-	$code = 'ACC';
-	$code = 'ACM';
+	$reason = 'same code';
 
-	$sql = 'SELECT * FROM nodes WHERE code="' . $code . '"';
+	$code = 'H';
+	$code = 'MCZ';
+	$code = 'BAA';
 
-	$result = $db->Execute($sql);
-	if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
-	while (!$result->EOF) 
-	{
-		$obj = new stdclass;
-		
-		$obj->id = $result->fields['id'];
-		
-		if ($result->fields['code'] != '')
-		{
-			$obj->code = $result->fields['code'];
-		}
-
-		if ($result->fields['unique_code'] != '')
-		{
-			$obj->unique_code = $result->fields['unique_code'];
-		}
-		
-		if ($result->fields['item_type'] != '')
-		{
-			$obj->type = preg_split('/;\s*/', $result->fields['item_type']);
-		}		
-
-		if ($result->fields['country'] != '')
-		{
-			$obj->country = $result->fields['country'];
-		}
-
-		if ($result->fields['name'] != '')
-		{
-			$obj->name = $result->fields['name'];
-		}
-		
-		// extended name?
-		if ($result->fields['additional_name'] != '')
-		{
-			$obj->name .= ' ' . $result->fields['additional_name'];
-		}
-		
-		if ($result->fields['wikispecies'] != '')
-		{
-			$obj->wikispecies = $result->fields['wikispecies'];
-		}
-
-		if ($result->fields['host'] != '')
-		{
-			$obj->host = $result->fields['host'];
-		}
-		
-		if ($result->fields['address'] != '')
-		{
-			$obj->address = $result->fields['address'];
-		}	
-
-		if ($result->fields['latitude'] != '')
-		{
-			$obj->latitude = $result->fields['latitude'];
-		}	
-
-		if ($result->fields['longitude'] != '')
-		{
-			$obj->longitude = $result->fields['longitude'];
-		}	
-		
-	
-	
-		$candidates[] = $obj;
-	
-		$result->MoveNext();	
-	}
+	$candidates = same_code($code);
 }
 
 // Candidates based on fulltext search
 if (0)
 {
+	$reason = 'group by text search'; 
+	
 	$candidates = fsearch('Jardim Botânico Tropical');
+	
+	$candidates = fsearch('Universidad del Azuay');
 }
 
-print_r($candidates);
-
-$n = count($candidates);
-
-// initialise matrix
-$m = array();
-
-for ($i = 0; $i < $n; $i++)
+if (1)
 {
-	$row = array();
-	for ($j = 0; $j < $n; $j++)
-	{
-		$row[] = 0;
-	}
-	$m[] = $row;
+	print_r($candidates);
 }
 
-// compare candidates using multiple criteria
-for ($i = 1; $i < $n; $i++)
-{
-	for ($j = 0; $j < $i; $j++)
-	{
-		$score = compare_candidates($candidates[$i], $candidates[$j]);
-		$m[$i][$j] = $score;
-		$m[$j][$i] = $score;
-	}
 
-}
+go($candidates, $reason);
 
-// dump matrix
-echo "\nRaw\n";
-for ($i = 0; $i < $n; $i++)
-{
-	echo $i . '| ';
-	
-	for ($j = 0; $j < $n; $j++)
-	{
-		echo ' ' . $m[$i][$j];
-	}
-	echo "\n";
-}
-
-// filter based on cutoff
-// insures matrix comprises 0,1 and filters out low-scoring matches
-echo "\nFiltered\n";
-
-for ($i = 1; $i < $n; $i++)
-{
-	for ($j = 0; $j < $i; $j++)
-	{
-		if ($m[$i][$j] >= $cutoff)
-		{
-			$m[$i][$j] = 1;
-			$m[$j][$i] = 1;		
-		}
-		else
-		{
-			$m[$i][$j] = 0;
-			$m[$j][$i] = 0;				
-		}
-	}
-}
-
-// dump matrix
-for ($i = 0; $i < $n; $i++)
-{
-	echo $i . '| ';
-	
-	for ($j = 0; $j < $n; $j++)
-	{
-		echo ' ' . $m[$i][$j];
-	}
-	echo "\n";
-}
-
-// components
-$c = get_components($m);
-
-print_r($c);
-
-
-
-/*
-foreach ($candidates as $candidate)
-{
-	$sql = 'SELECT * FROM nodes WHERE code="' . $code . '"';
-	
-	//$sql .= ' AND item_type="herbarium"';
-	
-	$ids = array();
-	
-	$result = $db->Execute($sql);
-	if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
-	while (!$result->EOF) 
-	{
-		$id = str_replace('%20', '_', $result->fields['id']);
-		$ids[] = $id;
-		$result->MoveNext();	
-	}
-	
-	$n = count($ids);
-	
-	for ($i = 1; $i < $n; $i++)
-	{
-		echo 'REPLACE INTO edges(source, target, reason) VALUES("' . $ids[0] . '", "' . $ids[$i] . '", "same code");' . "\n";
-	}
-	
-
-}
-
-*/
 
 ?>
-

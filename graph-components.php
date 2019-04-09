@@ -53,6 +53,8 @@ $sql = 'SELECT * FROM edges';
 
 //$sql .= ' WHERE source IN("jstorTEX", "jstorLL", "jstorBRI")';
 
+$sql .= ' WHERE source IN("grbioinstitution/south-china-botanical-garden", "ncbi6911")';
+
 
 $result = $db->Execute($sql);
 if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
@@ -82,6 +84,9 @@ $sql = 'SELECT * FROM edges';
 
 //$sql .= ' WHERE source IN("jstorTEX", "jstorLL", "jstorBRI")';
 
+$sql .= ' WHERE source IN("grbioinstitution/south-china-botanical-garden", "ncbi6911")';
+
+
 $result = $db->Execute($sql);
 if ($result == false) die("failed [" . __LINE__ . "]: " . $sql);
 while (!$result->EOF) 
@@ -108,6 +113,19 @@ foreach ($sets as $label => $x)
 	echo $label . " -> ";
 	echo $p->label . "\n";
 }
+
+
+// SQL dump
+foreach ($sets as $label => $x)
+{
+	$p = find($x);
+	
+	echo 'UPDATE node SET cluster_id="' . $p->label . '" WHERE id="' . $label . '";' . "\n";
+}
+
+
+// Then need code to take a cluster and work out what needs to be added to Wikidata,
+// e.g. what entity we add repository codes to
 
 
 

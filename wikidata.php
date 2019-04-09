@@ -277,6 +277,10 @@ function get_wikidata_entity($qid)
 							$entity->type[] = 'university';
 							break;
 							
+						case 'Q13226383':
+							$entity->type[] = 'facility';
+							break;
+							
 						default:
 							$entity->type[] = $claim->mainsnak->datavalue->value->id;
 							break;					
@@ -408,7 +412,10 @@ function wikidata_reconcile($text, $type = null, $properties = array(), $debug =
 	
 	$query->properties = $properties;
 	
-	//print_r($query);
+	if ($debug)
+	{
+		print_r($query);
+	}
 	
 	//echo json_encode($query);
 
