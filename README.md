@@ -37,6 +37,40 @@ https://www.idigbio.org/portal/collections
 
 https://www.tdwg.org/community/cd/
 
+## Wikidata queries
+
+### Find institution codes from Ringgold
+
+```
+SELECT DISTINCT * 
+WHERE 
+{ 
+  VALUES ?ringgold {"52827"}  
+  {
+    # institution that collection is part of has Ringgold
+    ?institution wdt:P3500 ?ringgold .
+    ?collection wdt:P195|wdt:P137|wdt:P749|wdt:P361 ?institution .
+  }
+  UNION
+  {
+    # collection itself has Ringgold
+    ?collection wdt:P3500 ?ringgold .
+  }
+ 
+    
+  # Code(s) for collection
+  {
+    ?collection wdt:P5858|wdt:P4090 ?code .
+  }
+  UNION
+  {
+    ?wikispecies schema:about ?collection .
+    BIND( REPLACE( STR(?wikispecies),"https://species.wikimedia.org/wiki/","" ) AS ?code). 
+    FILTER contains (STR(?wikispecies),'species.wikimedia.org')
+  }
+}
+```
+
 
 ## Rethink
 
@@ -103,6 +137,14 @@ This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unp
 ## JSTOR
 
 https://labstest.jstor.org/zambezi/
+
+## Publications about collections
+
+Could add publication on a collection to Wikidata (if not already there) and make the collection the subject of that publication.
+
+### Example publications
+
+Edição Especial Herbários do Brasil - 66º Congresso Nacional de Botânica published by: UNISANTA http://periodicos.unisanta.br/index.php/bio/issue/view/53/showToc
 
 
 
