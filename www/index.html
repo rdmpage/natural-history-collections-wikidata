@@ -30,13 +30,18 @@
 		var template_card = `
 			<% for(var i in data) {%>
 				<div class="row">
-					<div class="col s12 m6">
+					<div class="col s12 m6 l6">
 						<div class="card">
 						
 							<% if (data[i].map) {  %>
 								<div class="card-image">
+                  <!-- openstreetmap -->
+                  <!--
                   <a href="https://www.openstreetmap.org/?mlat=<%- data[i].pt[1] %>&mlon=<%- data[i].pt[0] %>&zoom=16" target="_new">
-								  <img src="<%- data[i].map %>">
+                  -->
+                  <!-- google -->
+                  <a href="https://www.google.com/maps/search/?api=1&query=<%- data[i].pt[1]%>,<%- data[i].pt[0]%>" target="_new">
+								  <img style="height:200px;object-fit: cover;" src="<%- data[i].map %>">
                   </a>
   
 								</div>	
@@ -44,7 +49,7 @@
 							
 							<% if (data[i].image) {  %>
 								<div class="card-image">
-									<img src="http://exeg5le.cloudimg.io/s/width/400/<%- data[i].image %>">
+									<img style="height:200px;object-fit: cover;" src="http://exeg5le.cloudimg.io/s/width/400/<%- data[i].image %>">
 								</div>	
 							<% } %>
 						
@@ -53,15 +58,38 @@
 								<span class="card-title">
 									<%- data[i].display_name.join(' / ') %>
 								</span>
+
+                <% if (data[i].description) {  %>
+                  <% if (data[i].description['en']) {  %>
+                      <p><%- data[i].description['en'] %></p>
+                  <% } %>
+                <% } %>
+
 								
+              <!-- social media links -->
+                <div class="row">
+
+ 										<% if (data[i].twitter) {  %>
+											<div class="col s2" style="text-align:center"><a href="https://twitter.com/<%- data[i].twitter %>" target="_new"><img height="24" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Ftwitter.svg?1552808188201"></a></div>
+										<% } %>
+
+ 										<% if (data[i].instagram) {  %>
+											<div class="col s2" style="text-align:center"><a href="https://www.instagram.com/<%- data[i].instagram %>" target="_new"><img height="24" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Finstagram.svg?1552760866872"></a></div>
+										<% } %>
+
+ 										<% if (data[i].facebook) {  %>
+											<div class="col s2" style="text-align:center"><a href="https://www.facebook.com/<%- data[i].facebook %>" target="_new"><img height="24" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Ffacebook-square.svg?1552760888987"></a></div>
+										<% } %>
+                </div>
+
 								<% if (data[i].url) { %>
 									<a class="btn" href="<%- data[i].url %>" target="_new">Website</a>
-								<% } %>																	
-								
+								<% } %>	
+
 								<table class="striped">
 									<tbody>	
 										<% if (data[i].code.length > 0) { %>
-											<tr><td>code</td><td><%- data[i].code.join(';') %></td></tr>
+											<tr><td>Code</td><td><%- data[i].code.join(';').replace(/</g, '&lt;').replace(/>/g, '&gt;') %></td></tr>
 										<% } %>									
 										<% if (data[i].grid) {  %>
 											<tr><td>grid</td><td><a href="https://www.grid.ac/institutes/<%- data[i].grid %>" target="_new"><%- data[i].grid %></a></td></tr>
@@ -75,22 +103,36 @@
 											<tr><td>BGCI garden ID</td><td><%- data[i].bgci %></td></tr>
 										<% } %>
 
+                    <!--
 										<% if (data[i].twitter) {  %>
-											<tr><td><img width="32" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Ftwitter.svg?1552808188201"></td><td><a href="https://twitter.com/<%- data[i].twitter %>" target="_new">@<%- data[i].twitter %></a></td></tr>
+											<tr><td><img width="24" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Ftwitter.svg?1552808188201"></td><td><a href="https://twitter.com/<%- data[i].twitter %>" target="_new">@<%- data[i].twitter %></a></td></tr>
 										<% } %>
 
 										<% if (data[i].instagram) {  %>
-											<tr><td><img width="32" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Finstagram.svg?1552760866872"></td><td><a href="https://www.instagram.com/<%- data[i].instagram %>" target="_new"><%- data[i].instagram %></a></td></tr>
+											<tr><td><img width="24" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Finstagram.svg?1552760866872"></td><td><a href="https://www.instagram.com/<%- data[i].instagram %>" target="_new"><%- data[i].instagram %></a></td></tr>
 										<% } %>
 
 										<% if (data[i].facebook) {  %>
-											<tr><td><img width="32" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Ffacebook-f.svg?1552808190096"></td><td><a href="https://www.facebook.com/<%- data[i].facebook %>" target="_new"><%- data[i].instagram %></a></td></tr>
+											<tr><td><img height="24" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Ffacebook-f.svg?1552808190096"></td><td><a href="https://www.facebook.com/<%- data[i].facebook %>" target="_new"><%- data[i].instagram %></a></td></tr>
 										<% } %>
+                    -->
 
 										<% if (data[i].wikispecies) {  %>
 											<tr><td>wikispecies</td><td><a href="https://species.wikimedia.org/wiki/<%- data[i].wikispecies %>" target="_new"><%- data[i].wikispecies %></a></td></tr>
 										<% } %>
-								
+
+										<% if (data[i].collection_size) {  %>
+											<tr><td>Collection size</td><td><%- parseInt(data[i].collection_size).toLocaleString('en') %></td></tr>
+										<% } %>
+
+										<% if (data[i].about) {  %>
+                      <% for(var j in data[i].about) {%>
+											  <tr><td><img height="32" src="https://cdn.glitch.com/7ac34ed1-a526-477d-bcf0-e32c7f9e0837%2Ffile.svg?1554925732736"></td><td><a href="https://doi.org/<%- data[i].about[j].doi %>" target="_new"><%- data[i].about[j].title['en'] %></a></td></tr>
+										  <% } %>
+                    <% } %>
+
+
+
 									</tbody>
 								</table>
 								
@@ -141,9 +183,13 @@
 						var sparql = `SELECT DISTINCT * 
 WHERE 
 { 
-	{
+	  {
   		?repository wdt:P5858 "CODE" . 
   	}
+  	UNION
+    {
+      ?repository wdt:P4090 "CODE" . 
+    }
   	UNION
   	{
     	<https://species.wikimedia.org/wiki/CODE> schema:about ?repository .
@@ -151,10 +197,8 @@ WHERE
   
   ?repository rdfs:label ?label .
   
-  #?repository ?p ?o .
-  
   OPTIONAL {
-   ?repository wdt:P195|wdt:P137|wdt:P749 ?parent .
+   ?repository wdt:P195|wdt:P137|wdt:P749|wdt:P361 ?parent .
     OPTIONAL { ?parent wdt:P18 ?parent_image . } 
     OPTIONAL { ?parent wdt:P17 ?parent_country . ?parent_country rdfs:label ?parent_country_label . FILTER (lang(?parent_country_label) = 'en') } 
     OPTIONAL { ?parent wdt:P625 ?parent_coordinates . }   
@@ -166,12 +210,11 @@ WHERE
     OPTIONAL { ?parent wdt:P856 ?parent_url . }
     
     OPTIONAL { ?parent wdt:P2003 ?parent_instagram . }
+    OPTIONAL { ?parent wdt:P2013 ?parent_facebook . }
   }
   
   OPTIONAL { ?repository schema:description ?description . FILTER (lang(?description) = 'en')  } 
 
-  
-  
   OPTIONAL { ?repository wdt:P18 ?image . } 
   OPTIONAL { ?repository wdt:P17 ?country . ?country rdfs:label ?country_label . FILTER (lang(?country_label) = 'en') }  
   OPTIONAL { ?repository wdt:P625 ?coordinates . }  
@@ -183,6 +226,9 @@ WHERE
   OPTIONAL { ?repository wdt:P856 ?url . }
   
   OPTIONAL { ?repository wdt:P2003 ?instagram . }
+  OPTIONAL { ?repository wdt:P2013 ?facebook . }
+
+  OPTIONAL { ?repository wdt:P1436 ?collection_size . }
   
   #OPTIONAL { ?repository wdt:P4090 ?bcode. }
   #OPTIONAL { ?repository wdt:P5858 ?ihcode. }  
@@ -199,7 +245,8 @@ WHERE
   
   OPTIONAL { ?wikispecies schema:about ?repository; schema:isPartOf <https://species.wikimedia.org/> } 
   
-  
+  OPTIONAL { ?work wdt:P921 ?repository; wdt:P1476 ?work_title; wdt:P356 ?work_doi } 
+
   # FILTER (lang(?label) = 'en') . 
 }`;
 
@@ -230,9 +277,10 @@ WHERE
 				  		if (!results[id]) {
 				  			results[id] = {};
 				  			results[id].name = {};
-							results[id].display_name = [];
+							  results[id].display_name = [];
 				  			results[id].description = {};
 				  			results[id].code = [];
+                results[id].about = {};
 				  		}
 				  		results[id].wikidata = data.results.bindings[i].repository.value;
 				  		
@@ -245,6 +293,7 @@ WHERE
 				  				case 'en':
 				  				case 'fr':
 				  				case 'ja':
+                  case 'po':
 				  				case 'zh':
 				  					if (results[id].display_name.indexOf(data.results.bindings[i].label.value) == -1) {				  				
 					  					results[id].display_name.push(data.results.bindings[i].label.value);
@@ -263,8 +312,7 @@ WHERE
 				  		// image
 				  		if (data.results.bindings[i].image) {
 				  			results[id].image = data.results.bindings[i].image.value;
-				  		}
-              if (!data.results.bindings[i].image) {
+				  		} else {
 					  	   if (data.results.bindings[i].parent_image) {
 				  			   results[id].image = data.results.bindings[i].parent_image.value;
 				  	   	}		
@@ -273,40 +321,53 @@ WHERE
 				  		// grid
 				  		if (data.results.bindings[i].grid) {
 				  			results[id].grid = data.results.bindings[i].grid.value;
-				  		}
+				  		} else {
 					  	if (data.results.bindings[i].parent_grid) {
 				  			results[id].grid = data.results.bindings[i].parent_grid.value;
 				  		}
+              }
 
 						// ringgold
 				  		if (data.results.bindings[i].ringgold) {
 				  			results[id].ringgold = data.results.bindings[i].ringgold.value;
-				  		}
+				  		} else {
 					  	if (data.results.bindings[i].parent_ringgold) {
 				  			results[id].ringgold = data.results.bindings[i].parent_ringgold.value;
 				  		}
+              }
 
 						// twitter
 				  		if (data.results.bindings[i].twitter) {
 				  			results[id].twitter = data.results.bindings[i].twitter.value;
-				  		}
+				  		} else {
 					  	if (data.results.bindings[i].parent_twitter) {
 				  			results[id].twitter = data.results.bindings[i].parent_twitter.value;
 				  		}
+              }
 
 						// instagram
 				  		if (data.results.bindings[i].instagram) {
 				  			results[id].instagram = data.results.bindings[i].instagram.value;
-				  		}
+				  		} else {
 					  	if (data.results.bindings[i].parent_instagram) {
 				  			results[id].instagram = data.results.bindings[i].parent_instagram.value;
 				  		}
+              }
+
+              // instagram
+				  		if (data.results.bindings[i].facebook) {
+				  			results[id].facebook = data.results.bindings[i].facebook.value;
+				  		} else {
+					  	if (data.results.bindings[i].parent_facebook) {
+				  			results[id].facebook = data.results.bindings[i].parent_facebook.value;
+				  		}
+              }
+
 
 						// url
 				  		if (data.results.bindings[i].url) {
 				  			results[id].url = data.results.bindings[i].url.value;
-				  		}
-              if (!data.results.bindings[i].url){
+				  		} else {
 					  	if (data.results.bindings[i].parent_url) {
 				  			results[id].url = data.results.bindings[i].parent_url.value;
 				  		}
@@ -317,6 +378,11 @@ WHERE
 				  			results[id].wikispecies = data.results.bindings[i].wikispecies.value;
 				  			results[id].wikispecies = results[id].wikispecies.replace('https://species.wikimedia.org/wiki/', '');
 				  		}
+              
+				  		// collection size
+				  		if (data.results.bindings[i].collection_size) {
+				  			results[id].collection_size = data.results.bindings[i].collection_size.value;
+				  		}              
 				  		
 				  		// codes
 				  		if (data.results.bindings[i].bcode) {
@@ -337,8 +403,7 @@ WHERE
 							results[id].coordinates = results[id].coordinates.replace(/Point\(/, '');
 							results[id].coordinates = results[id].coordinates.replace(/\)$/, '');
 							results[id].coordinates = results[id].coordinates.replace(/\s/, ',');
-				  		}
-              if (!data.results.bindings[i].coordinates) {
+				  		} else {
 					  	if (data.results.bindings[i].parent_coordinates) {
 							results[id].coordinates = data.results.bindings[i].parent_coordinates.value;
 							results[id].coordinates = results[id].coordinates.replace(/Point\(/, '');
@@ -360,6 +425,25 @@ WHERE
                 
                 results[id].pt = results[id].coordinates.split(',');
 						  }
+              
+              if (data.results.bindings[i].work) {
+                var work = data.results.bindings[i].work.value;
+                if (!results[id].about[work]) {
+                  results[id].about[work] = {};
+                  results[id].about[work].title = {};
+                }
+                
+                if (data.results.bindings[i].work_doi) {
+                   results[id].about[work].doi = data.results.bindings[i].work_doi.value;
+                }
+
+                if (data.results.bindings[i].work_title) {
+                   results[id].about[work].title[data.results.bindings[i].work_title['xml:lang']] = data.results.bindings[i].work_title.value;
+                }	
+                
+              }
+              
+              
 				  	}
 				  	
 				  	console.log(JSON.stringify(results, null, 2));
@@ -400,6 +484,19 @@ WHERE
 	</div>
 	
 	<div id="results">
+    <h5>
+      <p>
+        This application searches Wikidata for natural history repositories (such as herbaria, museums, etc.) using the acronym for the institution
+        (often referred to as the <b>institutionCode</b>). You can enter an institutionCode above, or try some of these examples:        
+      </p>
+      <div>
+        <a href="?q=NHMUK">NHMUK</a> <a href="?q=P">P</a> <a href="?q=PE">PE</a> <a href="?q=AM">AM</a> 
+      </div>
+      <p>
+        Note that the results depend entirely on what is in Wikidata. For some background see 
+        <a href="https://iphylo.blogspot.com/2019/03/where-is-damned-collection-wikidata.html" targte="_new">Where is the damned collection? Wikidata, GrBio, and a global list of all natural history collections</a>.
+      </p>
+    </h5>
 	</div>
 	
 	<div id="output">
