@@ -39,36 +39,41 @@ https://www.tdwg.org/community/cd/
 
 ## Wikidata queries
 
-### Find institution codes from Ringgold
+### Find institution codes from Ringgold or grid
 
 ```
 SELECT DISTINCT * 
 WHERE 
 { 
-  VALUES ?ringgold {"52827"}  
+  VALUES ?identifier {"grid.4903.e"}  
   {
-    # institution that collection is part of has Ringgold
-    ?institution wdt:P3500 ?ringgold .
+    # institution that includes collection has grid or ringgold
+    ?institution wdt:P3500|wdt:P2427 ?identifier .
+    # various part of relationships
     ?collection wdt:P195|wdt:P137|wdt:P749|wdt:P361 ?institution .
   }
   UNION
   {
-    # collection itself has Ringgold
-    ?collection wdt:P3500 ?ringgold .
+    # collection itself has grid or ringgold
+    ?collection wdt:P3500|wdt:P2427 ?identifier .
   }
- 
     
   # Code(s) for collection
   {
+    # Index Herb. or Biodiv Repo ID
     ?collection wdt:P5858|wdt:P4090 ?code .
   }
   UNION
   {
+    # Derive from Wikispecies URL
     ?wikispecies schema:about ?collection .
     BIND( REPLACE( STR(?wikispecies),"https://species.wikimedia.org/wiki/","" ) AS ?code). 
     FILTER contains (STR(?wikispecies),'species.wikimedia.org')
   }
 }
+
+
+
 ```
 
 
